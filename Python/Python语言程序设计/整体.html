@@ -1,0 +1,2696 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>程序设计基本方法 | 青焰的技能树</title>
+    <meta name="description" content="边学习边做好笔记，汇总成册方便查阅，不走重复路，点亮技能树。">
+    <link rel="icon" href="/skill-tree/logo.ico">
+    
+    <link rel="preload" href="/skill-tree/assets/css/0.styles.b8dd86a5.css" as="style"><link rel="preload" href="/skill-tree/assets/js/app.72dd125b.js" as="script"><link rel="preload" href="/skill-tree/assets/js/61.962f4e83.js" as="script"><link rel="prefetch" href="/skill-tree/assets/js/10.91df5722.js"><link rel="prefetch" href="/skill-tree/assets/js/11.41d1cd4d.js"><link rel="prefetch" href="/skill-tree/assets/js/12.8556f2c5.js"><link rel="prefetch" href="/skill-tree/assets/js/13.49192743.js"><link rel="prefetch" href="/skill-tree/assets/js/14.88be0a44.js"><link rel="prefetch" href="/skill-tree/assets/js/15.51335612.js"><link rel="prefetch" href="/skill-tree/assets/js/16.5191e6ae.js"><link rel="prefetch" href="/skill-tree/assets/js/17.d04d3e0e.js"><link rel="prefetch" href="/skill-tree/assets/js/18.84418bd8.js"><link rel="prefetch" href="/skill-tree/assets/js/19.842aaf10.js"><link rel="prefetch" href="/skill-tree/assets/js/2.c07a8465.js"><link rel="prefetch" href="/skill-tree/assets/js/20.33f7c98d.js"><link rel="prefetch" href="/skill-tree/assets/js/21.b3d39a47.js"><link rel="prefetch" href="/skill-tree/assets/js/22.ec52062d.js"><link rel="prefetch" href="/skill-tree/assets/js/23.390d1851.js"><link rel="prefetch" href="/skill-tree/assets/js/24.6d294b84.js"><link rel="prefetch" href="/skill-tree/assets/js/25.309d6cba.js"><link rel="prefetch" href="/skill-tree/assets/js/26.b74ca268.js"><link rel="prefetch" href="/skill-tree/assets/js/27.17d5de65.js"><link rel="prefetch" href="/skill-tree/assets/js/28.7489ff30.js"><link rel="prefetch" href="/skill-tree/assets/js/29.d9d6154e.js"><link rel="prefetch" href="/skill-tree/assets/js/3.1feea6c6.js"><link rel="prefetch" href="/skill-tree/assets/js/30.f7e8fe8b.js"><link rel="prefetch" href="/skill-tree/assets/js/31.308b86f3.js"><link rel="prefetch" href="/skill-tree/assets/js/32.3bb8e258.js"><link rel="prefetch" href="/skill-tree/assets/js/33.21fd5bd2.js"><link rel="prefetch" href="/skill-tree/assets/js/34.b42a07bb.js"><link rel="prefetch" href="/skill-tree/assets/js/35.969a85d6.js"><link rel="prefetch" href="/skill-tree/assets/js/36.5960e1d3.js"><link rel="prefetch" href="/skill-tree/assets/js/37.b966bcdf.js"><link rel="prefetch" href="/skill-tree/assets/js/38.4c39df5a.js"><link rel="prefetch" href="/skill-tree/assets/js/39.14465973.js"><link rel="prefetch" href="/skill-tree/assets/js/4.3330d463.js"><link rel="prefetch" href="/skill-tree/assets/js/40.c4ddeefc.js"><link rel="prefetch" href="/skill-tree/assets/js/41.46225b7b.js"><link rel="prefetch" href="/skill-tree/assets/js/42.f55facb8.js"><link rel="prefetch" href="/skill-tree/assets/js/43.2b695f25.js"><link rel="prefetch" href="/skill-tree/assets/js/44.60078cd8.js"><link rel="prefetch" href="/skill-tree/assets/js/45.f4be811b.js"><link rel="prefetch" href="/skill-tree/assets/js/46.35ec0b62.js"><link rel="prefetch" href="/skill-tree/assets/js/47.7e6a6ccb.js"><link rel="prefetch" href="/skill-tree/assets/js/48.d82a54ae.js"><link rel="prefetch" href="/skill-tree/assets/js/49.8d6e1391.js"><link rel="prefetch" href="/skill-tree/assets/js/5.bf7463d2.js"><link rel="prefetch" href="/skill-tree/assets/js/50.c361dbf9.js"><link rel="prefetch" href="/skill-tree/assets/js/51.86643bd0.js"><link rel="prefetch" href="/skill-tree/assets/js/52.3b1e9251.js"><link rel="prefetch" href="/skill-tree/assets/js/53.f9b57c52.js"><link rel="prefetch" href="/skill-tree/assets/js/54.44bbbd7f.js"><link rel="prefetch" href="/skill-tree/assets/js/55.08906c10.js"><link rel="prefetch" href="/skill-tree/assets/js/56.fb2c0dd5.js"><link rel="prefetch" href="/skill-tree/assets/js/57.71b1f488.js"><link rel="prefetch" href="/skill-tree/assets/js/58.985d9800.js"><link rel="prefetch" href="/skill-tree/assets/js/59.f40308a1.js"><link rel="prefetch" href="/skill-tree/assets/js/6.4f7bd484.js"><link rel="prefetch" href="/skill-tree/assets/js/60.d0ad8ef4.js"><link rel="prefetch" href="/skill-tree/assets/js/62.53c46cfe.js"><link rel="prefetch" href="/skill-tree/assets/js/63.769be78f.js"><link rel="prefetch" href="/skill-tree/assets/js/64.a1dff529.js"><link rel="prefetch" href="/skill-tree/assets/js/65.3402bf23.js"><link rel="prefetch" href="/skill-tree/assets/js/66.38cd918d.js"><link rel="prefetch" href="/skill-tree/assets/js/67.e412267d.js"><link rel="prefetch" href="/skill-tree/assets/js/68.61a0440d.js"><link rel="prefetch" href="/skill-tree/assets/js/69.c65f0c67.js"><link rel="prefetch" href="/skill-tree/assets/js/7.1d1caca0.js"><link rel="prefetch" href="/skill-tree/assets/js/70.d8c147ab.js"><link rel="prefetch" href="/skill-tree/assets/js/71.cc97eb82.js"><link rel="prefetch" href="/skill-tree/assets/js/72.485282c7.js"><link rel="prefetch" href="/skill-tree/assets/js/73.14a46d4a.js"><link rel="prefetch" href="/skill-tree/assets/js/74.d368f1f2.js"><link rel="prefetch" href="/skill-tree/assets/js/75.a46ebd79.js"><link rel="prefetch" href="/skill-tree/assets/js/76.5831c17f.js"><link rel="prefetch" href="/skill-tree/assets/js/77.30bd2be9.js"><link rel="prefetch" href="/skill-tree/assets/js/8.58b5d9b4.js"><link rel="prefetch" href="/skill-tree/assets/js/9.5d8b698c.js">
+    <link rel="stylesheet" href="/skill-tree/assets/css/0.styles.b8dd86a5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/skill-tree/" class="home-link router-link-active"><!----> <span class="site-name">青焰的技能树</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/skill-tree/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/HTML/" class="nav-link">HTML</a></li><li class="dropdown-subitem"><a href="/skill-tree/CSS/" class="nav-link">CSS</a></li><li class="dropdown-subitem"><a href="/skill-tree/JavaScript/" class="nav-link">JavaScript</a></li></ul></li><li class="dropdown-item"><h4>后端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/PHP/" class="nav-link">PHP</a></li></ul></li><li class="dropdown-item"><h4>编程</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/Python/" class="nav-link router-link-active">Python</a></li><li class="dropdown-subitem"><a href="/skill-tree/Java/" class="nav-link">Java</a></li></ul></li><li class="dropdown-item"><h4>图像处理</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/PS/" class="nav-link">PS</a></li><li class="dropdown-subitem"><a href="/skill-tree/AE/" class="nav-link">AE</a></li><li class="dropdown-subitem"><a href="/skill-tree/PR/" class="nav-link">PR</a></li></ul></li><li class="dropdown-item"><h4>数据库</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/SQL/" class="nav-link">SQL</a></li></ul></li><li class="dropdown-item"><h4>网络安全</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/web/" class="nav-link">网络安全</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/skill-tree/网站/" class="nav-link">网站</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">空闲</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/看书/" class="nav-link">看书</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/视频/" class="nav-link">视频</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/锻炼/" class="nav-link">锻炼</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/习惯/" class="nav-link">习惯</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/词句/" class="nav-link">词句</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/兼职/" class="nav-link">兼职</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/摄影/" class="nav-link">摄影</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/DIY/" class="nav-link">DIY</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/Aerial/" class="nav-link">航拍</a></li></ul></div></div><div class="nav-item"><a href="https://starryif.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  船星
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/skill-tree/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/HTML/" class="nav-link">HTML</a></li><li class="dropdown-subitem"><a href="/skill-tree/CSS/" class="nav-link">CSS</a></li><li class="dropdown-subitem"><a href="/skill-tree/JavaScript/" class="nav-link">JavaScript</a></li></ul></li><li class="dropdown-item"><h4>后端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/PHP/" class="nav-link">PHP</a></li></ul></li><li class="dropdown-item"><h4>编程</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/Python/" class="nav-link router-link-active">Python</a></li><li class="dropdown-subitem"><a href="/skill-tree/Java/" class="nav-link">Java</a></li></ul></li><li class="dropdown-item"><h4>图像处理</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/PS/" class="nav-link">PS</a></li><li class="dropdown-subitem"><a href="/skill-tree/AE/" class="nav-link">AE</a></li><li class="dropdown-subitem"><a href="/skill-tree/PR/" class="nav-link">PR</a></li></ul></li><li class="dropdown-item"><h4>数据库</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/SQL/" class="nav-link">SQL</a></li></ul></li><li class="dropdown-item"><h4>网络安全</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/web/" class="nav-link">网络安全</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/skill-tree/网站/" class="nav-link">网站</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">空闲</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/看书/" class="nav-link">看书</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/视频/" class="nav-link">视频</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/锻炼/" class="nav-link">锻炼</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/习惯/" class="nav-link">习惯</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/词句/" class="nav-link">词句</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/兼职/" class="nav-link">兼职</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/摄影/" class="nav-link">摄影</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/DIY/" class="nav-link">DIY</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/Aerial/" class="nav-link">航拍</a></li></ul></div></div><div class="nav-item"><a href="https://starryif.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  船星
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/skill-tree/Python/" class="sidebar-link">序言</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Python语言程序设计</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/skill-tree/Python/Python语言程序设计/整体.html" class="active sidebar-link">程序设计基本方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#计算机与程序设计" class="sidebar-link">计算机与程序设计</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#计算机编程" class="sidebar-link">计算机编程</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#编译和解释" class="sidebar-link">编译和解释</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#程序的基本编写方法" class="sidebar-link">程序的基本编写方法</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python语言描述" class="sidebar-link">Python语言描述</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python语言window系统开发环境" class="sidebar-link">Python语言Window系统开发环境</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python语言编写与运行" class="sidebar-link">Python语言编写与运行</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#“温度转换”问题分析" class="sidebar-link">“温度转换”问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#“温度转换”实例编写" class="sidebar-link">“温度转换”实例编写</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#“温度转换”代码分析" class="sidebar-link">“温度转换”代码分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#“温度转换”举一反三" class="sidebar-link">“温度转换”举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#程序的格式框架" class="sidebar-link">程序的格式框架</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#数据类型" class="sidebar-link">数据类型</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#语句与函数" class="sidebar-link">语句与函数</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#命名与保留字" class="sidebar-link">命名与保留字</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python程序的输入输出" class="sidebar-link">Python程序的输入输出</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python语言的特点" class="sidebar-link">Python语言的特点</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#编程语言的多样初心" class="sidebar-link">编程语言的多样初心</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#超级语言的诞生" class="sidebar-link">超级语言的诞生</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#计算机技术的演进" class="sidebar-link">计算机技术的演进</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python蟒蛇绘制问题分析" class="sidebar-link">Python蟒蛇绘制问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python蟒蛇绘制实例编写" class="sidebar-link">Python蟒蛇绘制实例编写</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python蟒蛇绘制举一反三" class="sidebar-link">Python蟒蛇绘制举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#turtle库基本介绍" class="sidebar-link">turtle库基本介绍</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#turtle绘图窗体布局" class="sidebar-link">turtle绘图窗体布局</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#turtle空间坐标体系" class="sidebar-link">turtle空间坐标体系</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#turtle角度坐标体系" class="sidebar-link">turtle角度坐标体系</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#rgb色彩体系" class="sidebar-link">RGB色彩体系</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#库引用与import" class="sidebar-link">库引用与import</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#turtle画笔控制函数" class="sidebar-link">turtle画笔控制函数</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#turtle运动控制函数" class="sidebar-link">turtle运动控制函数</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#turtle方向控制函数" class="sidebar-link">turtle方向控制函数</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#循环语句与range-函数" class="sidebar-link">循环语句与range()函数</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#“python蟒蛇绘制”代码分析" class="sidebar-link">“Python蟒蛇绘制”代码分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#整数类型" class="sidebar-link">整数类型</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#浮点数类型" class="sidebar-link">浮点数类型</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#复数类型" class="sidebar-link">复数类型</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#数值运算操作符" class="sidebar-link">数值运算操作符</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#数值运算函数" class="sidebar-link">数值运算函数</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#天天向上的力量问题-问题分析" class="sidebar-link">&quot;天天向上的力量问题&quot;问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#天天向上的力量问题-第一问" class="sidebar-link">&quot;天天向上的力量问题&quot;第一问</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#天天向上的力量问题-第二问" class="sidebar-link">&quot;天天向上的力量问题&quot;第二问</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#天天向上的力量问题-第三问" class="sidebar-link">&quot;天天向上的力量问题&quot;第三问</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#天天向上的力量问题-第四问" class="sidebar-link">&quot;天天向上的力量问题&quot;第四问</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#天天向上的力量问题-举一反三" class="sidebar-link">&quot;天天向上的力量问题&quot;举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#字符串类型的表示" class="sidebar-link">字符串类型的表示</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#字符串操作符" class="sidebar-link">字符串操作符</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#字符串处理函数" class="sidebar-link">字符串处理函数</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#字符串处理方法" class="sidebar-link">字符串处理方法</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#字符串类型的格式化" class="sidebar-link">字符串类型的格式化</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#time库基本介绍" class="sidebar-link">time库基本介绍</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#时间获取" class="sidebar-link">时间获取</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#时间格式化" class="sidebar-link">时间格式化</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#程序计时应用" class="sidebar-link">程序计时应用</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#文本进度条问题分析" class="sidebar-link">文本进度条问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#文本进度条简单的开始" class="sidebar-link">文本进度条简单的开始</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#文本进度条单行动态刷新" class="sidebar-link">文本进度条单行动态刷新</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#文本进度条实例完整效果" class="sidebar-link">文本进度条实例完整效果</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#文本进度条举一反三" class="sidebar-link">文本进度条举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#单分支结构" class="sidebar-link">单分支结构</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#二分支结构" class="sidebar-link">二分支结构</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#多分支结构" class="sidebar-link">多分支结构</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#条件判断及组合" class="sidebar-link">条件判断及组合</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#程序的异常处理" class="sidebar-link">程序的异常处理</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#身体质量指数bmi问题分析" class="sidebar-link">身体质量指数BMI问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#身体质量指数bmi实例讲解" class="sidebar-link">身体质量指数BMI实例讲解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#身体质量指数bmi举一反三" class="sidebar-link">身体质量指数BMI举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#遍历循环" class="sidebar-link">遍历循环</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#无限循环" class="sidebar-link">无限循环</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#循环控制保留字" class="sidebar-link">循环控制保留字</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#循环的高级用法" class="sidebar-link">循环的高级用法</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#模块3-random库的使用-random库基本介绍" class="sidebar-link">模块3 random库的使用_random库基本介绍</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#模块3-random库的使用-基本随机数函数" class="sidebar-link">模块3 random库的使用_基本随机数函数</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#模块3-random库的使用-扩展随机数函数" class="sidebar-link">模块3 random库的使用_扩展随机数函数</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#函数的理解和定义" class="sidebar-link">函数的理解和定义</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#函数的使用及调用过程" class="sidebar-link">函数的使用及调用过程</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#函数的参数传递" class="sidebar-link">函数的参数传递</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#函数的返回值" class="sidebar-link">函数的返回值</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#局部变量和全局变量" class="sidebar-link">局部变量和全局变量</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#lambda函数" class="sidebar-link">lambda函数</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#七段数码管绘制问题分析" class="sidebar-link">七段数码管绘制问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#七段数码管绘制实例讲解" class="sidebar-link">七段数码管绘制实例讲解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#七段数码管绘制举一反三" class="sidebar-link">七段数码管绘制举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#代码复用与模块化设计" class="sidebar-link">代码复用与模块化设计</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#函数递归的理解" class="sidebar-link">函数递归的理解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#函数递归的调用过程" class="sidebar-link">函数递归的调用过程</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#函数递归实例讲解" class="sidebar-link">函数递归实例讲解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#模块4-pyinstaller库基本介绍" class="sidebar-link">模块4 PyInstaller库基本介绍</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#模块4-pyinstaller库使用说明" class="sidebar-link">模块4 PyInstaller库使用说明</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#科赫雪花小包裹问题分析" class="sidebar-link">科赫雪花小包裹问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#科赫雪花小包裹实例讲解" class="sidebar-link">科赫雪花小包裹实例讲解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#科赫雪花小包裹举一反三" class="sidebar-link">科赫雪花小包裹举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#集合类型定义" class="sidebar-link">集合类型定义</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#集合操作符" class="sidebar-link">集合操作符</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#集合处理方法" class="sidebar-link">集合处理方法</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#集合类型应用场景" class="sidebar-link">集合类型应用场景</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#序列类型定义" class="sidebar-link">序列类型定义</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#序列处理函数及方法" class="sidebar-link">序列处理函数及方法</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#元组类型及操作" class="sidebar-link">元组类型及操作</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#列表类型及操作" class="sidebar-link">列表类型及操作</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#序列类型应用场景" class="sidebar-link">序列类型应用场景</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#基本统计值计算问题分析" class="sidebar-link">基本统计值计算问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#基本统计值计算实例讲解" class="sidebar-link">基本统计值计算实例讲解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#基本统计值计算举一反三" class="sidebar-link">基本统计值计算举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#字典类型定义" class="sidebar-link">字典类型定义</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#字典处理函数及方法" class="sidebar-link">字典处理函数及方法</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#字典类型应用场景" class="sidebar-link">字典类型应用场景</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#jieba库基本介绍" class="sidebar-link">jieba库基本介绍</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#jieba库使用说明" class="sidebar-link">jieba库使用说明</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#文本词频统计问题分析" class="sidebar-link">文本词频统计问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#hamlet英文词频统计实例讲解" class="sidebar-link">Hamlet英文词频统计实例讲解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#《三国演义》人物出场统计实例讲解" class="sidebar-link">《三国演义》人物出场统计实例讲解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#文本词频统计举一反三" class="sidebar-link">文本词频统计举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#文件的类型" class="sidebar-link">文件的类型</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#文件的打开和关闭" class="sidebar-link">文件的打开和关闭</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#文件内容的读取" class="sidebar-link">文件内容的读取</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#_2-文件的全文本操作遍历全文本fname-input-请输入要打开的文件名称-fo-open-fname-r-txt-fo-read-一次读入，统一处理对全文txt进行处理fo-close" class="sidebar-link">2.文件的全文本操作
+遍历全文本
+fname=input(&quot;请输入要打开的文件名称:&quot;)
+fo=open(fname,'r')
+txt=fo.read()
+一次读入，统一处理
+对全文txt进行处理
+fo.close()</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#_3-文件的逐行操作逐行遍历文件fname-input-请输入要打开的文件名称-fo-open-fname-r-for-line-in-fo-readlines-print-line-fo-close-一次读入，分行处理" class="sidebar-link">3.文件的逐行操作
+逐行遍历文件
+fname=input(&quot;请输入要打开的文件名称:&quot;)
+fo=open(fname,'r')
+for line in fo.readlines()
+	print(line)
+fo.close()
+一次读入，分行处理</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#数据的文件写入" class="sidebar-link">数据的文件写入</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#自动绘制轨迹问题分析" class="sidebar-link">自动绘制轨迹问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#自动绘制轨迹实例讲解" class="sidebar-link">自动绘制轨迹实例讲解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#自动绘制轨迹举一反三" class="sidebar-link">自动绘制轨迹举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#数据组织的维度" class="sidebar-link">数据组织的维度</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#一维数据的表示" class="sidebar-link">一维数据的表示</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#一维数据的存储" class="sidebar-link">一维数据的存储</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#一维数据的处理" class="sidebar-link">一维数据的处理</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#二维数据的表示" class="sidebar-link">二维数据的表示</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#csv格式与二维数据存储" class="sidebar-link">CSV格式与二维数据存储</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#二维数据的处理" class="sidebar-link">二维数据的处理</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#wordcloud库基本介绍" class="sidebar-link">wordcloud库基本介绍</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#wordcloud库使用说明" class="sidebar-link">wordcloud库使用说明</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#政府工作报告词云问题分析" class="sidebar-link">政府工作报告词云问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#政府工作报告词云实例讲解" class="sidebar-link">政府工作报告词云实例讲解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#政府工作报告词云举一反三" class="sidebar-link">政府工作报告词云举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#体育竞技分析问题分析" class="sidebar-link">体育竞技分析问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#体育竞技分析实例讲解" class="sidebar-link">体育竞技分析实例讲解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#体育竞技分析举一反三" class="sidebar-link">体育竞技分析举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#自顶向下和自底向上" class="sidebar-link">自顶向下和自底向上</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#计算生态与python语言" class="sidebar-link">计算生态与Python语言</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#计算思维与程序设计" class="sidebar-link">计算思维与程序设计</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#用户体验与软件产品" class="sidebar-link">用户体验与软件产品</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#基本的程序设计模式" class="sidebar-link">基本的程序设计模式</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#看见更大的python世界" class="sidebar-link">看见更大的Python世界</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#第三方库的pip安装方法" class="sidebar-link">第三方库的pip安装方法</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#第三方库的集成安装方法" class="sidebar-link">第三方库的集成安装方法</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#第三方库的文件安装方法" class="sidebar-link">第三方库的文件安装方法</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#os库基本介绍" class="sidebar-link">os库基本介绍</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#os库之路径操作" class="sidebar-link">os库之路径操作</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#os库之进程管理" class="sidebar-link">os库之进程管理</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#os库之环境参数" class="sidebar-link">os库之环境参数</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#第三方库安装脚本问题分析" class="sidebar-link">第三方库安装脚本问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#第三方库安装脚本实例讲解" class="sidebar-link">第三方库安装脚本实例讲解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#第三方库安装脚本举一反三" class="sidebar-link">第三方库安装脚本举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#霍兰德人格分析雷达图问题分析" class="sidebar-link">霍兰德人格分析雷达图问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#霍兰德人格分析雷达图实例讲解" class="sidebar-link">霍兰德人格分析雷达图实例讲解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#霍兰德人格分析雷达图举一反三" class="sidebar-link">霍兰德人格分析雷达图举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#玫瑰花绘制问题分析" class="sidebar-link">玫瑰花绘制问题分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#玫瑰花绘制实例讲解" class="sidebar-link">玫瑰花绘制实例讲解</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#玫瑰花绘制举一反三" class="sidebar-link">玫瑰花绘制举一反三</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python库之机器学习" class="sidebar-link">Python库之机器学习</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python库之数据分析" class="sidebar-link">Python库之数据分析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python库之数据可视化" class="sidebar-link">Python库之数据可视化</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python库之文本处理" class="sidebar-link">Python库之文本处理</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python库之web网站开发" class="sidebar-link">Python库之Web网站开发</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python库之web信息提取" class="sidebar-link">Python库之web信息提取</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python库之网络爬虫" class="sidebar-link">Python库之网络爬虫</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python库之网络应用开发" class="sidebar-link">Python库之网络应用开发</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python库之图形艺术" class="sidebar-link">Python库之图形艺术</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python库之图形用户界面" class="sidebar-link">Python库之图形用户界面</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python库之虚拟现实" class="sidebar-link">Python库之虚拟现实</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python语言程序设计/整体.html#python库之游戏开发" class="sidebar-link">Python库之游戏开发</a></li></ul></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Python应用基础</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>11周精通Python计划</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Python网络爬虫与信息提取</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="程序设计基本方法"><a href="#程序设计基本方法" aria-hidden="true" class="header-anchor">#</a> 程序设计基本方法</h1> <h2 id="计算机与程序设计"><a href="#计算机与程序设计" aria-hidden="true" class="header-anchor">#</a> 计算机与程序设计</h2> <p>1.计算机的概念
+计算机是根据指令操作数据的设备
+功能性：对数据的操作，表现为数据计算、输入输出处理和结果存储等
+可编程性：根据一系列指令自动地、可预测地、准确地完成操作者的意图</p> <p>2.计算机的发展
+计算机的发展参照摩尔定律，表现为指数方式
+计算机硬件所依赖的集成电路规模参照摩尔定律发展
+计算机运行速度因此也接近几何级数快速增长
+计算机所能高效支撑的各类运算功能不断丰富发展</p> <p>3.摩尔定律Moore`s Law
+计算机发展历史上最重要的预测法则
+Intel公司创造人之一戈登·摩尔在1965年提出
+-单位面积集成电路上可容纳晶体管的数量约每两年翻一番
+-CPU/GPU、内存、硬盘、电子产品价格等遵循摩尔定律</p> <p>4.程序设计
+程序设计是计算机可编程性的体现
+-程序设计，亦称编程，深度应用计算机的主要手段
+-程序设计已经成为当今社会需求量最大的职业技能之一
+-许多岗位都将被计算机程序结果，程序设计将是生存技能</p> <p>5.程序设计语言
+程序设计语言是一种用于交互（交流）的人造语言
+-程序设计语言，亦称编程语言，程序设计的具体实现方法
+-编程语言相比自然语言更简单、更严谨、更精确
+-编程语言主要用于人类和计算机之间的交互</p> <p>6.程序设计语言
+编程语言种类很多，但生命力强劲的却不多
+-编程语言有超过600种，绝大部分都不再被使用
+-C语言诞生于1972年，它是第一个被广泛使用的编程语言
+-Python语言诞生于1990年，它是最流行最好用的编程语言</p> <h2 id="计算机编程"><a href="#计算机编程" aria-hidden="true" class="header-anchor">#</a> 计算机编程</h2> <p>1.计算机编程
+编程能够训练思维
+-编程体现了一种抽象交互关系、自动化执行的思维模式
+-计算思维：区别逻辑思维（数学）和实证思维（物理）的第三种思维方式
+-能够促进人类思考，增进观察力和深化对交互关系的理解</p> <p>2.计算机编程
+编程能够增进认识
+-编程不单纯是求解计算问题
+-不仅要思考解决方法，还要思考用户体验、执行效率等
+-能够帮助程序员加深用户行为以及社会和文化认识</p> <p>3.计算机编程
+编程能够带来乐趣
+-编程能够提供展示自身思想和能力的舞台
+-让世界增加新的颜色、让自己变得更酷、提升心里满足
+-在信息空间里思考创新，将创新变为现实</p> <p>4.计算机编程
+编程能够提高效率
+-能够更好地利用计算机解决问题
+-显著提高工作、生活和学习效率
+-为理想的实现提供一种借助计算机的高效手段</p> <p>5.计算机编程
+编程带来就业机会
+-程序员是信息时代最重要的工作岗位之一
+-国内外对程序员岗位的缺口都在百万以上规模
+-计算机已经渗透各个行业，就业前景非常广阔</p> <h2 id="编译和解释"><a href="#编译和解释" aria-hidden="true" class="header-anchor">#</a> 编译和解释</h2> <p>1.编程语言的执行方式
+源代码：采用某种编程语言编写的计算机程序，人类可读
+例如：result = 2 + 3
+目标代码：计算机可直接执行，人类不可读（专家除外）
+例如：11010010 00111011</p> <p>2.编译
+将源代码一次性转换成目标代码的过程
+源代码-&gt;编译器-&gt;目标代码
+|
+程序输入-&gt;程序执行-&gt;结果输出
+执行编译过程的程序叫作编译器</p> <p>3.解释
+将源代码逐条转换成目标代码同时逐条运行的过程
+源代码-&gt;解释器-&gt;结果输出
+|
+程序输入
+执行解释过程的程序叫作解释器</p> <p>4.编译：一次性翻译，之后不再需要源代码（类似英文翻译）
+解释：每次程序运行时随翻译随执行（类似实时的同声传译）</p> <p>5.静态语言和脚本语言
+根据执行方式不同，编程语言分为两类
+静态语言：使用编译执行的编程语言
+C/C++语言、Java语言
+脚本语言：使用解释执行的编程语言
+Python语言、JavaScript语言、PHP语言</p> <p>6.静态语言和脚本语言的执行方式不同，优势各有不同
+静态语言：编译器一次性生成目标代码，优化更充分。程序运行速度更快。
+脚本语言：执行程序时需要源代码，维护更灵活。源代码在，维护灵活，可跨多个操作系统平台。</p> <h2 id="程序的基本编写方法"><a href="#程序的基本编写方法" aria-hidden="true" class="header-anchor">#</a> 程序的基本编写方法</h2> <p>1.IPO
+I Input 输入，程序的输入
+P Process 处理，程序的主要逻辑
+O Output 输出，程序的输出</p> <p>2.输入
+程序的输入：
+文件输入、网络输入、控制台输入、交互界面输入、内部参数输入等。
+输入是一个程序的开始</p> <p>3.输出
+程序的输出
+控制台输出、图形输出、文件输出、网络输出、操作系统内部变量输出等
+输出是程序展示运算结果的方式</p> <p>4.处理
+处理是程序对输入数据进行计算产生输出结果的过程
+处理方法统称为算法，它是程序最重要的部分
+算法是一个程序的灵魂</p> <p>5.问题的计算部分
+一个待解决问题中，可以用程序辅助完成的部分
+计算机只能解决计算问题，即问题的计算部分
+一个问题可能有多种角度理解，产生不同的计算部分
+问题的计算部分一般都有输入、处理和输出过程</p> <p>6.编程解决问题的步骤
+分析问题：分析问题的计算部分，想清楚
+划分边界：划分问题的功能边界，划分IPO
+设计算法：设计问题的求解算法，关注算法
+编写程序：编写问题的计算部分，编程序
+调试测试：调试程序使正确运行，运行调试
+升级维护：适应问题的升级维护，更新完善</p> <p>7.求解计算问题的精简步骤
+确定IPO：明确计算部分及功能边界
+编写程序：将计算求解的设计变成现实
+调试程序：确保程序按照正确逻辑能够正确运行</p> <h1 id="python开发环境配置"><a href="#python开发环境配置" aria-hidden="true" class="header-anchor">#</a> Python开发环境配置</h1> <h2 id="python语言描述"><a href="#python语言描述" aria-hidden="true" class="header-anchor">#</a> Python语言描述</h2> <p>1.-Python 译为“蟒蛇”
+-Python语言拥有者是Python Software Foundation(PSF)
+-PSF是非盈利组织，致力于保护Python语言开放、开源和发展
+2.-Python语言是一个由编程牛人Guido van Rossum领导并设计的编程语言
+-Python语言是一个有开放、开源精神的编程语言
+-Python语言应用于火星探测、搜索引擎、引力波分析等众多领域</p> <h2 id="python语言window系统开发环境"><a href="#python语言window系统开发环境" aria-hidden="true" class="header-anchor">#</a> Python语言Window系统开发环境</h2> <p>1.下载地址
+python.org
+python123.io
+2.Add Python xx to PATH</p> <h2 id="python语言编写与运行"><a href="#python语言编写与运行" aria-hidden="true" class="header-anchor">#</a> Python语言编写与运行</h2> <p>1.Python的两种编程方式
+交互式和文件式
+-交互式 对每个输入语句即时运行结果，适合语法练习
+-文件式 批量执行一组语句并运行结果，编程的主要方式</p> <h1 id="python程序语法元素分析"><a href="#python程序语法元素分析" aria-hidden="true" class="header-anchor">#</a> Python程序语法元素分析</h1> <h2 id="“温度转换”问题分析"><a href="#“温度转换”问题分析" aria-hidden="true" class="header-anchor">#</a> “温度转换”问题分析</h2> <p>1.温度转换
+温度刻画的两种不同体系
+-摄氏度 中国等世界大多数国家使用
+以1标准大气压水的结冰点为0度，沸点为100度，将温度进行等分刻画
+-华氏度 美国、英国等国家使用
+以1标准大气压水的结冰点为32度，沸点为212度，将温度进行等分刻画</p> <p>2.需求分析
+两种温度体系的转换
+-摄氏度转换为华氏度
+-华氏度转换为摄氏度</p> <p>3.问题分析
+该问题中计算部分的理解和确定
+-理解1 直接将温度值进行转换
+-理解2 将温度信息发布的声音或图像形式进行理解和转换
+-理解3 监控温度信息发布渠道，实时获取并转换温度值</p> <p>4.问题分析
+分析问题
+-采用理解1 直接将温度值进行转换
+温度数值需要标明温度体系，即华氏度或摄氏度
+转换后也需要给出温度体系</p> <p>5.问题分析
+划分边界
+-输入 带华氏或摄氏标志的温度值
+-处理 根据温度标示选择适当的温度转换算法
+-输出 带摄氏或华氏标志的温度值</p> <p>6.问题分析
+输入输出格式设计
+标识放在温度最后，F表示华氏度，C表示摄氏度
+82F表示华氏82度，28C表示摄28度</p> <p>7.问题分析
+设计算法
+根据华氏和摄氏温度定义，利用转换公式如下
+C = (F-32)/1.8
+F = C*1.8+32
+其中,C表示摄氏温度，F表示华氏温度</p> <h2 id="“温度转换”实例编写"><a href="#“温度转换”实例编写" aria-hidden="true" class="header-anchor">#</a> “温度转换”实例编写</h2> <h2 id="“温度转换”代码分析"><a href="#“温度转换”代码分析" aria-hidden="true" class="header-anchor">#</a> “温度转换”代码分析</h2> <div class="language- extra-class"><pre class="language-text"><code>	#TempConvert.py
+	TempStr = input(“请输入带有符号的温度值：”)
+	if TempStr[-1] in ['F','f']:
+		C = (eval(TempStr[0:-1])) - 32)/1.8
+		print(&quot;转换后的温度是{:.2f}C&quot;.format(C))
+	elif TempStr[-1] in ['C','c']:
+		F = 1.8*eval(TempStr[0:-1]) + 32
+		print(&quot;转换后的温度是{:.2f}F&quot;.format(F))
+	else:
+		print(“输入格式错误”)
+</code></pre></div><h2 id="“温度转换”举一反三"><a href="#“温度转换”举一反三" aria-hidden="true" class="header-anchor">#</a> “温度转换”举一反三</h2> <p>1.举一反三
+Python语法元素理解
+-温度转换程序共10行代码，但包含很多语法元素
+-清楚理解这10行代码能够快速入门Python语言
+-参考框架结构、逐行分析、逐词理解</p> <p>2.举一反三
+输入输出的改变
+-温度数值与温度标识之间关系的设计可以改变
+-标识改变放在温度数值之前：C82、F28
+-标识字符改变为多个字符：82Ce、28F</p> <p>3.举一反三
+计算问题的扩展
+-温度转换问题是各类转换问题的代表性问题
+-货币转换、长度转换、重量转换、面积转换...
+-问题不同，但程序代码相似</p> <h2 id="程序的格式框架"><a href="#程序的格式框架" aria-hidden="true" class="header-anchor">#</a> 程序的格式框架</h2> <p>1.代码高亮
+编程的色彩辅助体系，不是语法要求</p> <p>2.缩进
+一行代码开始前的空白区域，表达程序的格式框架
+单层缩进 多层缩进
+缩进表示程序的格式框架
+-严格明确 缩进是语法的一部分，缩进不正确程序运行错误
+-所属关系 表达代码间包含和层次关系的唯一手段
+-长度一致 程序内一致即可，一般用4个空格或1个TAB</p> <p>3.注释
+用于提高代码可读性的辅助性文字，不被执行
+不被程序执行的辅助性说明信息
+-单行注释 以#开头，其后内容为注释
+#这里是单行注释
+-多行注释 以'''开头和结尾
+'''这是多行注释第一行
+这是多行注释第二行'''</p> <h2 id="数据类型"><a href="#数据类型" aria-hidden="true" class="header-anchor">#</a> 数据类型</h2> <p>1.10，011，101
+-这是一个二进制数字 或者 十进制数字
+作为二进制数字，10，011，101的值是十进制157
+-这是一段文本 或者 用逗号，分割的3个数字
+作为一段文本，逗号是文本中的一部分，一共包含10个字符</p> <p>2.数据类型
+供计算机程序理解的数据形式
+-程序设计语言不允许存在语法歧义，需要定义数据的形式
+需要给10，011，101关联一种计算机可以理解的形式
+-程序设计语言通过一定方式向计算机表达数据的形式
+&quot;123&quot;表示文本字符串123，123则表示数字123</p> <p>3.10，011，101
+-整数类型：10011101
+-字符串类型：&quot;10,011,101&quot;
+-列表类型：[10,011,101]</p> <p>4.字符串
+由0个或多个字符组成的有序字符序列
+-字符串由一对单引号或一对双引号表示
+&quot;请输入带有符号的温度值：&quot;或者&quot;C&quot;
+-字符串是字符的有序序列，可以对其中的字符进行索引
+&quot;请&quot;是&quot;请输入带有符号的温度值:&quot;的第0个字符</p> <p>5.字符串的序号
+正向递增序号 和 反向递减序号
+0~11 -1~-12</p> <p>6.字符串
+使用[]获取字符串中一个或多个字符
+-索引：返回字符串中单个字符 &lt;字符串&gt;[M]
+&quot;请输入带有符号的温度值：&quot;[0] 或者 TempStr[-1]
+-切片：返回字符串中一段字符子串 &lt;字符串&gt;[M:N]
+&quot;请输入带有符号的温度值：&quot;[1:3] 或者 TempStr[0:-1]</p> <p>7.数字类型
+整数和浮点数都是数字类型
+-整数 数学中的整数
+32 或者 -89
+-浮点数 数学中的实数，带有小数部分
+1.8 或者 -1.8 或者 -1.0</p> <p>8.列表类型
+由0个或多个数据组成的有序序列
+-列表使用[]表示，采用逗号(，)分割各元素
+['F'，'f']表示两个元素'F'或者'f'
+-使用保留字in判断一个元素是否在列表中
+TempStr[-1] in ['C','c'] 判断前者是否与列表中某个元素相同</p> <h2 id="语句与函数"><a href="#语句与函数" aria-hidden="true" class="header-anchor">#</a> 语句与函数</h2> <p>1.赋值语句
+由赋值符号构成的一行代码
+-赋值语句用来给变量赋予新的数据值
+C=(eval(TempStr[0:-1])-32)/1.8 #右侧运算结果赋给变量C
+-赋值语句右侧的数据类型同时作用于变量
+TempStr=input(&quot;&quot;) #input()返回一个字符串，TempStr也是字符串</p> <p>2.分支语句
+由判断条件决定程序运行方向的语句
+-使用保留字if elif else 构成条件判断的分支结构
+if TempSte[-1] in ['F','f']: #如果条件为True则执行冒号后语句
+-每个保留字所在行最后存在一个冒号（：），语法的一部分
+冒号及后续缩进用来表示后续语句与条件的所属关系</p> <p>3.函数
+根据输入参数产生不同输出的功能过程
+-类似数学中的函数，y=f(x)
+print(&quot;输入格式错误&quot;) #打印输出“输入格式错误”
+-函数采用&lt;函数名&gt;(&lt;参数&gt;)方式使用
+eval(TempStr[0:-1]) #TempStr[0:-1]是参数</p> <h2 id="命名与保留字"><a href="#命名与保留字" aria-hidden="true" class="header-anchor">#</a> 命名与保留字</h2> <p>1.变量
+程序中用于保存和表示数据的占位符号
+-变量采用标识符（名字）来表示，关联标识符的过程叫命名
+TempStr是变量名字
+-可以使用等号（=）向变量赋值或修改值，=被称为赋值符号
+TempStr=&quot;82F&quot; #向变量TempStr赋值&quot;82F&quot;</p> <p>2.命名
+关联标识符的过程
+-命名规则：大小写字母、数字、下划线和汉字等字符及组合
+如：TempStr,Python_Great,这是门Python好课
+-注意事项：大小写敏感、首字符不能是数字、不与保留字相同
+Python和python是不同变量，123python是不合法的</p> <p>3.保留字（关键字）
+被编程语言内部定义并保留使用的标识符
+-Python语言有33个保留字
+if,elif,else,in
+-保留字是编程语言的基本单词，大小写敏感
+if是保留字，If是变量</p> <p>4.33个保留字
+and as assert break class continue def elif else except finally for from if import in is lambda not or pass raise return try while with yield del global nonlocal True False None</p> <h2 id="python程序的输入输出"><a href="#python程序的输入输出" aria-hidden="true" class="header-anchor">#</a> Python程序的输入输出</h2> <p>1.输入函数input()
+从控制台获得用户输入的函数
+-input()函数的使用格式：
+&lt;变量&gt; =  input(&lt;提示信息字符串&gt;)
+-用户输入的信息以字符串类型保存在&lt;变量&gt;中
+TempStr = input(“请输入”) #TempStr保存用户输入的信息</p> <p>2.输出函数print()
+以字符形式向控制台输出结果的函数
+-print()函数的基本使用格式：
+print(&lt;拟输出字符串或字符串变量&gt;)
+-字符串类型的一堆引号仅在程序内部使用，输出无引号
+print(&quot;输入格式错误&quot;) #向控制台输出 输入格式错误</p> <p>3.输出函数print()
+以字符形式向控制台输出结果的函数
+-print()函数的格式化：
+print(&quot;转换后的温度是{:.2f}C&quot;.format(C))
+{}表示槽，后续变量填充到槽中
+{:.2f}表示将变量C填充到这个位置时取小数点后2位
+如果C的值是123.456789，则输出结果为：
+转换后的温度是123.45C</p> <p>4.评估函数eval()
+去掉参数最外侧引号并执行余下语句的函数
+-eval()函数的基本使用格式：
+eval(&lt;字符串或字符串变量&gt;)</p> <p>'''
+&gt;&gt;&gt;eval(&quot;1&quot;)
+1
+&gt;&gt;&gt;eval(&quot;1+2&quot;)
+3
+&gt;&gt;&gt;eval('&quot;1+2&quot;')
+'1+2'
+&gt;&gt;&gt;eval('print(&quot;hello&quot;)')
+hello
+'''</p> <p>如果TempStr[0:-1]值是&quot;12.3&quot;，输出是：
+12.3</p> <h1 id="深入理解python语言"><a href="#深入理解python语言" aria-hidden="true" class="header-anchor">#</a> 深入理解Python语言</h1> <h2 id="python语言的特点"><a href="#python语言的特点" aria-hidden="true" class="header-anchor">#</a> Python语言的特点</h2> <p>1.深入理解Python语言
+Guido van Rossum:Python语言创立者
+-Python语言是通用语言
+-Python语言是脚本语言
+-Python语言是开源语言
+-Python语言是跨平台语言
+-Python语言是多模型语言</p> <p>2.Python特点与优势
+语法简洁
+-C代码量的10%
+-强制可读性
+-较少的底层语法元素
+-多种编程方式
+-支持中文字符
+生态高产
+-13万第三方库
+-快速增长的计算生态
+-避免重复造轮子
+-开放共享
+-跨操作系统平台</p> <p>3.如何看待Python语言
+人生苦短，我学Python
+-C/C++:Python归Python,C归C
+-Java:针对特定开发和岗位需求
+-HTML/CSS/JS:不可替代的前端技术，全栈能力
+-其他语言:R/Go/Matlab等，特定领域</p> <p>4.如何看待Python语言
+Python是最高产的程序设计语言及...
+-掌握抽象并求解计算问题综合能力的语言
+-了解产业界解决复杂计算问题方法的语言
+-享受利用编程将创新变为实现乐趣的语言</p> <p>5.如何看待Python语言
+工具决定思维：关注工具变革的力量！</p> <h2 id="编程语言的多样初心"><a href="#编程语言的多样初心" aria-hidden="true" class="header-anchor">#</a> 编程语言的多样初心</h2> <p>1.C
+-学习内容：指针、内存、数据类型
+-语言本质：理解计算机系统结构
+-解决问题：性能
+-适用对象：计算机类专业</p> <p>2.Java
+-学习内容：对象、跨平台、运行时
+-语言本质：理解主客体关系
+-解决问题：跨平台
+-适用对象：软件类专业</p> <p>3.C++
+-学习内容：对象、多态、继承
+-语言本质：理解主客体关系
+-解决问题：大规模程序
+-适用对象：计算机类专业</p> <p>4.VB
+-学习内容：对象、按钮、文本框
+-语言本质：理解交互逻辑
+-解决问题：桌面应用
+-适用对象：不确定</p> <p>5.Python
+-学习内容：编程逻辑、第三方库
+-语言本质：理解问题求解
+-解决问题：各类问题
+-适用对象：所有专业</p> <p>6.2018年以后的计算环境
+计算机性能不再是解决一般问题的瓶颈
+移动互联网广泛普及
+大数据、云计算、物联网、信息安全、人工智能等需求爆发</p> <h2 id="超级语言的诞生"><a href="#超级语言的诞生" aria-hidden="true" class="header-anchor">#</a> 超级语言的诞生</h2> <p>1.机器语言
+-一种二进制语言，直接使用二进制代码表达指令
+-计算机硬件（CPU）可以直接执行，与具体CPU型号有关
+-完成2+3功能的机器语言
+11010010 00111011</p> <p>2.汇编语言
+-一种将二进制代码直接对应助记符的编程语言
+-汇编语言与CPU型号有关，编程不通用，需要汇编器转换
+-完成2+3功能的汇编语言
+add 2,3,result</p> <p>3.高级语言
+-更接近自然语言，同时更容易描述计算问题
+-高级语言代码与具体CPU型号无关，编译后运行
+-完成2+3功能的高级语言
+result=2+3</p> <p>4.超级语言
+-具备庞大计算生态，可以很容易利用已有代码功能
+-编程思维不再是刀耕火种，而是集成开发
+-完成2+3功能的高级语言
+rusult=sum(2,3)</p> <p>5.编程语言种类的发展
+机器语言 代码直接执行，与CPU型号有关
+汇编语言 有助记符，汇编器，与CPU型号有关
+高级语言 接近自然语言，编译器，与CPU型号无关
+超级语言 粘性整合已有程序，具备庞大计算生态</p> <p>6.Python是目前唯一的超级语言
+前进的步伐不可阻挡</p> <h2 id="计算机技术的演进"><a href="#计算机技术的演进" aria-hidden="true" class="header-anchor">#</a> 计算机技术的演进</h2> <p>1.计算机技术的演进
+1946-1981
+计算机系统结构时代（35年） 计算能力问题
+1981-2008
+网络和视窗时代（27年） 交互问题
+2008-2016
+复杂信息系统时代（8年） 数据问题
+期间过渡-新计算时代
+2016-
+人工智能时代</p> <p>2.2008年，安卓操作系统诞生
+“PC时代”向移动时代转换</p> <p>3.2017年5月27日
+柯洁最终 0：3 AlphaGo</p> <p>4.云计算 网络安全 大数据</p> <h1 id="python蟒蛇绘制"><a href="#python蟒蛇绘制" aria-hidden="true" class="header-anchor">#</a> Python蟒蛇绘制</h1> <h2 id="python蟒蛇绘制问题分析"><a href="#python蟒蛇绘制问题分析" aria-hidden="true" class="header-anchor">#</a> Python蟒蛇绘制问题分析</h2> <p>1.用程序绘制一条蟒蛇</p> <p>-貌似很有趣，可以来试试
+-先学会蟒蛇绘制，再绘朵玫瑰花送给她</p> <p>2.设计蟒蛇的基本形状</p> <p>3.用程序绘制一条蟒蛇
+-问题1 计算机绘图是什么原理？
+一段程序为何能够产生窗体？为何能在窗体上绘制图形？
+-问题2 Python蟒蛇绘制从哪里开始呢？
+如何绘制一条线？如何绘制一个弧形？如何绘制一个蟒蛇？</p> <h2 id="python蟒蛇绘制实例编写"><a href="#python蟒蛇绘制实例编写" aria-hidden="true" class="header-anchor">#</a> Python蟒蛇绘制实例编写</h2> <p>'''
+#PythonDraw.py
+import turtle #程序关键</p> <pre><code>turtle.setup(650,350,200,200)
+turtle.penup()
+turtle.fd(-250)
+turtle.pendown()
+turtle.pensize(25)
+turtle.pencolor(&quot;purple&quot;)
+turtle.seth(-40)
+for i in range(4):
+	turtle.circle(40,80)
+	turtle.circle(-40,80)
+turtle.circle(40,80/2)
+turtle.fd(40)
+turtle.circle(40*2/3)
+turtle.done()
+</code></pre> <p>'''</p> <p>1.import 保留字
+引入一个绘图库
+名字叫：turtle
+海龟库</p> <h2 id="python蟒蛇绘制举一反三"><a href="#python蟒蛇绘制举一反三" aria-hidden="true" class="header-anchor">#</a> Python蟒蛇绘制举一反三</h2> <p>1.Python语法元素理解
+-Python蟒蛇绘制共17行代码，但很多行类似
+-清楚理解这17行代码能够掌握Python基本绘图方法
+-参考框架结构、逐行分析、逐词理解</p> <p>2.程序参数的改变
+-Python蟒蛇的颜色：黑色、白色、七彩色
+-Python蟒蛇的长度：1节、3节、10节
+-Python蟒蛇的走向：向左走、斜着走...</p> <p>3.计算问题的扩展
+-Python蟒蛇绘制问题是各类图像绘制问题的代表
+-图形绘制、五角星绘制、国旗绘制、机器猫绘制
+-掌握绘制一条线的方法，就可以绘制整个世界</p> <h1 id="模块1：turtle库的使用"><a href="#模块1：turtle库的使用" aria-hidden="true" class="header-anchor">#</a> 模块1：turtle库的使用</h1> <h2 id="turtle库基本介绍"><a href="#turtle库基本介绍" aria-hidden="true" class="header-anchor">#</a> turtle库基本介绍</h2> <p>1.turtle库概述
+turtle(海龟)库是turtle绘图体系的Python实现
+-turtle绘图体系：1969年诞生，主要用于程序设计入门
+-Python语言的标准库之一
+-入门级的图形绘制函数库</p> <p>2.标准库
+Python计算生态=标准库+第三方库
+-标准库：随解释器直接安装到操作系统中的功能模块
+-第三方库：需要经过安装才能使用的功能模块
+-库Library、包Package、模块Module，统称模块</p> <p>3.turtle的原理
+turtle(海龟)是一种真实的存在
+-有一只海龟，其实在窗体正中心，在画布上游走
+-走过的轨迹形成了绘制的图形
+-海龟由程序控制，可以变换颜色、改变宽度等</p> <h2 id="turtle绘图窗体布局"><a href="#turtle绘图窗体布局" aria-hidden="true" class="header-anchor">#</a> turtle绘图窗体布局</h2> <p>1.turtle的绘图窗体
+turtle的一个画布空间
+最小单位是像素</p> <p>2.屏幕坐标系
+窗体坐标系</p> <p>3.turtle的绘图窗体
+turtle.setup(width,height,startx,starty)
+-setup()设置窗体大小及位置
+-4个参数后两个可选
+-setup()不是必须的</p> <p>4.turtle.setup(800,800,0,0)
+turtle.setup(800,800)
+默认该窗口在屏幕的正中心
+turtle.setup()调整绘图窗体在电脑屏幕中的布局</p> <h2 id="turtle空间坐标体系"><a href="#turtle空间坐标体系" aria-hidden="true" class="header-anchor">#</a> turtle空间坐标体系</h2> <p>1.绝对坐标
+turtle.goto(x,y)</p> <ol start="2"><li></li></ol> <p>'''
+import turtle
+turtle.goto(100,100)
+turtle.goto(100,-100)
+turtle.goto(-100,-100)
+turtle.goto(-100,100)
+turtle.goto(0,0)
+'''</p> <p>3.海龟坐标
+前进方向 turtle.fd(d)
+后退方向 turtle.bk(d)
+左侧方向 turtle.circle(r,angle)
+右侧方向</p> <p>4.画布上以中心为原点的空间坐标系：绝对坐标&amp;海龟坐标</p> <h2 id="turtle角度坐标体系"><a href="#turtle角度坐标体系" aria-hidden="true" class="header-anchor">#</a> turtle角度坐标体系</h2> <p>1.绝对角度
+turtle.seth(angle)
+-seth()改变海龟行进方向
+-seth()只改变方向但不行进
+-angle为绝对度数</p> <p>2.海龟角度
+turtle.left(angle)
+turtle.right(angle)</p> <ol start="3"><li></li></ol> <p>'''
+import turtle
+turtle.left(45)
+turtle.fd(150)
+turtle.right(135)
+turtle.fd(300)
+turtle.left(135)
+turtle.fd(150)
+'''</p> <p>4.画布上以空间x轴为0度的角度坐标系：绝对角度&amp;海龟角度</p> <h2 id="rgb色彩体系"><a href="#rgb色彩体系" aria-hidden="true" class="header-anchor">#</a> RGB色彩体系</h2> <p>1.RGB色彩模式
+由三种颜色构成的万物色
+-RGB指红蓝绿三个通道的颜色组合
+-覆盖视力所能感知的所有颜色
+-RGB每色取值范围0~255整数或0~1小数</p> <p>2.英文名称：purple
+RGB整数值：160，32，240
+RGB小数值：0.63，0.13，0.94
+中文名称：紫色</p> <p>3.turtle的RGB色彩模式
+默认采用小数值，可切换为整数值
+turtle.colormode(mode)
+-1.0：RGB小数值模式
+-255：RGB整数值模式</p> <h1 id="turtle程序语法元素分析"><a href="#turtle程序语法元素分析" aria-hidden="true" class="header-anchor">#</a> turtle程序语法元素分析</h1> <h2 id="库引用与import"><a href="#库引用与import" aria-hidden="true" class="header-anchor">#</a> 库引用与import</h2> <p>1.库引用
+扩充Python程序功能的方式
+-使用import保留字，采用<a>.<b>()的编码风格
+import &lt;库名&gt;
+&lt;库名&gt;.&lt;函数名&gt;(&lt;函数参数&gt;)</b></a></p> <p>2.impott更多用法
+使用from和import保留字共同完成
+from&lt;库名&gt;import&lt;函数名&gt;
+from&lt;库名&gt;import *
+&lt;函数名&gt;(&lt;函数参数&gt;)</p> <p>3.两种方法比较
+import&lt;库名&gt;
+&lt;库名&gt;.&lt;函数名&gt;(&lt;函数参数&gt;)
+-第一种方法不会出现函数重名的问题
+from&lt;库名&gt;import &lt;函数名&gt;
+from&lt;库名&gt; import *
+&lt;函数名&gt;(&lt;函数参数&gt;)
+-第二种方法会出现函数重名的问题</p> <p>4.import更多用法
+使用import和as保留字共同完成
+import &lt;库名&gt; as &lt;库别名&gt;
+&lt;库别名&gt;.&lt;函数名&gt;(&lt;函数参数&gt;)
+-给调用的外部库关联一个更短、更适合自己的名字</p> <h2 id="turtle画笔控制函数"><a href="#turtle画笔控制函数" aria-hidden="true" class="header-anchor">#</a> turtle画笔控制函数</h2> <p>1.画笔控制函数
+画笔操作后一直有效，一般成对出现
+-turtle.penup() 别名 turtle.pu()
+抬起画笔，海龟在飞行
+-turtle.pendown() 别名 turtle.pd()
+落下画笔，海龟在爬行</p> <p>2.画笔控制函数
+画笔设置后一直有效，直至下次重新设置
+-turtle.pensize(width) 别名 turtle.width(width)
+画笔宽度，海龟的腰围
+-turtle.pencolor(color) color为颜色字符串或r,g,b值
+画笔颜色，海龟在涂装</p> <p>3.画笔控制函数
+pencolor(color)的color参与可以有三种形式
+-颜色字符串：turtle.pencolor(&quot;purple&quot;)
+-RGB的小数值：turtle.pencolor(0.63,0.13,0.94)
+-RGB的元组值：turtle.pencolor((0.63,0.13,0.94))</p> <h2 id="turtle运动控制函数"><a href="#turtle运动控制函数" aria-hidden="true" class="header-anchor">#</a> turtle运动控制函数</h2> <p>1.运动控制函数
+控制海龟行进：走直线
+-turtle.forword(d) 别名 turtle.fd(d)
+向前行进，海龟走直线
+-d:行进距离，可以为负数</p> <p>2.运动控制函数
+控制海龟行进：走曲线
+-turtle.circle(r,extent=None)
+根据半径r绘制extent角度的弧形
+-r:默认圆心在海龟左侧r距离的位置
+-extent:绘制角度，默认是360度整圆</p> <h2 id="turtle方向控制函数"><a href="#turtle方向控制函数" aria-hidden="true" class="header-anchor">#</a> turtle方向控制函数</h2> <p>1.方向控制函数
+控制海龟面对方向：绝对角度
+-turtle.setheading(angle) 别名 turtle.seth(angle)
+-angel:改变行进方向，海龟走角度</p> <p>2.方向控制函数
+控制海龟面对方向：海龟角度
+-turtle.left(angle) 海龟向左转
+-turtle.right(angle) 海龟向右转
+-angle:在海龟当前行进方向上旋转的角度</p> <h2 id="循环语句与range-函数"><a href="#循环语句与range-函数" aria-hidden="true" class="header-anchor">#</a> 循环语句与range()函数</h2> <p>1.循环语句
+按照一定次数循环执行一组语句
+for &lt;变量&gt; in range(&lt;参数名&gt;)
+&lt;被循环执行的语句&gt;
+-&lt;变量&gt;表示每次循环的计数</p> <ol start="2"><li></li></ol> <p>'''
+&gt;&gt;&gt;for i in range(5):
+print(i)
+0
+1
+2
+3
+4
+5
+&gt;&gt;&gt;for i in range(5):
+print(&quot;hello:&quot;,i)
+hello: 0
+hello: 1
+hello: 2
+hello: 3
+hello: 4
+'''</p> <p>3.range()函数
+产生循环计数序列
+-range(N)
+产生0到N-1的整数序列，共N个
+range(5)
+0,1,2,3,4
+-range(M,N)
+产生M到N-1的整数序列，共N-M个
+rang(2,5)
+2,3,4</p> <h2 id="“python蟒蛇绘制”代码分析"><a href="#“python蟒蛇绘制”代码分析" aria-hidden="true" class="header-anchor">#</a> “Python蟒蛇绘制”代码分析</h2> <p>1.turtle.done()
+文件式描写方法，程序运行完不会自动退出，需要手工关闭窗体</p> <h1 id="数字类型及操作"><a href="#数字类型及操作" aria-hidden="true" class="header-anchor">#</a> 数字类型及操作</h1> <h2 id="整数类型"><a href="#整数类型" aria-hidden="true" class="header-anchor">#</a> 整数类型</h2> <p>1.与数学中整数的概念一致
+-可正可负，没有取值范围限制
+-pow(x,y)函数：计算x的y次方，想算多大算多大</p> <blockquote><blockquote><blockquote><p>pow(2,100)
+pow(2,pow(2,15))</p></blockquote></blockquote></blockquote> <p>2.进制
+4种进制表示方式
+-十进制：1010，99，-217
+-二进制：以0b或0B开头：0b010,-0B101
+-八进制：以0o或0O开头：0o123,-0O456
+-十六进制：以0x或0X开头：0x9a,-0X89</p> <h2 id="浮点数类型"><a href="#浮点数类型" aria-hidden="true" class="header-anchor">#</a> 浮点数类型</h2> <p>1.与数学中实数的概念一致
+-带有小数点及小数的数字
+-浮点数取值范围和小数精度都存在限制，但常规计算可忽略
+-取值范围数量级约-10的308次方至10的308次方，精度数量级10的-16次方</p> <p>2.浮点数间运算存在不确定尾数，不是BUG</p> <blockquote><blockquote><blockquote><p>0.1+0.2
+0.30000000000000004</p></blockquote></blockquote></blockquote> <p>3.浮点数间运算存在不确定尾数，不是BUG
+0.1 53位二进制表示小数部分，约10的-16次方
+二进制表示小数，可以无限接近，但不完全相同
+0.1+0.2 结果无限接近0.3，但可能存在尾数</p> <p>4.浮点数间运算存在不确定尾数
+-round(x,d)：对x四舍五入，d是小数截取尾数
+round(0.1+0.2,1)
+-浮点数间运算及比较用round()函数辅助
+-不确定尾数一般发生在10的-16次方左右，round()函数十分有用</p> <p>5.浮点数可以采用科学计数法表示
+-使用字母e或E作为幂的符号，以10为基数，格式如下：
+<a>e<b> 表示a*10的b次方
+例如：4.3e-3值为0.0043 9.6E5值为960000.0</b></a></p> <h2 id="复数类型"><a href="#复数类型" aria-hidden="true" class="header-anchor">#</a> 复数类型</h2> <p>1.与数学中复数的概念一致
+如果x的平方=-1，那么x的值是什么？
+-定义j=根号下-1，以此为基础，构建数学体系
+-a+bj被称为复数，其中，a是实部,b是虚部</p> <p>2.复数实例
+z=1.23e-4+5.6e+89j
+通过z.real 获得实部 1.23e-4
+通过z.imag 获得虚部 5.6e+89</p> <h2 id="数值运算操作符"><a href="#数值运算操作符" aria-hidden="true" class="header-anchor">#</a> 数值运算操作符</h2> <p>1.操作符是完成运算的一种符号体系
+操作符及使用描述
+x+y：加，x与y之和
+x-y：减，x与y之差
+x*y：乘，x与y之积
+x/y：除，x与y之商，生成浮点数，10/3结果是3.333333333335
+x//y：整数除，x与y的整数商，10//3结果是3
++x：x半身
+-y：x的负值
+x%y：余数，模运算10%3结果是1
+x<strong>y：幂运算，x的y次幂；当y是小数时，开方运算，10</strong>0.5结果是10的平方</p> <p>2.二元操作符有对应的增强赋值操作符
+x=x op y，其中op为二元操作符
+x+=y;x-=y;x*=y;x//=y;x%=y;x**=y</p> <blockquote><blockquote><blockquote><p>x=3.1415
+x**=3 # 与x=x**3等价</p></blockquote></blockquote></blockquote> <p>3.类型间可进行混合运算，生成结果为“最宽”类型
+-三种类型存在一种逐渐“扩宽”或“变宽”的关系：
+整数-&gt;浮点数-&gt;复数
+-例如：123+4.0=127.0（整数+浮点数=浮点数）</p> <h2 id="数值运算函数"><a href="#数值运算函数" aria-hidden="true" class="header-anchor">#</a> 数值运算函数</h2> <p>一些以函数形式提供的数值运算功能
+函数及使用描述
+abs(x):绝对值，x的绝对值，abs(-10.01)结果为10.01
+divmod(x,y):商余，(x//y,x%y)，同时输出商和余数
+divmod(10,3)结果为(3,1)
+pow(x,y[,z]):幂余，(x**y)%z,[..]表示参数z可省略,防止溢出
+pow(3,pow(3,99),10000)结果为4587
+round(x[,d]):四舍五入，d是保留小数位数，默认值是0
+round(-10.123,2)结果为-10.12
+max(x1,x2,....xn)最大值，返回x1,x2,....xn中的最大值，n不限
+max(1,9,5,4,3)结果为9
+min(x1,x2,....xn)最小值，返回x1,x2,....xn中的最小值，n不限
+min(1,9,5,4,3)结果为1
+int(x):将x变成整数，舍弃小数部分
+int(123.78)结果为123；int(&quot;123.78&quot;)结果为132
+float(x):将x变成浮点数，增加小数部分
+float(12)结果为12.0：float(&quot;1.23&quot;)结果为1.23
+complex(x):将x变成复数，增加虚数部分
+complex(4)结果为4+0j</p> <h1 id="天天向上的力量"><a href="#天天向上的力量" aria-hidden="true" class="header-anchor">#</a> 天天向上的力量</h1> <h2 id="天天向上的力量问题-问题分析"><a href="#天天向上的力量问题-问题分析" aria-hidden="true" class="header-anchor">#</a> &quot;天天向上的力量问题&quot;问题分析</h2> <p>1.基本问题：持续的价值
+-一年365天，每天进步1%，累计进步多少呢？
+1.01的365次方
+-一年365天，每天退步1%，累计剩下多少呢？
+0.99的365次方</p> <p>2.需求分析
+天天向上的力量
+-数学公式可以求解，似乎没必要用程序
+-如果是“三天打鱼两天晒网”呢？
+-如果是“双休日又不退步”呢？</p> <h2 id="天天向上的力量问题-第一问"><a href="#天天向上的力量问题-第一问" aria-hidden="true" class="header-anchor">#</a> &quot;天天向上的力量问题&quot;第一问</h2> <p>1.问题1：千分之一的力量
+-一年365天，每天进步千分之一，累计进步多少呢？
+-一年365天，每天退步千分之一，累计剩下多少呢？</p> <p>2.问题1：千分之一的力量
+#DayDayUpQ1.py
+dayup=pow(1.01,365)
+daydown=pow(0.99,365)
+print(&quot;向上：{:.2f},向下：{.2f}&quot;.format(dayup,daydown))
+编写上述代码，并保存为DayDayUpQ1.py文件</p> <blockquote><blockquote><blockquote><p>(运行结果0)
+向上：1.44，向下：0.69</p></blockquote></blockquote></blockquote> <h2 id="天天向上的力量问题-第二问"><a href="#天天向上的力量问题-第二问" aria-hidden="true" class="header-anchor">#</a> &quot;天天向上的力量问题&quot;第二问</h2> <p>1.问题2：千分之五或百分之一的力量
+-一年365天，每天进步千分之五或百分之一，累计进步多少呢？
+-一年365天，每天退步千分之五或百分之一，累计剩下多少呢？</p> <p>2.问题2：千分之五或百分之一的力量
+#DayDayUpQ2.py
+dayfactor=0.005
+dayup=pow(1+dayfactor,365)
+daydown=pow(1-dayfactor,365)
+print(&quot;向上：{:.2f}，向下：{.2f}&quot;.format(dayup,daydown))
+编写上述代码，并保存为DaydayupQ2.py文件
+使用变量的好处：一处修改即可</p> <h2 id="天天向上的力量问题-第三问"><a href="#天天向上的力量问题-第三问" aria-hidden="true" class="header-anchor">#</a> &quot;天天向上的力量问题&quot;第三问</h2> <p>1.问题3：工作日的力量
+-一年365天，一周5个工作日，每天进步千分之一
+-一年365天，一周2个休息日，每天退步千分之一</p> <p>2.问题3：工作日的力量
+#daydayup3.py
+dayup=1.0
+dayfactor=0.01
+for i in range(365):
+if i%7 in [6,0]:
+dayup=dayup*(1+dayfactor)
+else:
+dayup=dayup*(1-dayfactor)
+print(&quot;工作日的力量：{:.2f}&quot;.format(dayup))</p> <blockquote><blockquote><blockquote><p>（运行结果）
+工作日的力量：4.63</p></blockquote></blockquote></blockquote> <h2 id="天天向上的力量问题-第四问"><a href="#天天向上的力量问题-第四问" aria-hidden="true" class="header-anchor">#</a> &quot;天天向上的力量问题&quot;第四问</h2> <p>1.问题4：工作日的努力
+-工作日模式要努力到什么水平，才能与每天努力1%一样？
+-A君：一年365天，每天进步1%，不停歇
+-B君：一年365天，每周工作5天休息2天，休息日下降1%，要多努力呢？</p> <p>2.笨办法试错
+def...while</p> <p>3.天天向上的力量
+#DayDayUpQ4.py
+def dayUP(df):
+dayup=1
+for i in range(365):
+if i%7  in [6,0]:
+dayup=dayup*(1-0.01)
+else:
+dayup=dayup*(1+df)
+return dayup
+dayfactor = 0.01
+while dayUP(dayfactor) &lt; 37.78:
+dayup += 0.001
+print(&quot;工作日的努力参数是：{:.3f}&quot;.format(dayfactor))
+根据df参数计算工作日力量的函数
+参数不同，这段代码可共用
+def保留字用于定义函数
+while保留字判断条件是否成立
+条件成立时循环执行</p> <p>4.工作日的努力</p> <blockquote><blockquote><blockquote><p>（运行结果）
+工作日的努力参数是：0.019</p></blockquote></blockquote></blockquote> <p>5.GRIT,坚毅，对长期目标的持续激情及持久耐力
+-GRIT是获取成功最重要的因素之一，牢记天天向上的力量</p> <h2 id="天天向上的力量问题-举一反三"><a href="#天天向上的力量问题-举一反三" aria-hidden="true" class="header-anchor">#</a> &quot;天天向上的力量问题&quot;举一反三</h2> <p>1.for...in..(计算思维)
+def..while(“笨办法”试错)</p> <p>2.天天向上的力量
+-实例虽然仅包含8-12行代码，但包含很多语法元素
+-判断条件循环、次数循环、分支、函数、计算思维
+-清楚理解这些代码能够快速入门Python语言</p> <p>3.问题的变化和扩展
+-工作日模式中，如果休息日不下降呢？
+-如果努力每天提高1%，休息时每天下降千分之一呢？
+-如果工作3天休息1天呢？
+-“三天打鱼，两天晒网”呢？
+-“多一份努力”呢？（努力比下降多一点儿）
+-“多一份懈怠”呢？（下降比努力多一点儿）</p> <h1 id="字符串类型及操作"><a href="#字符串类型及操作" aria-hidden="true" class="header-anchor">#</a> 字符串类型及操作</h1> <h2 id="字符串类型的表示"><a href="#字符串类型的表示" aria-hidden="true" class="header-anchor">#</a> 字符串类型的表示</h2> <p>1.字符串
+由0个或多个字符组成的有序字符序列
+-字符串由一对单引号或一对双引号表示
+&quot;请输入带有符号的温度值：&quot;或者&quot;C&quot;
+-字符串是字符的有序序列，可以对其中的字符进行索引
+&quot;请&quot;是&quot;请输入带有符号的温度值:&quot;的第0个字符</p> <p>2.字符串
+字符串有2类共4种表示方法
+-由一对单引号或双引号表示，仅表示单行字符串
+&quot;请输入带有符号的温度值：&quot;或者'C'
+-由一对三引号或三双引号表示，可表示多行字符串
+'''Python
+语言'''</p> <p>3.字符串有2类共4种表示方法
+-如果希望在字符串中包含双引号或单引号呢？
+'这里有个双引号(&quot;)'或&quot;这里有个单引号(')&quot;
+-如果希望在字符串中既包括单引号又包括双引号呢？
+'''这里既有单引号(')又有双引号(&quot;)'''</p> <p>4.字符串的序号
+正向递增序号和反向递减序号
+0——11或-1——-12</p> <p>5.字符串的使用
+使用[]获取字符串中一个或多个字符
+-索引：返回字符串中单个字符  &lt;字符串&gt;[M]
+&quot;请输入带有符号的温度值:&quot;[0]或者TempStr[-1]
+-切片：返回字符串中一段字符子串 &lt;字符串&gt;[M:N]
+&quot;请输入带有符号的温度值:&quot;[1:3]或者TempStr[0:-1]</p> <p>6.字符串切片高级用法
+使用[M:N:K]根据步长对字符串切片
+-&lt;字符串&gt;[M:N],M缺失表示至开头，N缺失表示至结尾
+&quot;零一二三四五六七八九十&quot;[:3]结果是&quot;零一二&quot;
+-&lt;字符串&gt;[M:N:K],根据步长K对字符串切片
+&quot;零一二三四五六七八九十&quot;[1:8:2]结果是&quot;一三五七&quot;
+&quot;零一二三四五六七八九十&quot;[::-1]结果是&quot;十九八七六五四三二一零&quot;</p> <p>7.字符串的特殊字符
+转义符<br>
+-转义符表达特定字符的本意
+&quot;这里有个双引号(&quot;)&quot;结果为 这里有个双引号(&quot;)
+-转义符形成一些组合，表达一些不可打印的含义
+&quot;\b&quot;回退 &quot;\n&quot;换行(光标移动到下行首) &quot;\r&quot;回车(光标移动到本行首)</p> <h2 id="字符串操作符"><a href="#字符串操作符" aria-hidden="true" class="header-anchor">#</a> 字符串操作符</h2> <p>1.操作符及使用描述
+x+y：连接两个字符串x和y
+n<em>x或x</em>n：复制n次字符串x
+x in s:如果x是s的子串，返回True，否则返回False</p> <p>2.获取星期字符串
+-输入：1-7的整数，表示星期几
+-输出：输入整数对应的星期字符串
+-例如：输入3,输出星期三</p> <p>3.获取星期字符串</p> <div class="language- extra-class"><pre class="language-text"><code>	#WeekNamePrintV1.py
+	weekStr=&quot;星期一星期二星期三星期四星期五星期六星期日&quot;
+	weekId=eval(input(&quot;请输入星期数字(1-7):&quot;))
+	pos=(weekId-1)*3
+	print(weekStr[pos:pos+3])
+</code></pre></div><p>4.获取星期字符串</p> <div class="language- extra-class"><pre class="language-text"><code>	#WeekNamePrintV2.py
+	weekStr=&quot;一二三四五六天&quot;
+	weekId=eval(input(&quot;请输入星期数字(1-7):&quot;))
+	print(&quot;星期&quot;+weekStr[weekID-1])
+</code></pre></div><h2 id="字符串处理函数"><a href="#字符串处理函数" aria-hidden="true" class="header-anchor">#</a> 字符串处理函数</h2> <p>1.一些以函数形式提供的字符串处理功能
+函数及使用描述
+len(x)：长度，返回字符串x的长度
+len(&quot;一二三456&quot;)结果为6
+str(x)：任意类型x所对应的字符串形式
+str(1.23)结果为&quot;1.23&quot;或str([1,2])结果为&quot;[1,2]&quot;
+hex(x)或oct(x)：整数x的十六进制或八进制小写形式字符串
+hex(425)结果为&quot;0x1a9&quot;或oct(425)结果为“0o651”</p> <p>2.一些以函数形式提供的字符串处理功能
+chr(u)，u为Unicode编码，返回其对应的字符
+ord(x)，x为字符，返回其对应的Unicode编码</p> <p>3.Unicode编码
+Python字符串的编码方式
+-统一字符编码，即覆盖几乎所有字符的编码方式
+-从0到1114111（0x10FFFF）空间，
+每个编码对应一个字符
+-Python字符串中每个字符都是Unicode编码字符</p> <p>4.Unicode编码
+一些有趣的例子</p> <blockquote><blockquote><blockquote><p>&quot;1+1=2&quot;+chr(10004)
+&quot;1+1=2  &quot;</p></blockquote></blockquote> <blockquote><blockquote><p>&quot;这个字符的Unicode值是：&quot;+str(ord())
+&quot;这个字符的Unicode值是：9801&quot;</p></blockquote></blockquote> <blockquote><blockquote><p>for i in range(12):
+print(chr(9800+i),end=&quot;&quot;)</p></blockquote></blockquote></blockquote> <h2 id="字符串处理方法"><a href="#字符串处理方法" aria-hidden="true" class="header-anchor">#</a> 字符串处理方法</h2> <p>1.&quot;方法&quot;在编程中是一个专有名词
+-&quot;方法&quot;特指<a>.<b>()风格中的函数<b>()
+-方法本身也是函数，但与<a>有关，<a>.<b>()风格使用
+-字符串及变量也是<a>，存在一些方法</a></b></a></a></b></b></a></p> <p>2.一些以方法形式提供的字符串处理功能
+方法及使用描述
+str.lower()或ste.upper()：返回字符串的副本，全部字符小写/大写
+&quot;AbCdEfGh&quot;.lower()结果为&quot;abcdefg&quot;
+str.split(sep=None)：返回一个列表，由str根据sep被分割的部分组成
+&quot;A,B,C&quot;.split(&quot;,&quot;)结果为['A','B','C']
+str.count(sub)：返回子串sub在str中出现的次数
+&quot;an  apple a day&quot;.count(&quot;a&quot;)结果为4
+str.replace(old,new)：返回字符串str副本，所有Old子串被替换为new
+&quot;python&quot;.replace('n','n123.io')结果为&quot;python123.io&quot;
+str.center(width[,fillchar])：字符串str根据宽度width居中，fillchat可选，
+&quot;python&quot;.center(20,&quot;=&quot;)结果为&quot;=======python========&quot;
+str.strip(chars)：从str中去掉在其左侧和右侧chars中列出的字符
+&quot;= python= &quot;.strip(&quot; =np&quot;结果为&quot;ytho&quot;
+str.join(iter)：在iter变量除最后元素外每个元素后增加一个str
+&quot;,&quot;.join(&quot;12345&quot;)结果为&quot;1,2,3,4,5&quot; #主要用于字符串分隔等</p> <h2 id="字符串类型的格式化"><a href="#字符串类型的格式化" aria-hidden="true" class="header-anchor">#</a> 字符串类型的格式化</h2> <p>1.格式化是对字符串进行格式表达的方式
+-字符串格式化使用.format()方法，用法如下
+&lt;模版字符串&gt;.format(&lt;逗号分割的参数&gt;)</p> <p>2.槽
+字符串中槽{}的默认顺序与format()中参数的顺序一致</p> <p>3.槽内部对格式化的配置方式
+｛&lt;参数序号&gt;:&lt;格式控制标记&gt;｝
+:引导符号
+&lt;填充&gt;：用于填充的单个字符
+&lt;对齐&gt;：&lt;左对齐&gt;右对齐^居中对齐
+&lt;宽度&gt;：槽设定的输出宽度
+&lt;,&gt;：数字的千位分隔符
+&lt;.精度&gt;：浮点数小数精度或字符串最大输出长度
+&lt;类型&gt;：整数类型b,c,d,o,x,X浮点数类型e,E,f,%</p> <p>4.&gt;&gt;&gt;&quot;{0:=^20}&quot;.format(&quot;python&quot;)
+'=======python========'</p> <blockquote><blockquote><blockquote><p>&quot;{0:*&gt;20}&quot;.format(&quot;bit&quot;)
+'************bit'</p></blockquote></blockquote> <blockquote><blockquote><p>&quot;{:10}&quot;.format(&quot;bit&quot;)
+'bit       '</p></blockquote></blockquote> <blockquote><blockquote><p>&quot;{0:,.2f}&quot;.format(12345.6789)
+'12,345.68'</p></blockquote></blockquote> <blockquote><blockquote><p>&quot;{0:b},{0:c},{0:d},{0:o},{0:x},{0:X}&quot;.format(425)
+'110101001,,425,651,1a9,1A9'</p></blockquote></blockquote> <blockquote><blockquote><p>&quot;{0:e},{0:E},{0:f},{0:%}&quot;.fotmat(3.14)
+'3.140000e+00,3.140000E+00,3.140000,314.000000%'</p></blockquote></blockquote></blockquote> <h1 id="模块2-time库的使用"><a href="#模块2-time库的使用" aria-hidden="true" class="header-anchor">#</a> 模块2 time库的使用</h1> <h2 id="time库基本介绍"><a href="#time库基本介绍" aria-hidden="true" class="header-anchor">#</a> time库基本介绍</h2> <p>1.time库是python中处理时间的标准库
+-计算机时间的表达
+-提供获取系统时间并格式化输出功能
+-提供系统级精确计时功能，用于程序性能分析
+import time
+time.<b>()</b></p> <p>2.time库包括三类函数
+-时间获取：time() ctime() gmtime()
+-时间格式化：strftime() strptime()
+-程序计时：sleep() perf_counter()</p> <h2 id="时间获取"><a href="#时间获取" aria-hidden="true" class="header-anchor">#</a> 时间获取</h2> <p>1.函数及描述
+time()：获取当前时间戳，即计算机内部时间值，浮点数</p> <blockquote><blockquote><blockquote><p>time.time()
+1516939876.622282
+ctime()：获取当前时间并以易读方式表示，返回字符串</p></blockquote></blockquote> <blockquote><blockquote><p>time.ctime()
+&quot;Fri Jan 26 12:11:16 2018&quot;
+gmtime():获取当前时间，表示为计算机可处理的时间格式</p></blockquote></blockquote> <blockquote><blockquote><p>time.gmtime()
+time.struct_time(tm_year=2018,tm_mon=1,tm_mday=26,tm_hour=4,tm_min=11,tm_sec=16,tm_wday=4,tm_yday=26,tm_isdst=0)</p></blockquote></blockquote></blockquote> <h2 id="时间格式化"><a href="#时间格式化" aria-hidden="true" class="header-anchor">#</a> 时间格式化</h2> <p>1.时间格式化
+将时间以合理的方式展示出来
+-格式化：类似字符串格式化，需要有展示模版
+-展示模版由特定的格式化控制符组成
+-strftime()方法</p> <p>2.函数及描述
+strftime(tpl,ts)：tpl是格式化模版字符串，用来定义输出效果
+ts是计算机内部时间类型变量</p> <blockquote><blockquote><blockquote><p>t=time.gmtime()
+time.strftime(&quot;%Y-%m-%d %H:%M:%S&quot;,t)
+'2018-01-26 12:55:20'
+strtime(str,tpl)：str是字符串形式的时间值，tpl是格式化模版字符串，用来定义输入效果</p></blockquote></blockquote> <blockquote><blockquote><p>timeStr=&quot;2018-01-26 12:55:20&quot;
+time.strptime(timeStr,&quot;%Y-%m-%d %H:%M:%S&quot;)
+time.struct_time(tm_year=2018,tm_mon=1,tm_mday=26,tm_hour=4,tm_min=11,tm_sec=16,tm_wday=4,tm_yday=26,tm_isdst=0)</p></blockquote></blockquote></blockquote> <p>3.格式化字符串，日期/时间说明，值范围和实例
+%Y：年份，0000~9999，例如：1900
+%m：月份，01~12，例如：10
+%B：月份名称，January~December,例如：April
+%b：月份名称缩写，Jan~Dec，例如：Apr
+%d：日期，01~31，例如：25
+%A：星期,Monday~Sunday,例如：Wednesday
+%a：星期缩写，Mon~Sun，例如：Wed
+%H：小时（24h制），00~23，例如：12
+%h：小时（12h制），01~12，例如：7
+%p：上/下午，AM,PM，例如：PM
+%M：分钟，00~59，例如:26
+%S：秒，00~50，例如：26</p> <h2 id="程序计时应用"><a href="#程序计时应用" aria-hidden="true" class="header-anchor">#</a> 程序计时应用</h2> <p>1.程序计时应用广泛
+-程序计时指测量起止动作所经历时间的过程
+-测量时间：perf_counter()
+-产生时间：sleep</p> <p>2.函数及描述
+perf_counter()：返回一个cpu级别的精确时间计数值，单位为秒
+由于这个计数值起点不确定，连续调用差值才有意义</p> <blockquote><blockquote><blockquote><p>start=time.perf_counter()
+318.4564646456</p></blockquote></blockquote> <blockquote><blockquote><p>end=time.perf_counter()
+341.347894654</p></blockquote></blockquote> <blockquote><blockquote><p>end-start
+22.713456465464</p></blockquote></blockquote></blockquote> <p>3.函数及描述
+sleep(s)：s拟休眠的时间，单位是秒，可以是浮点数</p> <blockquote><blockquote><blockquote><p>def wait():
+time.sleep(3.3)</p></blockquote></blockquote> <blockquote><blockquote><p>wait() #程序将等待3.3秒后再退出</p></blockquote></blockquote></blockquote> <h1 id="文本进度条"><a href="#文本进度条" aria-hidden="true" class="header-anchor">#</a> 文本进度条</h1> <h2 id="文本进度条问题分析"><a href="#文本进度条问题分析" aria-hidden="true" class="header-anchor">#</a> 文本进度条问题分析</h2> <p>1.需求分析
+文本进度条
+-采用字符串方式打印可以动态变化的文本进度条
+-进度条需要能在一行中逐渐变化</p> <p>2.问题分析
+如何获得文本进度条的变化时间？
+-采用sleep()模拟一个持续的进度
+-似乎不那么难</p> <h2 id="文本进度条简单的开始"><a href="#文本进度条简单的开始" aria-hidden="true" class="header-anchor">#</a> 文本进度条简单的开始</h2> <p>1.简单的开始</p> <p>'''
+#TextProBroV1.py
+import time
+scale = 10
+print(&quot;------执行开始------&quot;)
+for i in range(scale+1):
+a=&quot;*&quot;<em>i
+b=&quot;·&quot;</em>(scale-1)
+c=(i/scale)*100
+print(&quot;{:^3.0f}%[{}-&gt;{}]&quot;.format(a,b,c))
+time.sleep(0.1)
+print(&quot;------执行结束------&quot;)
+'''</p> <h2 id="文本进度条单行动态刷新"><a href="#文本进度条单行动态刷新" aria-hidden="true" class="header-anchor">#</a> 文本进度条单行动态刷新</h2> <p>1.单行动态刷新
+刷新的关键是\r
+-刷新的本质是：用打印后的字符覆盖之前的字符
+-不能换行：print()需要被控制
+-要能回退：打印后光标退回到之前的位置\r</p> <p>2.单行动态刷新
+#TextProBarV2.py
+for i in range(101):
+print(&quot;\r{:3}%&quot;.format(i),end=&quot;&quot;)
+time.sleep(0.1)</p> <p>3.IDLE是编写程序的开发环境，并不是程序运行的主要环境</p> <h2 id="文本进度条实例完整效果"><a href="#文本进度条实例完整效果" aria-hidden="true" class="header-anchor">#</a> 文本进度条实例完整效果</h2> <p>1.完整效果</p> <p>'''
+#TextProBarV3.py
+import time
+scale=50
+print(&quot;执行开始&quot;.center(scale//2,'-'))
+start=time.perf_counter()
+for i in range(scale+1):
+a=&quot;*&quot;<em>i
+b='·'</em>(scale-1)
+c=(i/scale)*100
+dur=time.perf_counter()-start
+print(&quot;\r{:^3.0f}%[{}-&gt;{}]{:.2f}s&quot;.format(c,a,b,dur),end=&quot;&quot;)
+time.sleep(0.1)
+print(&quot;\n&quot;+&quot;执行结束&quot;.center(scale//2,'-'))
+'''</p> <h2 id="文本进度条举一反三"><a href="#文本进度条举一反三" aria-hidden="true" class="header-anchor">#</a> 文本进度条举一反三</h2> <p>1.计算问题扩展
+-文本进度条程序使用了perf_counter()计时
+-计时方法适合各类需要统计时间的计算问题
+-例如：比较不同算法时间，统计部分程序运行时间</p> <p>2.进度条扩展
+-在任何运行时间需要较长的程序中增加进度条
+-在任何希望提高用户体验的应用中增加进度条
+-进度条是人机交互的纽带之一</p> <p>3.文本进度条的不同设计函数
+设计名称，趋势，设计函数
+Linear,Constant,f(x)=x
+Early Pause,Speeds up,f(x)=x+(1-sin(x<em>pai</em>2+pai/2))/-8
+Latr Pause,Speeds down,f(x)=x+(1-sin(x<em>pai</em>2+pai/2))/8
+Slow Wavy,Constant,
+Fast Wavy,Constant,
+Power,Speeds up,
+Inverse Power,Slows down,
+Fast Power,Speeds up,
+Inverse Fast Power,Slows down</p> <p>4.先慢后快符合用户心理</p> <h1 id="程序的分支结构"><a href="#程序的分支结构" aria-hidden="true" class="header-anchor">#</a> 程序的分支结构</h1> <h2 id="单分支结构"><a href="#单分支结构" aria-hidden="true" class="header-anchor">#</a> 单分支结构</h2> <p>1.单分支结构
+根据判断条件结果而选择不同向前路径的运行方式
+if &lt;条件&gt;:
+&lt;语句块&gt;</p> <p>2.单分支示例
+guess=eval(input())
+if guess==99:
+print(&quot;猜对了&quot;)</p> <p>if True:	
+print(&quot;条件正确&quot;)</p> <h2 id="二分支结构"><a href="#二分支结构" aria-hidden="true" class="header-anchor">#</a> 二分支结构</h2> <p>1.二分支结构
+根据判断条件结果而选择不同向前路线的运行方式
+if&lt;条件&gt;:
+&lt;语句块1&gt;
+else:
+&lt;语句块2&gt;</p> <p>2.二分支示例
+guess=eval(input())
+if guess==99:
+print(&quot;猜对了&quot;)
+else:
+print(&quot;猜错了&quot;)</p> <p>if Ture:
+print(&quot;语句块1&quot;)
+else:
+print(&quot;语句块2&quot;)</p> <p>3.紧凑形式
+紧凑形式：适用于简单表达式的二分支结构
+&lt;表达式1&gt;if&lt;条件&gt;else&lt;表达式2&gt;
+guess=eval(input())
+print(&quot;猜{}了&quot;.format(&quot;对&quot;if guess=99 else &quot;错&quot;))</p> <p>3.在紧凑形式中，if,else所对应的的输出不是语句而是表达式</p> <h2 id="多分支结构"><a href="#多分支结构" aria-hidden="true" class="header-anchor">#</a> 多分支结构</h2> <p>1.多分支结构
+if&lt;条件1&gt;：
+&lt;语句块1&gt;
+elif&lt;条件2&gt;
+&lt;语句块2&gt;
+....
+else:
+&lt;语句块n&gt;</p> <p>2.多分支结构
+对不同分数分级的问题</p> <p>'''
+score=eval(input())
+if score&gt;=60:
+grade=&quot;d&quot;
+elif score&gt;=70:
+grade=&quot;c&quot;
+elif score&gt;=80:
+grade=&quot;b&quot;
+elif score&gt;=90:
+grade=&quot;a&quot;
+print(&quot;输入成绩属于级别{}&quot;.format(grade))
+'''
+-注意多条件之间的包含关系
+-注意变量取值范围的覆盖</p> <h2 id="条件判断及组合"><a href="#条件判断及组合" aria-hidden="true" class="header-anchor">#</a> 条件判断及组合</h2> <p>1.条件判断
+操作符，描述
+&lt;，小于
+&lt;=，小于等于</p> <blockquote><p>=，大于等于
+，大于
+==，等于
+!=，不等于</p></blockquote> <p>2.条件组合
+用于条件组合的三个保留字
+操作符及使用，描述
+x and y，两个条件x和y的逻辑与
+x or y，两个条件x和y的逻辑或
+not x，条件x的逻辑非</p> <p>3.示例</p> <p>'''
+guess=eval(input())
+if guess&gt;99 or guess&lt;99:
+print(&quot;猜错了&quot;)
+else:
+print(&quot;猜对了&quot;)</p> <pre><code>if not True:
+	print(&quot;语句块2&quot;)
+else:
+	print(&quot;语句块1&quot;)
+</code></pre> <p>'''</p> <h2 id="程序的异常处理"><a href="#程序的异常处理" aria-hidden="true" class="header-anchor">#</a> 程序的异常处理</h2> <p>1.异常处理
+num=eval(input(&quot;请输入一个整数&quot;))
+print(num**2)
+当用户没有输入整数时，会产生异常，怎么处理？</p> <p>2.异常处理
+Traceback(most recent call last):
+File &quot;t.py&quot;,line 1,in <module>
+num =eval(input(&quot;请输入一个整数:&quot;))
+File &quot;<string>&quot;,line 1,in <module>
+NameError:name 'abc' is not defined
+异常发生的代码行数
+异常类型：异常内容提示</module></string></module></p> <p>3.异常处理的基本使用</p> <p>'''
+try:
+&lt;语句块1&gt;
+except:
+&lt;语句块2&gt;</p> <pre><code>try:
+	&lt;语句块1&gt;
+except &lt;异常类型&gt;：
+	&lt;语句块2&gt;
+</code></pre> <p>'''</p> <p>4.异常处理示例</p> <p>'''
+try:
+num=eval(input(&quot;请输入一个整数:&quot;))
+print(num**2)
+except:
+print(&quot;输入不是整数&quot;)</p> <pre><code>try:
+	num=eval(input(&quot;请输入一个整数:&quot;))
+	print(num**2)
+except NameError:
+	print(&quot;输入不是整数&quot;)
+</code></pre> <p>'''
+标注异常类型后，仅响应该异常
+异常类型名字等同于变量</p> <p>5.异常处理的高级使用
+try:
+&lt;语句块1&gt;
+except:
+&lt;语句块2&gt;
+else:
+&lt;语句块3&gt;
+finally:
+&lt;语句块4&gt;</p> <p>-finally对应语句块4一定执行
+-else对应语句块3在不发生异常时执行</p> <h1 id="身体质量指数bmi"><a href="#身体质量指数bmi" aria-hidden="true" class="header-anchor">#</a> 身体质量指数BMI</h1> <h2 id="身体质量指数bmi问题分析"><a href="#身体质量指数bmi问题分析" aria-hidden="true" class="header-anchor">#</a> 身体质量指数BMI问题分析</h2> <p>1.身体质量指数BMI
+BMI：对身体质量的刻画
+BMI:Body Mass Index
+国际上常用的衡量人体肥胖和健康程度的重要标准，主要用于统计分析
+-定义：BMI=体重(kg)/身高平方(m平方)</p> <p>2.身体质量指数BMI
+国际：世界卫生组织
+国内：国家卫生健康委员会
+分类，国际BMI值，国内BMI值
+偏瘦，&lt;18.5，&lt;18.5
+正常，18.5~25，18.5~24
+偏胖，25~30，24~28
+肥胖，&gt;30，&gt;28</p> <p>3.问题需求
+-输入：给定体重和身高值
+-输出：BMI指标分类信息（国内和国际）</p> <h2 id="身体质量指数bmi实例讲解"><a href="#身体质量指数bmi实例讲解" aria-hidden="true" class="header-anchor">#</a> 身体质量指数BMI实例讲解</h2> <p>1.思路方法
+-难点在于同时输出国际和国内对应的分类
+-思路1：分别计算并给出国际和国内BMI分类
+-思路2：混合计算并给出国际和国内BMI分类</p> <p>2.国际身体质量指数BMI
+···
+#CalBMI1.py
+height,weight=eval(input(&quot;请输入身高\（米）和体重\（公斤）[逗号隔开]：&quot;))
+bmi=height/pow(weight,2)
+print(&quot;BMI数值为：{:.2f}&quot;.format(bmi))
+who=&quot;&quot;
+if bmi&lt;18.5:
+who=&quot;偏瘦&quot;
+elif 18.5&lt;=bmi&lt;25:
+who=&quot;正常&quot;
+elif 25&lt;=bim&lt;30:
+who=&quot;偏胖&quot;
+else:
+who=&quot;肥胖&quot;
+print(&quot;BMI指标为：国际'{0}'&quot;.format(who))
+···</p> <p>···
+#CalBMI2.py
+height,weight=eval(input(&quot;请输入身高\（米）和体重\（公斤）[逗号隔开]：&quot;))
+bmi=height/pow(weight,2)
+print(&quot;BMI数值为：{:.2f}&quot;.format(bmi))
+who=&quot;&quot;
+if bmi&lt;18.5:
+who=&quot;偏瘦&quot;
+elif 18.5&lt;=bmi&lt;24:
+who=&quot;正常&quot;
+elif 24&lt;=bmi&lt;28:
+who=&quot;偏胖&quot;
+else:
+who=&quot;肥胖&quot;
+print(&quot;BMI指标为：国内'{0}'&quot;.format(who))
+···</p> <p>···
+#CalBMI3.py
+height,weight=eval(input(&quot;请输入身高\（米）和体重\（公斤）[逗号隔开]：&quot;))
+bmi=height/pow(weight,2)
+print(&quot;BMI数值为：{:.2f}&quot;.format(bmi))
+who,nat=&quot;&quot;,&quot;&quot;
+if bmi&lt;18.5:
+who,nat=&quot;偏瘦&quot;,&quot;偏瘦&quot;
+elif 18.5&lt;=bmi&lt;24:
+who,nat=&quot;正常&quot;,&quot;正常&quot;
+elif 24&lt;=bmi&lt;25:
+who,nat=&quot;正常&quot;,&quot;偏胖&quot;
+elif 25&lt;=bmi&lt;28:
+who,nat=&quot;偏胖&quot;,&quot;偏胖&quot;
+elif 28&lt;=bmi&lt;30:
+who,nat=&quot;偏胖&quot;,&quot;肥胖&quot;
+else:
+who,nat=&quot;肥胖&quot;,&quot;肥胖&quot;
+print(&quot;BMI指标为：国际'{0}',国内'{1}'&quot;.format(who,nat))
+···</p> <h2 id="身体质量指数bmi举一反三"><a href="#身体质量指数bmi举一反三" aria-hidden="true" class="header-anchor">#</a> 身体质量指数BMI举一反三</h2> <p>1.举一反三
+关注多分支条件的组合
+-多分支条件之间的覆盖是重要问题
+-程序可运行，但不正确，要注意多分支
+-分支结构是程序的重要框架，读程序先看分支</p> <h1 id="程序的循环结构"><a href="#程序的循环结构" aria-hidden="true" class="header-anchor">#</a> 程序的循环结构</h1> <h2 id="遍历循环"><a href="#遍历循环" aria-hidden="true" class="header-anchor">#</a> 遍历循环</h2> <p>1.遍历循环
+遍历某个结构形成的循环运行方式
+for &lt;循环变量&gt; in &lt;遍历结构&gt;：
+&lt;语句块&gt;
+-从遍历结构中逐一提取元素，放在循环变量中
+-由保留字for和in组成，完成遍历所有元素后结束
+-每次循环，所获得元素放入循环变量，并执行一次语句块</p> <p>2.遍历循环的应用
+计数循环（N次）
+for i in range(N):
+&lt;语句块&gt;
+-遍历由range()函数产生的数字序列，产生循环
+···
+&gt;&gt;&gt;for i in range(5):
+print(i)
+&gt;&gt;&gt;for i in range(5):
+print(&quot;hello:&quot;,i)
+···
+计数循环（N次）
+for i in range(M,N,K):
+&lt;语句块&gt;
+-遍历由range()函数产生的数字序列，产生循环
+···
+&gt;&gt;&gt;for i in range(1,6):
+print(i)
+&gt;&gt;&gt;for i in range(1,6,2):
+print(&quot;hello:&quot;,i)
+···</p> <p>3.遍历循环的应用
+字符串遍历循环
+for c in s:
+&lt;语句块&gt;
+-s是字符串，遍历字符串每个字符，产生循环
+···
+for c in &quot;Python123&quot;:
+print(c,end=&quot;,&quot;)
+···</p> <p>4.遍历循环的应用
+列表遍历循环
+for item in ls:
+&lt;语句块&gt;
+-ls是一个列表，遍历其每个元素，产生循环</p> <div class="language- extra-class"><pre class="language-text"><code>	for item in [123,&quot;py&quot;,456]:
+		print(item,end=&quot;,&quot;)
+</code></pre></div><p>5.遍历循环的应用
+文件遍历循环
+for line in fi:
+&lt;语句块&gt;
+-fi是一个文件标识符，遍历其每行，产生循环</p> <h2 id="无限循环"><a href="#无限循环" aria-hidden="true" class="header-anchor">#</a> 无限循环</h2> <p>1.无限循环
+由条件控制的循环运行方式
+while &lt;条件&gt;:
+&lt;语句块&gt;
+-反复执行语句块，直到条件不满足时结束</p> <p>2.无限循环的应用
+无限循环的条件</p> <blockquote><blockquote><blockquote><p>a=3
+while a&gt;0:
+a=a-1
+print(a)</p></blockquote></blockquote> <blockquote><blockquote><p>a=3
+while a&gt;0:
+a=a+1
+print(a)
+-死循环，CTRL+C退出执行</p></blockquote></blockquote></blockquote> <h2 id="循环控制保留字"><a href="#循环控制保留字" aria-hidden="true" class="header-anchor">#</a> 循环控制保留字</h2> <p>1.循环控制保留字
+break和continue
+-break跳出并结束当前整个循环，执行循环后的语句
+-continue结束当次循环，继续执行后续次数循环
+-break和continue可以与for和while循环搭配使用</p> <p>2.循环控制保留字</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;for c in &quot;PYTHON&quot;:
+	if c == &quot;T&quot;:
+		continue
+	print(c,end=&quot;&quot;)
+PYHON
+
+&gt;&gt;&gt;for c in &quot;PYTHON&quot;:
+	if c == &quot;T&quot;:
+		break
+	print(c,end=&quot;&quot;)
+PY
+</code></pre></div><p>3.循环控制保留字</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;s=&quot;PYTHON&quot;
+&gt;&gt;&gt;while s!= &quot;&quot;:
+	for c in s:
+		print(c,end=&quot;&quot;)
+	s=s[:-1]
+PYTHONPYTHOPYTHPYTPYP
+</code></pre></div><p>4.循环控制保留字</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;s=&quot;PYTHON&quot;
+&gt;&gt;&gt;while s!=&quot;&quot;:
+	for c in s:
+		if c==&quot;T&quot;:
+			break
+		print(c,end=&quot;&quot;)
+	s=s[:-1]
+PYPYPYPYPYP
+</code></pre></div><p>-break仅跳出当前最内层循环</p> <h2 id="循环的高级用法"><a href="#循环的高级用法" aria-hidden="true" class="header-anchor">#</a> 循环的高级用法</h2> <p>1.循环的扩展
+循环与else
+for &lt;循环变量&gt; in &lt;遍历结构&gt;：
+&lt;语句块1&gt;
+else:
+&lt;语句块2&gt;</p> <p>while &lt;条件&gt;：
+&lt;语句块1&gt;
+else:
+&lt;语句块2&gt;</p> <p>2.循环的扩展
+循环与else
+-当循环没有被break语句退出时，执行else语句块
+-else语句块作为&quot;正常&quot;完成循环的奖励
+-这里else的用法与异常处理中else用法相似</p> <p>3.循环的扩展
+循环与else</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;for c in &quot;PYTHON&quot;:
+	if c ==&quot;T&quot;:
+		continue
+	print(c,end=&quot;&quot;)
+else:
+	print(&quot;正常退出&quot;)
+PYHON正常退出
+
+&gt;&gt;&gt;for c in &quot;PYTHON&quot;:
+	if c ==&quot;T&quot;:
+		break
+	print(c,end=&quot;&quot;)
+else:
+	print(&quot;正常退出&quot;)
+PY
+</code></pre></div><h1 id="模块3-random库的使用"><a href="#模块3-random库的使用" aria-hidden="true" class="header-anchor">#</a> 模块3 random库的使用</h1> <h2 id="模块3-random库的使用-random库基本介绍"><a href="#模块3-random库的使用-random库基本介绍" aria-hidden="true" class="header-anchor">#</a> 模块3 random库的使用_random库基本介绍</h2> <p>1.random库概述
+random库是使用随机数的Python标准库
+-标准库：随着Python解释器而自带的库，不需要安装，直接使用
+-伪随机数：采用梅森算法生成的（伪）随机序列中元素
+-random库主要用于生成随机数
+-使用random库：import random</p> <p>2.random库概述
+random库包括两类函数，常用共8个
+-基本随机数函数:seed(),random()
+-扩展随机数函数:randint(),getrandbits(),uniform(),randrange(),choice(),shuffle()</p> <h2 id="模块3-random库的使用-基本随机数函数"><a href="#模块3-random库的使用-基本随机数函数" aria-hidden="true" class="header-anchor">#</a> 模块3 random库的使用_基本随机数函数</h2> <p>1.随机数种子
+随机数种子-梅森旋转算法-随机序列-随机数</p> <p>2.基本随机数函数
+函数，描述
+seed(a=None)：初始化给定的随机数种子，默认为当前系统时间</p> <blockquote><blockquote><blockquote><p>random.seed(10)#产生种子10对应的序列
+random()：生成一个[0.0,1.0]之间的随机小数</p></blockquote></blockquote> <blockquote><blockquote><p>random.random()
+0.5714025946899135</p></blockquote></blockquote></blockquote> <p>3.基本随机数函数</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;import random
+&gt;&gt;&gt;random.seed(10)
+&gt;&gt;&gt;random.random()
+0.5714025946899135
+&gt;&gt;&gt;random.random()
+0.4288890546751146
+
+&gt;&gt;&gt;import random
+&gt;&gt;&gt;random.seed(10)
+&gt;&gt;&gt;random.random()
+0.5714025946899135
+&gt;&gt;&gt;random.seed(10)
+&gt;&gt;&gt;random.random()
+0.5714025946899135
+</code></pre></div><h2 id="模块3-random库的使用-扩展随机数函数"><a href="#模块3-random库的使用-扩展随机数函数" aria-hidden="true" class="header-anchor">#</a> 模块3 random库的使用_扩展随机数函数</h2> <p>1.扩展随机数函数
+函数及描述
+randint(a,b)：生成一个[a,b]之间的整数</p> <blockquote><blockquote><blockquote><p>random.randint(10,100)
+64
+randrange(m,n[,k])：生成一个[m,n)之间以k为步长的随机整数</p></blockquote></blockquote> <blockquote><blockquote><p>random.randint(10,100,10)
+80
+getrandbits(k)：生成一个k比特长的随机整数</p></blockquote></blockquote> <blockquote><blockquote><p>random.getrandbits(16)
+37885
+uniform(a,b)：生成一个[a,b]之间的随机小数</p></blockquote></blockquote> <blockquote><blockquote><p>random.uniform(10,100)
+13.096321648808136  #16位精度
+choice(seq)：从序列seq中随机选择一个元素</p></blockquote></blockquote> <blockquote><blockquote><p>random.choice([1,2,3,4,5,6,7])
+5
+shuffle(seq)：将序列seq中元素随机排列，返回打乱后的序列</p></blockquote></blockquote> <blockquote><blockquote><p>s=[1,2,3,4,5,6,7];random.shuffle(s);print(s)
+[5,7,1,3,4,2]</p></blockquote></blockquote></blockquote> <p>2.随机数函数的使用
+需要掌握的能力
+-能够利用随机数种子产生&quot;确定&quot;伪随机数
+-能够产生随机整数
+-能够对序列类型进行随机操作</p> <h1 id="圆周率的计算"><a href="#圆周率的计算" aria-hidden="true" class="header-anchor">#</a> 圆周率的计算</h1> <h1 id="圆周率的计算问题分析"><a href="#圆周率的计算问题分析" aria-hidden="true" class="header-anchor">#</a> 圆周率的计算问题分析</h1> <p>1.圆周率的近似计算公式
+2.蒙特卡罗方法</p> <h1 id="圆周率的计算实例讲解"><a href="#圆周率的计算实例讲解" aria-hidden="true" class="header-anchor">#</a> 圆周率的计算实例讲解</h1> <p>1.圆周率的近似计算公式</p> <div class="language- extra-class"><pre class="language-text"><code>#CalPiV1.py
+pi=0
+N =100
+for k in range(N):
+	pi+=1/pow(16,k)*( \
+		4/(8*k+1)-2/(8*k+4)- \
+		1/(8*k+5)-1/(8*k+6))
+print(&quot;圆周率值是:{}&quot;.format(pi))
+</code></pre></div><p>2.蒙特卡罗方法</p> <div class="language- extra-class"><pre class="language-text"><code>#CalPiV2.py
+from random import random
+from time import perf_counter
+DARTS=1000*1000
+hits=0.0
+for i in range(1,DARTS+1):
+	x,y=random(),random()
+	dist=pow(x**2+y**2,0.5)
+	if dist &lt; 1:
+		hit= hit+1
+pi=4*(hits/DARTS)
+print(&quot;圆周率值是:{}&quot;.format(pi))
+print(&quot;运行时间是:{:.5f}s&quot;.format(perf_counter()-start))
+
+</code></pre></div><h1 id="圆周率的计算举一反三"><a href="#圆周率的计算举一反三" aria-hidden="true" class="header-anchor">#</a> 圆周率的计算举一反三</h1> <p>1.举一反三
+理解方法思维
+-数学思维：找到公式，利用公式求解
+-计算思维：抽象一种过程，用计算机自动化求解
+-谁更准确？</p> <p>2.举一反三
+程序运行时间分析
+-使用time库的计算方法获得程序运行时间
+-改变撒点数量，理解程序运行时间的分布
+-初步掌握简单的程序性能分析方法</p> <p>3.举一反三
+计算问题的扩展
+-不求解圆周率，而是某个特定图形的面积
+-在工程计算中寻找蒙特卡罗方法的应用场景</p> <h1 id="函数的定义与使用"><a href="#函数的定义与使用" aria-hidden="true" class="header-anchor">#</a> 函数的定义与使用</h1> <h2 id="函数的理解和定义"><a href="#函数的理解和定义" aria-hidden="true" class="header-anchor">#</a> 函数的理解和定义</h2> <p>1.函数的定义
+函数是一段代码的表示
+-函数是一段具有特定功能的、可重用的语句组
+-函数是一种功能的抽象，一般函数表达特定功能
+-两个作用：降低编程难度和代码复用</p> <div class="language- extra-class"><pre class="language-text"><code>def..while(&quot;笨方法&quot;试错)
+#DayDayUpQ4.py
+def dayUp(df):
+	dayup=1
+	for i in range(365):
+		if i%7 in [6,0]:
+			dayup=dayup*(1-0.01)
+		else:
+			dayup=dayup*(1+df)
+	return dayup
+dayfactor=0.01
+while dayUp(dayfactor)&lt;37.78
+	dayfactor+=0.001
+print(&quot;工作日的努力参数是:{:.3f}&quot;.format(dayfactor))
+</code></pre></div><p>2.函数的定义
+函数是一段代码的表示
+def &lt;函数名&gt;(&lt;参数(0个或多个)&gt;):
+&lt;函数体&gt;
+return &lt;返回值&gt;</p> <p>3.函数的定义
+案例：计算n!
+def fact(n):
+s=1
+for i in range(1,n+1):
+s*=i
+return s</p> <p>4.函数的定义
+y=f(x)
+-函数定义时，所指定的参数是一种占位符
+-函数定义后，若果不经过调用，不会被执行
+-函数定义时，参数是输入，函数体是处理，结果是输出(IPO)</p> <h2 id="函数的使用及调用过程"><a href="#函数的使用及调用过程" aria-hidden="true" class="header-anchor">#</a> 函数的使用及调用过程</h2> <p>1.函数的调用
+调用是运行函数代码的方式
+def fact(n):
+s=1
+for i in range(1,n+1):
+s*=i
+return s
+fact(10) #调用
+-调用时要给出实际参数
+-实际参数替换定义中的参数
+-函数调用后得到返回值</p> <h2 id="函数的参数传递"><a href="#函数的参数传递" aria-hidden="true" class="header-anchor">#</a> 函数的参数传递</h2> <p>1.参数个数
+函数可以有参数，也可以没有，但必须保留括号
+def &lt;函数名&gt;():
+&lt;函数体&gt;
+return &lt;返回值&gt;</p> <p>def fact():
+print(&quot;我也是函数&quot;)</p> <p>2.可选参数(默认参数)传递
+函数定义时可以为某些参数指定默认值，构成可选参数
+def &lt;函数名&gt;(&lt;非可选参数&gt;,&lt;可选参数&gt;)：
+&lt;函数体&gt;
+return &lt;返回值&gt;
+非可选参数(必选参数)</p> <p>3.可选参数传递
+计算n!//m
+def fact(n,m=1):
+s=1
+for i in range(1,n+1):
+s*=i
+return s//m</p> <blockquote><blockquote><blockquote><p>fact(10)
+3628800</p></blockquote></blockquote> <blockquote><blockquote><p>fact(10,5)
+725760</p></blockquote></blockquote></blockquote> <p>4.可变参数传递
+函数定义时可以设计可变数量参数，即不确定参数总数量
+def &lt;函数名&gt;(&lt;参数,*b&gt;):
+&lt;函数体&gt;
+return &lt;返回值&gt;</p> <p>5.可变参数传递
+计算n!乘数
+def fact(n,<em>b):
+s=1
+for i in range(1,n+1):
+s</em>=i
+for item  in b:
+s*=item
+return s</p> <blockquote><blockquote><blockquote><p>fact(10,3)
+10886400</p></blockquote></blockquote> <blockquote><blockquote><p>fact(10,3,5,8)
+435456000</p></blockquote></blockquote></blockquote> <p>6.参数传递的两种方式
+函数调用时，参数可以按照位置或名字方式传递
+def fact(n,m=1):
+s=1
+for i in range(1,n+1):
+s*=i
+return s//m</p> <blockquote><blockquote><blockquote><p>fact(10,5)
+725760</p></blockquote></blockquote> <blockquote><blockquote><p>fact(m=5,n=10)
+725760</p></blockquote></blockquote></blockquote> <h2 id="函数的返回值"><a href="#函数的返回值" aria-hidden="true" class="header-anchor">#</a> 函数的返回值</h2> <p>1.函数的返回值
+函数可以返回0个或多个结果
+-return保留字用来传递返回值
+-函数可以有返回值，也可以没有
+可以有return，也可以没有
+-return可以传递0个返回值，也可以传递任意多个返回值</p> <p>2.函数的返回值
+函数可以返回0个或多个结果
+def fact(n,m=1):
+s=1
+for i in range(1,n+1):
+s*=i
+return s//m,n,m</p> <blockquote><blockquote><blockquote><p>fact(10,5)
+(725760,10,5)  #元组类型</p></blockquote></blockquote> <blockquote><blockquote><p>a,b,c=fact(10,5)
+print(a,b,c)
+725760 10 5</p></blockquote></blockquote></blockquote> <h2 id="局部变量和全局变量"><a href="#局部变量和全局变量" aria-hidden="true" class="header-anchor">#</a> 局部变量和全局变量</h2> <p>1.局部变量和全部变量
+&lt;语句块1&gt;
+def &lt;函数名&gt;(&lt;参数&gt;)：
+&lt;函数体&gt;
+return &lt;返回值&gt;
+&lt;语句块2&gt;
+程序全局变量
+函数局部变量</p> <p>2.规则1：局部变量和全局变量是不同变量
+-局部变量是函数内容的占位符，与全局变量可能重名但不同
+-函数运算结束后，局部变量被施放
+-可以使用global保留字在函数内部使用全局变量</p> <p>3.规则2：局部变量为组合数据类型且未创建，等同于全局变量</p> <p>4.使用规则
+-基本数据类型，无论是否重名，局部变量与全局变量不同
+-可以通过global保留字在函数内容声明全局变量
+-组合数据类型，如果局部变量未真实创建，则是全局变量</p> <h2 id="lambda函数"><a href="#lambda函数" aria-hidden="true" class="header-anchor">#</a> lambda函数</h2> <p>1.lambda函数
+lambda函数返回函数名作为结果
+-lambda函数是一种匿名行数，即没有名字的函数
+-使用lambda保留字定义，函数名是返回结果
+-lambda函数用于定义简单的、能够在一行内表达的函数</p> <p>2.lambda函数
+&lt;函数名&gt;=lambda&lt;参数&gt;:&lt;表达式&gt;
+等价于
+def &lt;函数名&gt;(&lt;参数&gt;)：
+&lt;函数体&gt;
+return &lt;返回值&gt;</p> <p>3.lambda函数</p> <blockquote><blockquote><blockquote><p>f=lambda x,y=x+y
+f(10,15)
+25</p></blockquote></blockquote> <blockquote><blockquote><p>f=lambda:&quot;lambda函数&quot;
+print(f())
+lambda函数</p></blockquote></blockquote></blockquote> <p>4.谨慎使用lambda函数
+-lambda函数主要用作一些特定函数或方法的参数
+-lambda函数有一些固定使用方式，建议逐步掌握
+-一般情况，建议使用def定义的普通函数</p> <h1 id="七段数码管绘制"><a href="#七段数码管绘制" aria-hidden="true" class="header-anchor">#</a> 七段数码管绘制</h1> <h2 id="七段数码管绘制问题分析"><a href="#七段数码管绘制问题分析" aria-hidden="true" class="header-anchor">#</a> 七段数码管绘制问题分析</h2> <p>1.七段数码管
+由7段小的数码管构成的数字，选择不同的数码管的亮或灭，可以形成0-9，a-z不同的数字和字母的组合</p> <p>2.七段数码管绘制
+-需求：用程序绘制七段数码管，似乎很有趣
+-该怎么做呢？
+turtle绘图体系-&gt;七段数码管 绘制</p> <h2 id="七段数码管绘制实例讲解"><a href="#七段数码管绘制实例讲解" aria-hidden="true" class="header-anchor">#</a> 七段数码管绘制实例讲解</h2> <p>1.基本思路
+-步骤1：绘制单个数字对应的数码管
+-步骤2：获得一串数字，绘制对应的数码管
+-步骤3：获得当前系统时间，绘制对应的数码管</p> <p>2.步骤1：绘制单个数码管
+-七段数码管由7个基本线条组成
+-七段数码管可以有固定顺序
+-不同数字显示不同的线条</p> <p>3.步骤3：获取系统时间，绘制七段数码管
+-使用time库获得当前系统时间
+-增加年月日标记
+-年月日颜色不同</p> <p>4.七段数码管绘制</p> <div class="language- extra-class"><pre class="language-text"><code>import turtle
+def drawGap(): #绘制七段数码管之间线条间隔
+	turtle.penup()
+	turtle.fd(5)
+def drawLine(draw):  #绘制单段数码管
+	drawGap()
+	turtle.pendown() if draw else turtle.penup()
+	turtle.fd(40)
+	drawGap()
+	turtle.right(90)
+def drawDight(dight): #根据数字绘制七段数码管
+	drawLine(True) if dight in [2,3,4,5,6,8,9] else drawLine(False)
+	drawLine(True) if dight in [0,1,3,4,5,6,7,8,9] else drawLine(False)
+	drawLine(True) if dight in [0,2,3,5,6,8,9] else drawLine(False)
+	drawLine(True) if dight in [0,2,6,8] else drawLine(False)
+	turtle.left(90)
+	drawLine(True) if dight in [0,4,5,6,8,9] else drawLine(False)
+	drawLine(True) if dight in [0,2,3,5,6,7,8,9] else drawLine(False)
+	drawLine(True) if dight in [0,1,2,3,4,7,8,9] else drawLine(False)
+	turtle.left(180)
+	turtle.penup() #会绘制后续数字确定位置
+	turtle.fd(20) #会绘制后续数字确定位置
+def drawDate(date): #date为日期，格式为&quot;%Y-%m=%d+&quot;
+	turtle.pencolor(&quot;red&quot;)
+	for i in date:
+		if i == &quot;-&quot;:
+			turtle.write('年',font=(&quot;Arial&quot;,18,&quot;normal&quot;))
+			turtle.pencolor(&quot;green&quot;)
+			turtle.fd(40)
+		elif i == &quot;=&quot;:
+			turtle.write('月',font=('Arial',18,'normal'))
+			turtle.pencolor(&quot;blue&quot;)
+			turtle.fd(40)
+		elif i == &quot;+&quot;:
+			turtle.write('日',font=('Arial',18,'normal'))
+		else:
+			drawDigit(eval(i)) #通过eval()函数将字符变成整数
+def main():
+	turtle.setup(800,350,200,200)
+	turtle.penup()
+	turtle.fd(-300)
+	turtle.pensize(5)
+	drawDate(time.strftime('%Y-%m=%d+',time.gmtime()))
+	turtle.hideturtle()
+	turtle.done()
+main()
+</code></pre></div><h2 id="七段数码管绘制举一反三"><a href="#七段数码管绘制举一反三" aria-hidden="true" class="header-anchor">#</a> 七段数码管绘制举一反三</h2> <p>1.举一反三
+理解方法思维
+-模块化思维：确定模块接口，封装功能
+-规则化思维：抽象过程为规则，计算机自动执行
+-化繁为简：将大功能变为小功能组合，分而治之</p> <p>2.应用问题的扩展
+-绘制带小数点的七段数码管
+-带刷新的时间倒计时效果
+-绘制高级的数码管</p> <h1 id="代码复用与函数递归"><a href="#代码复用与函数递归" aria-hidden="true" class="header-anchor">#</a> 代码复用与函数递归</h1> <h2 id="代码复用与模块化设计"><a href="#代码复用与模块化设计" aria-hidden="true" class="header-anchor">#</a> 代码复用与模块化设计</h2> <p>1.代码复用
+把代码当成资源进行抽象
+-代码资源化：程序代码是一种用来表达计算的&quot;资源&quot;
+-代码抽象化：使用函数等方法对代码赋予更高级别的定义
+-代码复用：同一份代码在需要时可以被重复使用</p> <p>2.代码复用
+函数和对象是代码复用的两种主要形式
+函数：将代码命名，在代码层面建立了初步抽象
+对象：属性和方法
+<a>.<b>和<a>.<b>()
+在函数之上再次组织进行抽象</b></a></b></a></p> <p>3.模块化设计
+分而治之
+-通过函数或对象封装将程序划分为模块及模块间的表达
+-具体包括：主程序、子程序和子程序间关系
+-分而治之：一种分而治之、分层抽象、体系化的设计思想</p> <p>4.模块化设计
+紧耦合 松耦合
+-紧耦合：两个部分之间交流很多，无法独立存在
+-松耦合：两个部分之间交流较少，可以独立存在
+-模块内部紧耦合、模块之间松耦合</p> <h2 id="函数递归的理解"><a href="#函数递归的理解" aria-hidden="true" class="header-anchor">#</a> 函数递归的理解</h2> <p>1.递归的定义
+函数定义中调用函数自身的方式
+n=0,n!=1
+otherwisw,n!=n(n-1)!</p> <p>2.两个关键特征
+链条：计算过程存在递归链条
+基例：存在一个或多个不需要再次递归的实例</p> <p>3.递归的定义
+类似数学归纳法
+-证明当n取第一个值n0时命题成立
+-假设当nk时命题成立，证明当n=nk+1时命题也成立
+-递归是数学归纳法思维的编程体现</p> <h2 id="函数递归的调用过程"><a href="#函数递归的调用过程" aria-hidden="true" class="header-anchor">#</a> 函数递归的调用过程</h2> <p>1.递归的实现
+def fact(n):
+if n==0:
+return 1
+else:
+return n*fact(n-1)</p> <p>2.函数+分支语句
+-递归本身是一个函数，需要函数定义方式描述
+-函数内部，采用分支语句对输入参数进行判断
+-基例和链条，分别编写对应代码</p> <h2 id="函数递归实例讲解"><a href="#函数递归实例讲解" aria-hidden="true" class="header-anchor">#</a> 函数递归实例讲解</h2> <p>1.字符串反转
+将字符串s反转后输出</p> <blockquote><blockquote><blockquote><p>s[::-1]</p></blockquote></blockquote></blockquote> <div class="language- extra-class"><pre class="language-text"><code>def rvs(s):
+	if s=&quot;&quot;:
+		return s
+	else:
+		return rvs(s[1:])+s[0]
+</code></pre></div><p>2.斐波那契数列
+F(n)=F(n-1)+F(n-2)</p> <div class="language- extra-class"><pre class="language-text"><code>def f(n):
+	if n==1 or n==2:
+		return 1
+	else:
+		return f(n-1)+f(n-2)
+</code></pre></div><p>3.汉诺塔</p> <div class="language- extra-class"><pre class="language-text"><code>count=0
+def hanoi(n,src,dst,mid):
+	global count
+	if n==1:
+		print('{}:{}-&gt;{}'.format(1,src,dst))
+		count+=1
+	else:
+		hanoi(n-1,src,mid,dst)
+		print('{}:{}-&gt;{}'.format(n,src,dst))
+		count+=1
+		hanoi(n-1,mid,dst,src)
+</code></pre></div><h1 id="模块4-pyinstaller库的使用"><a href="#模块4-pyinstaller库的使用" aria-hidden="true" class="header-anchor">#</a> 模块4 PyInstaller库的使用</h1> <h2 id="模块4-pyinstaller库基本介绍"><a href="#模块4-pyinstaller库基本介绍" aria-hidden="true" class="header-anchor">#</a> 模块4 PyInstaller库基本介绍</h2> <p>1.PyInstaller库概述
+将.py源代码转换成无需源代码的可执行文件
+-.py文件-&gt;PyInstaller-&gt;-Windows(exe文件)-Linux-Mac OS X</p> <p>2.PyInstaller库概述
+-官方网站：http://www.pyinstaller.org
+-第三方库：使用前需要额外安装
+-安装第三方库需要使用pip工具</p> <p>3.PyInstaller库的安装
+(cmd命令行)pip install pyinstaller</p> <h2 id="模块4-pyinstaller库使用说明"><a href="#模块4-pyinstaller库使用说明" aria-hidden="true" class="header-anchor">#</a> 模块4 PyInstaller库使用说明</h2> <p>1.简单的使用
+(cmd命令行)pyinstall -F &lt;文件名.py&gt;
+缓冲文件夹可删除：<strong>pycache</strong>、build
+dist文件下，可执行文件.exe</p> <p>2.PyInstaller库常用参数
+参数及描述
+-h：查看帮助
+--clean：清理打包过程中的临时文件
+-D,--onedir：默认值，生成dist文件
+-F,--onefile：在dist文件夹中只生成独立的打包文件
+-i &lt;图标文件名.ico&gt;指定打包程序使用的图标(icon)文件
+pyinstaller -i curve.ico -F SevenDigitsDrawV2.py</p> <h1 id="科赫雪花小包裹"><a href="#科赫雪花小包裹" aria-hidden="true" class="header-anchor">#</a> 科赫雪花小包裹</h1> <h2 id="科赫雪花小包裹问题分析"><a href="#科赫雪花小包裹问题分析" aria-hidden="true" class="header-anchor">#</a> 科赫雪花小包裹问题分析</h2> <p>1.科赫雪花
+高大上的分形几何
+-分形几何是一种迭代的几何图形，广泛存在于自然界中</p> <p>2.科赫雪花
+科赫曲线，也叫雪花曲线</p> <p>3.科赫雪花绘制
+用Python绘制科赫曲线，去1/3长，60度
+0阶科赫曲线、1阶科赫曲线、2阶科赫曲线、5阶科赫曲线
+每分割一次为一阶</p> <h2 id="科赫雪花小包裹实例讲解"><a href="#科赫雪花小包裹实例讲解" aria-hidden="true" class="header-anchor">#</a> 科赫雪花小包裹实例讲解</h2> <p>1.科赫雪花小包裹
+科赫曲线的绘制
+-递归思想：函数+分支
+-递归链条：线段的组合
+-递归基例：初试线段
+科赫曲线的绘制-&gt;科赫雪花的绘制</p> <div class="language- extra-class"><pre class="language-text"><code>#KochDrawV1.py
+import turtle
+def koch(size,n):
+	if n==0:
+		turtle.fd(size)
+	else:
+		for angle in [0,60,-120,60]:
+			turtle.left(angle)
+			koch(size/3,n-1)
+def main():
+	turtle.setup(600,600)
+	turtle.penup()
+	turtle.goto(-200,100)
+	turtle.pendown()
+	turtle.pensize(2)
+	level=3  #3阶科赫曲线
+	koch(400,level)
+	turtle.right(120)
+	koch(400,level)
+	turtle.right(120)
+	koch(400,level)
+	turtle.hideturtle()
+main()
+</code></pre></div><h2 id="科赫雪花小包裹举一反三"><a href="#科赫雪花小包裹举一反三" aria-hidden="true" class="header-anchor">#</a> 科赫雪花小包裹举一反三</h2> <p>1.举一反三
+绘制条件的扩展
+-修改分形几何绘制阶数
+-修改科赫曲线的基本定义及旋转角度
+-修改绘制科赫雪花的基础框架图形</p> <p>2.举一反三
+分形几何千千万
+-康托尔集、谢尔宾斯基三角形、门格海绵...
+-龙形曲线、空间填充曲线、科赫曲线...
+-函数递归的深入应用</p> <h1 id="集合类型及操作"><a href="#集合类型及操作" aria-hidden="true" class="header-anchor">#</a> 集合类型及操作</h1> <h2 id="集合类型定义"><a href="#集合类型定义" aria-hidden="true" class="header-anchor">#</a> 集合类型定义</h2> <p>1.集合类型的定义
+集合是多个元素的无序组合
+-集合类型与数学中的集合概念一致
+-集合元素之间无序，每个元素唯一，不存在相同元素
+-集合元素不可更改，不能是可变数据类型</p> <p>2.集合类型的定义
+集合是多个元素的无序组合
+-集合用大括号{}表示，元素间用逗号分割
+-建立集合类型用{}或set{}
+-建立空集合类型，必须使用set{}</p> <p>3.集合类型的定义</p> <blockquote><blockquote><blockquote><p>A={'python',123,(&quot;python,123&quot;)} #使用{}建立集合
+{'python',123,(&quot;python,123&quot;)}</p></blockquote></blockquote> <blockquote><blockquote><p>B=set('pypy123') #使用set()建立集合
+{'1','p','2','3','y'}</p></blockquote></blockquote> <blockquote><blockquote><p>C={'python',123,'python',123}
+{'python',123}</p></blockquote></blockquote></blockquote> <p>4.重点
+-集合用大括号{}表示，元素箭用逗号分隔
+-集合中每个元素唯一，不存在相同元素
+-集合元素之间无序</p> <h2 id="集合操作符"><a href="#集合操作符" aria-hidden="true" class="header-anchor">#</a> 集合操作符</h2> <p>1.集合间操作
+S|T 并，返回一个新集合，包括在集合S和T中所有元素
+S-T 差，返回一个新集合，包括在集合S但不在T中的元素
+S&amp;T 交，返回一个新集合，包括同时在集合S和T中元素
+S^T 补，返回一个新集合，包括集合S和T中非相同元素
+S&lt;=T或S&lt;T，返回True或Flase，判断S和T的子集关系
+S&gt;=T或S&gt;T，返回True或Flase，判断S和T的包含关系</p> <p>2.增强操作符
+S|=T 并，更新集合S，包括在集合S和T中所有元素
+S-=T 差，更新集合S，包括在集合S但不在T中的元素
+S&amp;=T 交，更新集合S，包括同时在集合S和T中元素
+S^=T 补，更新集合S，包括集合S和T中非相同元素</p> <p>3.集合类型的定义</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;A={'p','y',123}
+&gt;&gt;&gt;B=set(&quot;pypy123&quot;)
+&gt;&gt;&gt;A-B
+{123}
+&gt;&gt;&gt;B-A
+{'1','3','2'}
+&gt;&gt;&gt;A&amp;B
+{'p','y'}
+&gt;&gt;&gt;A|B
+{'p','y','1','2','3',123}
+&gt;&gt;&gt;A^B
+{'1','3',123,'3'}
+</code></pre></div><h2 id="集合处理方法"><a href="#集合处理方法" aria-hidden="true" class="header-anchor">#</a> 集合处理方法</h2> <p>1.集合处理方法
+操作函数及方法描述
+S.add(x):如果x不在集合S中，将x增加到S
+S.discard(x):移除S中元素x,如果x不在集合S中,不报错
+S.remove(x):移除S中元素x,如果x不在集合S中，产生KeyError异常
+S.clear():移除S中所有元素
+S.pop():随机抽取S的一个元素，更新S，若S为空产生KeyError异常
+S.copy():返回集合S的一个副本
+len(S):返回集合S的元素个数
+x in S:判断S中元素x，x在集合S中，返回True，否则返回False
+x not in S:判断S中元素x，x不在集合S中，返回True，否则返回False
+set(x):将其他类型变量x转变为集合类型</p> <p>2.集合处理方法</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;A={'p','y',123}
+&gt;&gt;&gt;for item in A:
+	print(item,end='')
+p123y
+&gt;&gt;&gt;A
+{'p',123,'y'}
+</code></pre></div><p>3.集合处理方法</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;try:
+	while True:
+		print(A.pop(),end=&quot;&quot;)
+except:
+	pass
+p123y
+&gt;&gt;&gt;A
+set()
+</code></pre></div><h2 id="集合类型应用场景"><a href="#集合类型应用场景" aria-hidden="true" class="header-anchor">#</a> 集合类型应用场景</h2> <p>1.集合类型应用场景
+包含关系比较</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;&quot;p&quot; in {'p','y',123}
+True
+&gt;&gt;&gt;{'p','y'}&gt;={'p','y',123}
+False
+</code></pre></div><p>2.集合类型应用场景
+数据去重：集合类型所有元素无重复</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;ls=['p','p','y','y',123]
+&gt;&gt;&gt;s=set(ls) # 利用了集合无重复元素的特点
+{'p','y',123}
+&gt;&gt;&gt;lt=list(s) # 将集合转换为列表
+['p','y',123]
+</code></pre></div><h1 id="序列类型及操作"><a href="#序列类型及操作" aria-hidden="true" class="header-anchor">#</a> 序列类型及操作</h1> <h2 id="序列类型定义"><a href="#序列类型定义" aria-hidden="true" class="header-anchor">#</a> 序列类型定义</h2> <p>1.序列类型定义
+序列是具有先后关系的一组元素
+-序列是一维元素向量，元素类型可以不同
+-类似数学元素序列：S0,S1,...,Sn-1
+-元素间由序号引导，通过下标访问序列的特定元素</p> <p>2.序列类型定义
+序列是一个基类类型
+序列类型：字符串类型、元组类型、列表类型</p> <p>3.序列类型定义
+序号的定义：正向递增序号、反向递减序号</p> <h2 id="序列处理函数及方法"><a href="#序列处理函数及方法" aria-hidden="true" class="header-anchor">#</a> 序列处理函数及方法</h2> <p>1.序列类型通用操作符
+6个操作符及应用描述
+x in s:如果x是序列s的元素，返回True，否则返回False
+x not in s:如果x是序列s的元素，返回False，否则返回True
+s+t:连接两个序列s和t
+s<em>n或n</em>s:将序列s复制n次
+s[i]:索引，返回s中的第i个元素，i是序列的序号
+s[i:j]或s[i:j:k]切片，返回序列s中第i到第j以k为步长的元素子序列</p> <p>2.序列类型操作实例</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;ls=['python',123,'.io']
+&gt;&gt;&gt;ls[::-1]
+[&quot;.io&quot;,123,&quot;python&quot;]
+&gt;&gt;&gt;s=&quot;python123.io&quot;
+&gt;&gt;&gt;s[::-1]
+&quot;oi.321nohtyp&quot;
+</code></pre></div><p>3.序列类型通用函数和方法
+5个函数和方法描述
+len(s):返回序列s的长度
+min(s):返回序列s的最小元素，s中元素需要可比较
+max(s):返回序列s的最大元素，s中元素需要可比较
+s.index(x)或s.index(x,i,j):返回序列s从i开始到j位置中第一次出现元素x的位置
+s.count(x):返回序列s中出现x的总次数</p> <p>4.序列类型操作实例</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;ls=['python',123,'io']
+&gt;&gt;&gt;len(ls)
+3
+&gt;&gt;&gt;s=&quot;python123.io&quot;
+&gt;&gt;&gt;max(s)
+'y'
+</code></pre></div><h2 id="元组类型及操作"><a href="#元组类型及操作" aria-hidden="true" class="header-anchor">#</a> 元组类型及操作</h2> <p>1.元组类型定义
+元组是序列类型的一种扩展
+-元组是一种序列类型，一旦创建就不能被修改
+-使用小括号()或tuple()创建，元素间用逗号,分隔
+-可以使用或不使用小括号
+def func():
+return 1,2</p> <p>2.元组类型定义</p> <blockquote><blockquote><blockquote><p>creature=&quot;cat&quot;,'dog','tiger','human'
+creature
+('cat','dog','tiger','human')</p></blockquote></blockquote> <blockquote><blockquote><p>color=(0x001100,'blue',creature)
+color
+(4352,'blue',(&quot;cat&quot;,'dog','tiger','human'))</p></blockquote></blockquote></blockquote> <p>3.元组类型操作
+元组继承序列类型的全部通用操作
+-元组继承了序列类型的全部通用操作
+-元组因为创建后不能操作，因此没有特殊操作
+-使用或不使用小括号</p> <p>4.元组类型操作</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;creature=&quot;cat&quot;,'dog','tiger','human'
+&gt;&gt;&gt;creature[::-1]
+('human','tiger','dog','cat')
+&gt;&gt;&gt;color=(0x001100,'blue',creature)
+&gt;&gt;&gt;color[-1][2]
+'tiger'
+</code></pre></div><h2 id="列表类型及操作"><a href="#列表类型及操作" aria-hidden="true" class="header-anchor">#</a> 列表类型及操作</h2> <p>1.列表类型定义
+列表是序列类型的一种扩展，十分常用
+-列表是一种序列类型，创建后可以随意被修改
+-使用方括号[]或list()创建，元素间用逗号,分隔</p> <p>2.列表类型定义</p> <blockquote><blockquote><blockquote><p>ls=['cat','dog','tiger',1024]
+ls
+['cat','dog','tiger',1024]</p></blockquote></blockquote> <blockquote><blockquote><p>lt=ls
+lt
+['cat','dog','tiger',1024]
+方括号[]真正创建一个列表，赋值仅传递引用</p></blockquote></blockquote></blockquote> <p>3.列表类型操作函数和方法
+函数和方法描述
+ls[i]=x,替换列表ls第i元素为x
+ls[i:j:k]=lt,用列表lt替换ls切片后所对应元素子列表
+del ls[i],删除列表ls中第i元素
+del ls[i:j:k],删除列表ls中第i到第j以k为步长的元素
+ls += lt,更新列表ls,将列表lt元素增加到列表ls中
+ls *=n,更新列表ls，其元素重复n次</p> <p>4.列表类型操作</p> <blockquote><blockquote><blockquote><p>ls=['cat','dog','tiger',1024]
+ls[1:2]=[1,2,3,4]
+['cat',1,2,3,4,'tiger',1024]</p></blockquote></blockquote> <blockquote><blockquote><p>del ls[::3]
+[1,2,4,'tiger']</p></blockquote></blockquote> <blockquote><blockquote><p>ls*2
+[1,2,4,'tiger',1,2,4,'tiger']</p></blockquote></blockquote></blockquote> <p>5.列表类型操作函数和方法
+函数或方法描述
+ls.append(x):在列表ls最后增加一个元素x
+ls.clear():删除列表ls种所有元素
+ls.copy:生成一个新列表，赋值ls中所有元素
+ls.insert(i,x):在列表ls的第i位置增加元素x
+ls.pop(i):将列表ls中第i位置元素取出并删除该元素
+ls.remove(x):将列表ls中出现的第一个元素x删除
+ls.reverse():将列表ls中的元素反转</p> <p>6.列表类型操作</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;&gt;ls=['cat','dog','tiger',1024]
+&gt;&gt;&gt;ls.append(1234)
+['cat','dog','tiger',1024,1234]
+&gt;&gt;&gt;ls.insert(3,'human')
+['cat','dog','tiger','human',1024,1234]
+&gt;&gt;&gt;ls.reverse()
+[1234,1024,'human','tiger','dog','cat']
+</code></pre></div><h2 id="序列类型应用场景"><a href="#序列类型应用场景" aria-hidden="true" class="header-anchor">#</a> 序列类型应用场景</h2> <p>1.序列类型应用场景：数据展示
+-元组用于元素不改变的应用场景，更多用于固定搭配场景
+-列表更加灵活，它是最常用的序列类型
+-最主要作用；表示一组有序数据，进而操作它们</p> <p>2.元素遍历
+for item in ls:
+&lt;语句块&gt;
+for item in tp:
+&lt;语句块&gt;</p> <p>3.数据类型应用场景
+数据保护
+-如果不希望数据被程序所改变，转换为元组类型</p> <blockquote><blockquote><blockquote><p>ls=['cat','dog','tiger',1024]
+lt=tuple(ls)
+lt
+('cat','dog','tiger',1024)</p></blockquote></blockquote></blockquote> <h1 id="基本统计值计算"><a href="#基本统计值计算" aria-hidden="true" class="header-anchor">#</a> 基本统计值计算</h1> <h2 id="基本统计值计算问题分析"><a href="#基本统计值计算问题分析" aria-hidden="true" class="header-anchor">#</a> 基本统计值计算问题分析</h2> <p>1.问题分析
+基本统计值
+-需求：给出一组数，对它们有个概要理解
+-该怎么做呢？
+总个数、求和、平均数、方差、中位数</p> <p>2.问题分析
+基本统计值
+-总个数：len()
+-求和：for...in
+-平均值：求和/总个数
+-方差：各数据与平均数差的平方的和的平均数，然后开平方
+-中位数：排序，然后...奇数找中间1个，偶数找中间2个取平均</p> <h2 id="基本统计值计算实例讲解"><a href="#基本统计值计算实例讲解" aria-hidden="true" class="header-anchor">#</a> 基本统计值计算实例讲解</h2> <p>1.基本统计值计算</p> <div class="language- extra-class"><pre class="language-text"><code>#CalStatisticsV1.py
+def getNum(): #获取用户不定长度的输入
+	nums=[]
+	iNumStr=input(&quot;请输入数字(回车退出):&quot;)
+	while iNumStr != &quot;&quot;:
+		nums.append(eval(iNumStr))
+		iNumStr=input(&quot;请输入数字(回车退出):&quot;)
+	return nums
+def mean(numbers): #计算平均值
+	s=0.0
+	for num in numbers:
+		s=s+num
+	return s/len(numbers)
+def dev(numbers,mean): #就算方差
+	sdev=0.0
+	for num in numbers:
+		sdev=sdev+(num-mean)**2
+	return pow(sdev/(len(numbers)-1),0.5)
+def median(numbers): #计算中位数
+	numbers=sorted(numbers)
+	size=len(numbers)
+	if size%2==0:
+		med=(numbers[size//2-1]+numbers[size//2])/2
+	else:
+		med=numbers[size//2]
+	return med
+n=getNum()
+m=mean(n)
+print(&quot;平均值:{},方差:{:.2},中位数:{}.&quot;.format(m,dev(n,m),median(n)))
+</code></pre></div><h2 id="基本统计值计算举一反三"><a href="#基本统计值计算举一反三" aria-hidden="true" class="header-anchor">#</a> 基本统计值计算举一反三</h2> <p>1.举一反三
+技术能力扩展
+-获取多个数据：从控制台获取多个不确定数据的方法
+-分隔多个函数：模块化设计方法
+-充分利用函数：充分利用Python提供的内置函数</p> <h1 id="字典类型及操作"><a href="#字典类型及操作" aria-hidden="true" class="header-anchor">#</a> 字典类型及操作</h1> <h2 id="字典类型定义"><a href="#字典类型定义" aria-hidden="true" class="header-anchor">#</a> 字典类型定义</h2> <p>1.字典类型定义
+理解“映射”
+-映射是一种键(索引)和值(数据)的对应
+内部颜色：蓝色
+外部颜色：红色
+&quot;streetAddr&quot;:&quot;中关村南大街5号&quot;
+&quot;city&quot;:&quot;北京市&quot;
+&quot;zipcode&quot;:&quot;100081&quot;</p> <p>2.字典类型定义
+-理解“映射”
+-映射是一种键(索引)和值(数据)的对应
+字典类型是数据组织和表达的一种形态
+['python',123,'.io']
+序列类型由0..N整数作为数据的默认索引
+内部颜色:蓝色
+外部颜色:红色
+映射类型则由用户为数据定义索引</p> <p>3.字典类型定义
+字典类型是“映射”的体现
+-键值对：键是数据索引的扩展
+-字典是键值对的集合，键值对之间无序
+-采用大括号{}和dict()创建，键值对用冒号:表示
+{&lt;键1&gt;:&lt;值1&gt;,&lt;键2&gt;:&lt;值2&gt;,...,&lt;键n&gt;:&lt;值n&gt;}</p> <p>4.字典类型的用法
+在字典变量中，通过键获得值
+&lt;字典变量&gt;={&lt;键1&gt;:&lt;值1&gt;,...&lt;键n&gt;:&lt;值n&gt;}
+&lt;值&gt;=&lt;字典变量&gt;[&lt;键&gt;]
+&lt;字典变量&gt;[&lt;键&gt;]=&lt;值&gt;
+[]用来向字典变量中索引或增加元素</p> <p>5.字典类型定义和使用</p> <blockquote><blockquote><blockquote><p>d={'中国':&quot;北京&quot;,&quot;美国&quot;:&quot;华盛顿&quot;,&quot;法国&quot;:&quot;巴黎&quot;}
+d
+{'中国':&quot;北京&quot;,&quot;美国&quot;:&quot;华盛顿&quot;,&quot;法国&quot;:&quot;巴黎&quot;}</p></blockquote></blockquote> <blockquote><blockquote><p>d[&quot;中国&quot;]
+&quot;北京&quot;</p></blockquote></blockquote> <blockquote><blockquote><p>de={};type(de)
+&lt;class 'dict'&gt;
+type(x) # 返回变量x的类型</p></blockquote></blockquote></blockquote> <h2 id="字典处理函数及方法"><a href="#字典处理函数及方法" aria-hidden="true" class="header-anchor">#</a> 字典处理函数及方法</h2> <p>1.字典类型操作函数和方法
+函数和方法描述
+del d[k]:删除字典d中键k对应的数据值
+k in d:判断键k是否在字典d中，如果在返回True，否则False
+d.keys():返回字典d中所有的键信息
+d.values():返回字典d中所有的值信息
+d.items():返回字典d中所有的键值对信息</p> <p>2.字典类型操作</p> <blockquote><blockquote><blockquote><p>d={&quot;中国&quot;:&quot;北京&quot;,&quot;美国&quot;:&quot;华盛顿&quot;,&quot;法国&quot;:&quot;巴黎&quot;}
+&quot;中国&quot; in d
+True</p></blockquote></blockquote> <blockquote><blockquote><p>d.keys()
+dict_keys([&quot;中国&quot;,'美国','法国'])</p></blockquote></blockquote> <blockquote><blockquote><p>d.values()
+dict_values(['北京','华盛顿','巴黎'])</p></blockquote></blockquote></blockquote> <p>3.字典类型操作函数和方法
+函数或方法描述
+d.get(k,<default>):键k存在，则返回相应值，不在则返回<default>值
+d.pop(k,<default>):键k存在，则取出相应值，不在则返回<default>值
+d.popitem():随机从字典d中取出一个键值对，以元组形式返回
+d.clear():删除所有的键值对
+len(d):返回字典d中元素的个数</default></default></default></default></p> <p>4.字典类型操作</p> <blockquote><blockquote><blockquote><p>d={&quot;中国&quot;:&quot;北京&quot;,&quot;美国&quot;:&quot;华盛顿&quot;,&quot;法国&quot;:&quot;巴黎&quot;}
+d.get(&quot;中国&quot;,&quot;伊斯兰堡&quot;)
+'北京'</p></blockquote></blockquote> <blockquote><blockquote><p>d.get(&quot;巴基斯坦&quot;,&quot;伊斯兰堡&quot;)
+&quot;伊斯兰堡&quot;</p></blockquote></blockquote> <blockquote><blockquote><p>d.popitem()
+(&quot;中国&quot;,'北京')</p></blockquote></blockquote></blockquote> <h2 id="字典类型应用场景"><a href="#字典类型应用场景" aria-hidden="true" class="header-anchor">#</a> 字典类型应用场景</h2> <p>1.字典类型应用场景
+映射的表达
+-映射无处不在，键值对无处不在
+-例如:统计数据出现的次数，数据是键，次数是值
+-最主要作用：表达键值对数据，进而操作它们</p> <p>2.字典类型应用场景
+元素遍历
+for k in d:
+print(d[k]+&quot;:&quot;+k) #获得所有键和值</p> <h1 id="模块5-jieba库的使用"><a href="#模块5-jieba库的使用" aria-hidden="true" class="header-anchor">#</a> 模块5 jieba库的使用</h1> <h2 id="jieba库基本介绍"><a href="#jieba库基本介绍" aria-hidden="true" class="header-anchor">#</a> jieba库基本介绍</h2> <p>1.jieba库概述
+jieba库是优秀的中文分词第三方库
+-中文文本需要通过分词获得单个的词语
+-jieba是优秀的中文分词第三方库，需要额外安装
+-jieba库提供三种分词模式，最简单最需掌握一个函数</p> <p>2.jieba库的安装
+(cmd命令行)pip install jieba</p> <p>3.jieba分词的原理
+Jieba分词依靠中文词库
+-利用一个中文词库，确定汉字之间的关联概率
+-汉字间概率大的组成词组，形成分词结果
+-除了分词，用户还可以添加自定义的词组</p> <h2 id="jieba库使用说明"><a href="#jieba库使用说明" aria-hidden="true" class="header-anchor">#</a> jieba库使用说明</h2> <p>1.jieba分词的三种模式
+精确模式、全模式、搜索引擎模式
+-精确模式：把文本精确的切分开，不存在冗余单词
+-全模式：把文本中所有可能的词语都扫描出来，有冗余
+-搜索引擎模式：在精确模式基础上，对长词再次切分</p> <p>2.jieba库常用函数
+函数及描述
+jieba.lcut(s):精确模式，返回一个列表类型的分词结果</p> <blockquote><blockquote><blockquote><p>jieba.lcut(&quot;中国是一个伟大的国家&quot;)
+[&quot;中国&quot;,&quot;是&quot;,&quot;一个&quot;,&quot;伟大&quot;,&quot;的&quot;,&quot;国家&quot;]
+jieba.lcut(s,cut_all=True):全模式，返回一个列表类型的分词结果，存在冗余</p></blockquote></blockquote> <blockquote><blockquote><p>jieba.lcut(&quot;中国是一个伟大的国家&quot;,cut_all=True)
+[&quot;中国&quot;,&quot;国是&quot;,&quot;一个&quot;,&quot;伟大&quot;,&quot;的&quot;,&quot;国家&quot;]</p></blockquote></blockquote> <blockquote><blockquote><p>jieba.lcut_for_search(s):搜索引擎模式，返回一个列表类型的分词结果，存在冗余
+jieba.lcut_for_search(&quot;中华人民共和国是伟大的&quot;)
+[&quot;中华&quot;,&quot;华人&quot;,&quot;人民&quot;,&quot;共和&quot;,&quot;共和国&quot;,&quot;中华人民共和国&quot;,&quot;是&quot;,&quot;伟大&quot;,&quot;的&quot;]</p></blockquote></blockquote> <blockquote><blockquote><p>jieba.add_word(w):向分词字典增加新词w
+jieba.add_word(&quot;蟒蛇语言&quot;)</p></blockquote></blockquote></blockquote> <h1 id="文本词频统计"><a href="#文本词频统计" aria-hidden="true" class="header-anchor">#</a> 文本词频统计</h1> <h2 id="文本词频统计问题分析"><a href="#文本词频统计问题分析" aria-hidden="true" class="header-anchor">#</a> 文本词频统计问题分析</h2> <p>1.问题分析
+文字词频统计
+-需求：一篇文章，出现了哪些词？哪些词出现得最多？
+-该怎么做呢？
+英文文本、中文文本</p> <p>2.问题分析
+文字词频统计
+-英文文本：Hamet 分析词频
+-中文文本：《三国演义》 分析人物</p> <h2 id="hamlet英文词频统计实例讲解"><a href="#hamlet英文词频统计实例讲解" aria-hidden="true" class="header-anchor">#</a> Hamlet英文词频统计实例讲解</h2> <p>1.哈姆雷特(HAMLET)</p> <div class="language- extra-class"><pre class="language-text"><code>#CalHamletV1.py
+def getText():
+	txt=open('hamlet.txt','r').read()
+	txt=txt.lower()
+	for ch in '!&quot;#$%&amp;()*+,-/:;&lt;=&gt;?@[\\]^_`{|}~'
+		txt=txt.replace(ch,&quot; &quot;)
+	return txt
+hamletTxt=getText()
+words=hamletTxt.split()
+counts={}
+for word in words:
+	counts[word]=count.get(word,0)+1
+items=list(counts.items())
+items.sort(key=lambda x:x[1],reverse=True)
+for i in range(10):
+	word,count=items[i]
+	print(&quot;{0:&lt;10}{1:&gt;5}&quot;.format(word,count))
+
+</code></pre></div><h2 id="《三国演义》人物出场统计实例讲解"><a href="#《三国演义》人物出场统计实例讲解" aria-hidden="true" class="header-anchor">#</a> 《三国演义》人物出场统计实例讲解</h2> <p>1.《三国演义》人物出场统计</p> <div class="language- extra-class"><pre class="language-text"><code>#CalThreeKingdomsV1.py
+import jieba
+txt=open(&quot;threekingdoms.txt&quot;,'r',encoding='utf-8').read()
+excludes={&quot;将军&quot;,'却说','荆州','二人','不可'}
+words=jieba.lcut(txt)
+count={}
+for word in words:
+	if len(word)==1:
+		continue
+	elif word ==&quot;诸葛亮&quot; or word ==&quot;孔明曰&quot;：
+		reword=&quot;孔明&quot;
+	elif word ==&quot;关公&quot; or word =&quot;云长&quot;：
+		reword=&quot;关羽&quot;
+	else:
+		reword=word
+	count[reword]=count.get(reword,0)+1
+for word in excludes:
+	del counts[word]
+items=list(counts.items())
+items.sort(key=lambda x:x[1],reverse=True)
+for i in range(15):
+	word,count=items[i]
+	print(&quot;{0:&lt;10}{1:&gt;5}&quot;.format(word,count))
+</code></pre></div><h2 id="文本词频统计举一反三"><a href="#文本词频统计举一反三" aria-hidden="true" class="header-anchor">#</a> 文本词频统计举一反三</h2> <p>1.举一反三
+应用问题的扩展
+-《红楼梦》、《西游记》、《水浒传》...
+-政府工作报告、科研论文、新闻报道...
+-进一步呢？未来还有词云...</p> <h1 id="文件的使用"><a href="#文件的使用" aria-hidden="true" class="header-anchor">#</a> 文件的使用</h1> <h2 id="文件的类型"><a href="#文件的类型" aria-hidden="true" class="header-anchor">#</a> 文件的类型</h2> <p>1.文件的理解
+文件是数据的抽象和集合
+-文件是存储在辅助存储器上的数据序列
+-文件是数据存储的一种形式
+-文件展示形态：文本文件和二进制文件</p> <p>2.文件的理解
+文本文件vs二进制文件
+-文本文件和二进制文件只是文件的展示方式
+-本质上，所有文件都是二进制形式存储
+-形式上，所有文件采用两种方式展示</p> <p>3.文本文件
+文件是数据的抽象和集合
+-由单一特定编码组成的文件，如UTF-8编码
+-由于存在编码，也被看成是存储这的长字符串
+-适用于例如：.txt文件、.py文件</p> <p>4.二进制文件
+文件是数据的抽象和集合
+-直接由比特0和1组成，没有统一字符编码
+-一般存在二进制0和1的组织结构，即文件格式
+-适用于例如：.png文件、.avi文件</p> <p>5.文本文件vs二进制文件
+f.txt文件保存：&quot;中国是个伟大的国家&quot;
+#文本形式打开文件
+tf=open(&quot;f.txt&quot;,'rt')
+print(tf.readline())
+tf.close()</p> <blockquote><blockquote><blockquote></blockquote></blockquote></blockquote> <p>中国是个伟大的国家！</p> <p>6.文本文件vs二进制文件
+f.txt文件保存：&quot;中国是个伟大的国家&quot;
+#二进制形式打开文件
+bf=open(&quot;f.txt&quot;,'rb')
+print(bf.readline())
+bf.close()</p> <blockquote><blockquote><blockquote></blockquote></blockquote></blockquote> <p>b'\xd6</p> <h2 id="文件的打开和关闭"><a href="#文件的打开和关闭" aria-hidden="true" class="header-anchor">#</a> 文件的打开和关闭</h2> <p>1.文件的打开关闭
+文件的存储状态-文件的占用状态
+a=open(,)-a.close()
+在占用状态中，一个程序可以唯一地、排它地对文件进行处理
+读入
+a.read(size)
+a.readline(size)
+a.readlines(hint)
+输出
+a.write(s)
+a.writrlines(lines)
+a.seek(offset)</p> <p>2.文件的打开
+&lt;变量名&gt;=open(&lt;文件名&gt;,&lt;打开模式&gt;)
+文件句柄
+文件路径和名称，源文件同目录可省路径
+D:\PYE\f.txt
+-&gt;&quot;D:\PYER\f.txt&quot;
+-&gt;&quot;D:/PYE/f.txt&quot;
+-&gt;&quot;./PYE/f.txt&quot;
+-&gt;&quot;f.txt&quot;
+文本or二进制，读or写</p> <p>3.打开模式
+文件的打开模式及描述
+'r':只读模式，默认值，如果文件不存在，返回FileNotFoundError
+'w':覆盖写模式，文件不存在则创建，存在则完全覆盖
+'x':创建写模式，文件不存在则创建，存在则返回FileExistsError
+'a':追加写模式，文件不存在则创建，存在则在文件最后追加内容
+'b':二进制文件模式
+'t':文本文件模式，默认值
+'+':与r/w/x/a一同使用，在原功能基础上增加同时读写功能</p> <p>4.打开模式
+f=open('f.txt')-文本形式、只读模式、默认值
+f=open('f.txt','rt')-文本形式、只读模式、同默认值
+f=open('f.txt','w')-文本形式、覆盖写模式
+f=open('f.txt','a+')-文本形式、追加写模式+ 读文件
+f=open('f.txt','x')-文本形式、创建写模式
+f=open('f.txt','b')-二进制形式、只读模式
+f=open('f.txt','wb')-二进制形式、覆盖写模式</p> <p>5.文件的关闭
+&lt;变量名&gt;.close()
+文件句柄</p> <p>6.文件使用
+#文本形式打开文件
+tf=open(&quot;f.txt&quot;,'rt')
+print(tf.readline())
+tf.close()
+#二进制形式打开文件
+bf=open(&quot;f.txt&quot;,'rb')
+print(bf.readline())
+bf.close()</p> <h2 id="文件内容的读取"><a href="#文件内容的读取" aria-hidden="true" class="header-anchor">#</a> 文件内容的读取</h2> <p>1.文件内容的读取
+操作方法及描述
+<f>.read(size=-1):读入全部内容，如果给出参数，读入前size长度</f></p> <blockquote><blockquote><blockquote><p>s=f.read(2)
+中国
+<f>.readline(size=-1):读入一行内容，如果给出参数，读入该行前size长度</f></p></blockquote></blockquote> <blockquote><blockquote><p>s=f.readline()
+中国是一个伟大的国家！
+<f>.readlines(hint=-1):读入文件所有行，以每行为元素形成列表，如果给出参数，读入前hint行</f></p></blockquote></blockquote> <blockquote><blockquote><p>s=f.readlines()
+['中国是一个伟大的国家！']</p></blockquote></blockquote></blockquote> <h2 id="_2-文件的全文本操作遍历全文本fname-input-请输入要打开的文件名称-fo-open-fname-r-txt-fo-read-一次读入，统一处理对全文txt进行处理fo-close"><a href="#_2-文件的全文本操作遍历全文本fname-input-请输入要打开的文件名称-fo-open-fname-r-txt-fo-read-一次读入，统一处理对全文txt进行处理fo-close" aria-hidden="true" class="header-anchor">#</a> 2.文件的全文本操作
+遍历全文本
+fname=input(&quot;请输入要打开的文件名称:&quot;)
+fo=open(fname,'r')
+txt=fo.read()
+一次读入，统一处理
+对全文txt进行处理
+fo.close()</h2> <p>fname=input(&quot;请输入要打开的文件名称:&quot;)
+fo=open(fname,'r')
+txt=fo.read(2)
+whilie txt!= '':
+#对txt进行处理
+txt=fo.read(2)
+fo.close
+分阶段按数量读入，逐步处理</p> <h2 id="_3-文件的逐行操作逐行遍历文件fname-input-请输入要打开的文件名称-fo-open-fname-r-for-line-in-fo-readlines-print-line-fo-close-一次读入，分行处理"><a href="#_3-文件的逐行操作逐行遍历文件fname-input-请输入要打开的文件名称-fo-open-fname-r-for-line-in-fo-readlines-print-line-fo-close-一次读入，分行处理" aria-hidden="true" class="header-anchor">#</a> 3.文件的逐行操作
+逐行遍历文件
+fname=input(&quot;请输入要打开的文件名称:&quot;)
+fo=open(fname,'r')
+for line in fo.readlines()
+print(line)
+fo.close()
+一次读入，分行处理</h2> <p>fname=inpit(&quot;请输入要打开的文件名称:&quot;)
+fo=open(fname,'r')
+for line in fo:
+prien(line)
+fo.close()
+分行读入，逐行处理</p> <h2 id="数据的文件写入"><a href="#数据的文件写入" aria-hidden="true" class="header-anchor">#</a> 数据的文件写入</h2> <p>1.数据的文件写入
+操作方法及描述
+<f>.write(s):向文件写入一个字符串或字节流</f></p> <blockquote><blockquote><blockquote><p>f.write(&quot;中国是一个伟大的国家&quot;)
+<f>.writelines(lines)</f></p></blockquote></blockquote> <blockquote><blockquote><p>将一个元素全为字符串的列表写入文件
+ls=['中国',&quot;法国&quot;,&quot;美国&quot;]
+f.writelines(ls)
+中国法国美国
+<f>.seek(offset):改变当前文件操作指针的位置，offset含义如下:
+0-文件开头;1-当前位置;2-文件结尾</f></p></blockquote></blockquote> <blockquote><blockquote><p>f.seek(0) #回到文件开头</p></blockquote></blockquote></blockquote> <p>2.数据的文件写入
+fo=open('output.txt','w+')
+ls=['中国','法国','美国']
+fo.writelines(ls)
+fo.seek(0)
+for line in fo:
+print(line)
+fo.close()</p> <h1 id="实例11-自动绘制轨迹"><a href="#实例11-自动绘制轨迹" aria-hidden="true" class="header-anchor">#</a> 实例11 自动绘制轨迹</h1> <h2 id="自动绘制轨迹问题分析"><a href="#自动绘制轨迹问题分析" aria-hidden="true" class="header-anchor">#</a> 自动绘制轨迹问题分析</h2> <p>1.问题分析
+自动绘制轨迹
+-需求：根据脚本来绘制图形
+-不是写代码而是写数据绘制轨迹
+-数据脚本是自动化最重要的第一步</p> <h2 id="自动绘制轨迹实例讲解"><a href="#自动绘制轨迹实例讲解" aria-hidden="true" class="header-anchor">#</a> 自动绘制轨迹实例讲解</h2> <p>1.自动绘制轨迹
+基本思路
+-步骤1：定义数据文件格式（接口）
+-步骤2：编写程序，根据文件接口解析参数绘制图形
+-步骤3：编制数据文件</p> <p>2.数据接口定义
+非常具有个性色彩
+300,1,144,0,1,0
+行进距离
+转向判断：0左转1右转
+转向角度
+RGB三个通道颜色</p> <p>3.自动绘制轨迹</p> <div class="language- extra-class"><pre class="language-text"><code>#AutoTraceDraw.py
+impore turtle as t
+t.title(&quot;自动绘制轨迹&quot;)
+t.setup(800,600,0,0)
+t.pencolor(&quot;red&quot;)
+t.pensize(5)
+#数据读取
+datals=[]
+f=open(&quot;data.txt&quot;)
+for line in f:
+	line=line.replace(&quot;\n&quot;,&quot;&quot;)
+datals.append(lint(map(eval,line.split(&quot;,&quot;))))
+f.close()
+#自动绘制
+for i in range(len(datals)):
+	t.pencolor(datals[i][3],datals[i][4],datals[i][5])
+	t.fd(datals[i][0])
+	if datals[i][1]:
+		t.right(datals[i][2])
+	else:
+		t.left(datal[i][2])
+</code></pre></div><h2 id="自动绘制轨迹举一反三"><a href="#自动绘制轨迹举一反三" aria-hidden="true" class="header-anchor">#</a> 自动绘制轨迹举一反三</h2> <p>1.举一反三
+理解方法思维
+-自动化思维：数据和功能分离，数据驱动的自动运行
+-接口化设计：格式化设计接口，清晰明了
+-二维数据应用：应用维度组织数据，二维数据最常用</p> <p>2.举一反三
+应用问题的扩展
+-扩展接口设计，增加更多控制接口
+-扩展功能设计，增加弧形等更多功能
+-扩展应用需求，发展自动轨迹绘制到动画绘制</p> <h1 id="一维数据的格式化和处理"><a href="#一维数据的格式化和处理" aria-hidden="true" class="header-anchor">#</a> 一维数据的格式化和处理</h1> <h2 id="数据组织的维度"><a href="#数据组织的维度" aria-hidden="true" class="header-anchor">#</a> 数据组织的维度</h2> <p>1.从一个数据到一组数据
+一个数据表达一个含义
+一组数据表达一个或多个含义</p> <p>2.维度：一组数据的组织形式
+一组数据
+数据的组织形式</p> <p>3.一维数据
+由对等关系的有序或无序数据构成，采用线性方式组织
+-对应列表、数组和集合等概念</p> <p>4.二维数据
+由多个一维数据构成，是一维数据的组合形式
+-表格是典型的二维数据
+-其中，表头可以是二维数据的一部分，也可以作为之外的部分</p> <p>5.多维数据
+由一维或二维数据在新维度上扩展形成</p> <p>6.高维数据
+仅利用最基本的二元关系展示数据间的复杂结构
+-键值对</p> <p>7.数据的操作周期
+存储&lt;-&gt;表示&lt;-&gt;操作
+数据存储:存储格式
+数据表示:数据类型
+数据操作:操作方式</p> <h2 id="一维数据的表示"><a href="#一维数据的表示" aria-hidden="true" class="header-anchor">#</a> 一维数据的表示</h2> <p>1.一维数据的表示
+如果数据间有序:使用列表类型
+ls=[3.1398,3.1349,3.1376]
+-列表类型可以表达一维有序数据
+-for循环可以遍历数据，进而对每个数据进行处理</p> <p>2.一维数据的表示
+如果数据间无序:使用集合类型
+st={3.1398,3.1349,3.1376}
+-集合类型可以表达一维无序数据
+-for循环可以遍历数据，进而对每个数据进行处理</p> <h2 id="一维数据的存储"><a href="#一维数据的存储" aria-hidden="true" class="header-anchor">#</a> 一维数据的存储</h2> <p>1.一维数据的存储
+存储方式:空格分隔
+中国 美国 日本 德国 法国 英国 意大利
+-使用一个或多个空格分隔进行存储，不换行
+-缺点：数据中不能存在空格</p> <p>2.一维数据的存储
+存储方式二:逗号分隔
+中国,美国,日本,德国,法国,英国,意大利
+-使用英文半角逗号分隔数据进行存储，不换行
+-缺点：数据中不能有英文逗号</p> <p>3.一维数据的存储
+存储方式三：其他方式
+中国$美国$日本$德国$法国$英国$意大利
+-使用其他符号或符号组合分隔，建议采用特殊符号
+-缺点:需要根据数据特点定义，通用性较差</p> <h2 id="一维数据的处理"><a href="#一维数据的处理" aria-hidden="true" class="header-anchor">#</a> 一维数据的处理</h2> <p>1.数据的处理
+存储&lt;-&gt;表示
+数据存储-数据表示
+存储格式-数据类型
+-将存储的数据读入程序
+-将程序表示的数据写入文件</p> <p>2.一维数据的读入处理
+从空格分隔的文件中读入数据
+中国 美国 日本 德国 法国 英国 意大利
+txt=open(fname).read()
+ls=txt.split()
+f.close</p> <blockquote><blockquote><blockquote><p>ls
+['中国','美国','日本','德国','法国','英国','意大利']</p></blockquote></blockquote></blockquote> <p>3.一维数据的读入处理
+从特殊符号分隔的文件中读入数据
+中国$美国$日本$德国$法国$英国$意大利
+txt=open(fname).read()
+ls=txt.split('$')
+f.close()</p> <blockquote><blockquote><blockquote><p>ls
+['中国','美国','日本','德国','法国','英国','意大利']</p></blockquote></blockquote></blockquote> <p>4.一位数据的写入处理
+采用空格分隔方式将数据写入文件
+ls=['中国','美国','日本']
+f=open(fname,'w')
+f.write(''.join(ls))
+f.close()</p> <p>5.一维数据的写入处理
+采用特殊分隔方式将数据写入文件
+ls=['中国','美国','日本']
+f=open(fname,'w')
+f.write('$'.join(ls))
+f.close()</p> <h1 id="二维数据的格式化和处理"><a href="#二维数据的格式化和处理" aria-hidden="true" class="header-anchor">#</a> 二维数据的格式化和处理</h1> <h2 id="二维数据的表示"><a href="#二维数据的表示" aria-hidden="true" class="header-anchor">#</a> 二维数据的表示</h2> <p>1.二维数据的表示
+使用列表类型
+-列表类型可以表达二维数据
+-使用二维列表
+[[3.1398,3.1349,3.1376],
+[3.1413,3.1404,3.1401]]</p> <p>2.二维数据的表示
+使用列表类型
+[[3.1398,3.1349,3.1376],
+[3.1413,3.1404,3.1401]]
+-使用两层for循环遍历每个元素
+-外层列表中每个元素可以对应一行，也可以对应一列</p> <p>3.一二维数据的Python表示
+数据维度是数据的组织形式
+-一维数据:列表和集合类型
+[3.1398,3.1349,3.1376]数据间有序
+{3.1398,3.1349,3.1376}数据间无序
+-二维数据:列表类型
+[[3.1398，3.1349，3.1376],
+[3.1413,3.1404,3.1401]]</p> <h2 id="csv格式与二维数据存储"><a href="#csv格式与二维数据存储" aria-hidden="true" class="header-anchor">#</a> CSV格式与二维数据存储</h2> <p>1.CSV数据存储格式
+CSV:Comma-Separated Values
+-国际通用的一二维数据存储格式，一般.csv扩展名
+-每行一个一维数据，采用逗号分割，无空行
+-Excel软件可读入输出，一般编辑软件都可以产生</p> <p>2.CSV数据存储格式
+CSV:Comma-Separated Values
+-如果某个元素缺失，逗号仍要保留
+-二维数据的表头可以作为数据存储，也可以另外存储
+-逗号为英文半角逗号，逗号与数据之间无额外空格</p> <p>3.二维数据的存储
+按行存？按列存？
+-按行村或者按列存都可以，具体由程序决定
+-一般索引习惯:ls[row][column]，先行后列
+-根据一般习惯，外层列表每个元素是一行，按行存</p> <h2 id="二维数据的处理"><a href="#二维数据的处理" aria-hidden="true" class="header-anchor">#</a> 二维数据的处理</h2> <p>1.二维数据的读入处理
+从CSV格式的文件中读入数据
+fo=open(fname)
+ls=[]
+for line in fo:
+line=line.replace('\n','')
+ls.append(line.split(','))
+fo.close()</p> <p>2.二维数据的读入处理
+将数据写入CSV格式的文件
+ls=[[],[],[]]
+f=open(fname,'w')
+for item in ls:
+f.write(','.join(itme)+'\n')
+f.close()</p> <p>3.二维数据的逐一处理
+采用二层循环
+ls=[[],[],[]] #二维列表
+for row in ls:
+for column in row:
+print(ls[row][column])</p> <h1 id="wordcloud库的使用"><a href="#wordcloud库的使用" aria-hidden="true" class="header-anchor">#</a> wordcloud库的使用</h1> <h2 id="wordcloud库基本介绍"><a href="#wordcloud库基本介绍" aria-hidden="true" class="header-anchor">#</a> wordcloud库基本介绍</h2> <p>1.wordcloud库概述
+wordcloud是优秀的词云展示第三方库
+-词云以词语为基本单位，通过图形可视化的方式，更加直观和艺术的展示文本</p> <p>2.wordcloud库安装
+(cmd命令行)pip install wordcloud</p> <h2 id="wordcloud库使用说明"><a href="#wordcloud库使用说明" aria-hidden="true" class="header-anchor">#</a> wordcloud库使用说明</h2> <p>1.wordcloud库基本使用
+wordcloud库可以把词云当作一个WordCloud对象
+-wordcloud.WordCloud()代表一个文本对应的词云
+-可以根据文本中词语出现的频率等参数绘制词云
+-绘制词云的形状、尺寸和颜色都可以设定</p> <p>2.wordcloud库常规方法
+w=wordcloud.WordCloud()
+-以WordCloud对象为基础
+-配置参数、加载文本、输出文件</p> <p>3.wordcloud库常规方法
+w=wordcloud.WordCloud()
+w.generate(txt):向WordCloud对象w中加载文本txt</p> <blockquote><blockquote><blockquote><p>w.generate(&quot;Python and WordCloud&quot;)
+w.to_file(filename):将词云输出为图像文件，.png或.jpg格式</p></blockquote></blockquote> <blockquote><blockquote><p>w.to_file(&quot;outfile.png&quot;)</p></blockquote></blockquote></blockquote> <p>4.wordcloud库常规方法
+-步骤1:配置对象参数
+-步骤2:加载词云文本
+-步骤3:输出词云文件</p> <div class="language- extra-class"><pre class="language-text"><code>import wordcloud
+c=wordcloud.WordCloud()
+c.generate(&quot;wordcloud by python&quot;)
+c.to_file(&quot;pywordcloud.png&quot;)
+</code></pre></div><p>5.wordcloud库基常规方法
+&quot;wordcloud by python&quot;
+分隔:以空格分隔单词
+统计:单词出现次数并过滤
+字体:根据统计配置字号
+布局:颜色环境尺寸</p> <p>6.配置对象参数
+w=wordcloud.WordCloud(&lt;参数&gt;)
+参数及描述
+width:指定词云对象生成图片的宽度，默认400像素</p> <blockquote><blockquote><blockquote><p>w.wordcloud.WordCloud(width=600)
+height:指定词云对象生成图片的高度，默认200像素</p></blockquote></blockquote> <blockquote><blockquote><p>w.wordcloud.WordCloud(height=400)
+min_font_size:指定词云中字体的最小字号，默认4号</p></blockquote></blockquote> <blockquote><blockquote><p>w.wordcloud.WordCloud(min_font_size=10)
+max_font_size:指定次云中字体的最大字号，根据高度自动调节</p></blockquote></blockquote> <blockquote><blockquote><p>w.wordcloud.WordCloud(max_font_size=20)
+font_step:指定词云中字体字号的步进间隔，默认为1</p></blockquote></blockquote> <blockquote><blockquote><p>w.wordcloud.WordCloud(font_step=2)
+font_path:指定字体文件的路径，默认None</p></blockquote></blockquote> <blockquote><blockquote><p>w.wordcloud.WordCloud(font_path='msyh.ttc')
+max_words:指定词云显示的最大单词数量，默认200</p></blockquote></blockquote> <blockquote><blockquote><p>w.wordcloud.WordCloud(max_words=20)
+stop_words:指定词云的排除词列表，即不显示的单词列表</p></blockquote></blockquote> <blockquote><blockquote><p>w.wordcloud.WordCloud(stop_words={'python'})
+mask:指定词云形状，默认为长方形，需要引用imread()函数</p></blockquote></blockquote> <blockquote><blockquote><p>from scipy.misc import imread
+mk=imread(&quot;pic.png&quot;)
+w=wordcloud.WordCloud(mask=mk)
+background_color:指定词云图片的背景颜色，默认为黑色</p></blockquote></blockquote> <blockquote><blockquote><p>w.wordcloud.WordCloud(backgroud_color='white')</p></blockquote></blockquote></blockquote> <p>7.wordcloud应用实例</p> <div class="language- extra-class"><pre class="language-text"><code>import wordcloud
+txt='life is short,you need python'
+w=wordcloud.WordCloud(\
+	background_color='white')
+w.generate(txt)
+w.to_file('pywcloud.png')
+#以空格分隔单词
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>import jieba
+import wordcloud
+txt='程序设计语言是计算机能够理解和\
+识别用户操作意图的一种交互体系，它按\
+照特定规则组织计算机指令'
+w=wordcloud.WordCloud(width=1000,\
+font_path='msyh.ttc',height=700)
+w.generate(''.join(jieba.lcut(txt)))
+w.to_file('pywcloud.png')
+#中文需要先分词并组成空格分隔的字符串
+</code></pre></div><h1 id="政府工作报告词云"><a href="#政府工作报告词云" aria-hidden="true" class="header-anchor">#</a> 政府工作报告词云</h1> <h2 id="政府工作报告词云问题分析"><a href="#政府工作报告词云问题分析" aria-hidden="true" class="header-anchor">#</a> 政府工作报告词云问题分析</h2> <p>1.问题分析
+直观理解政策文件
+-需求：对于政府工作报告等政策文件，如何直观理解？
+-体会直观的价值：生成词云&amp;优化词云
+政府工作报告等文件-&gt;有效展示的词云</p> <h2 id="政府工作报告词云实例讲解"><a href="#政府工作报告词云实例讲解" aria-hidden="true" class="header-anchor">#</a> 政府工作报告词云实例讲解</h2> <p>1.政府工作报告词云
+基本思路
+-步骤1:读取文件、分词整理
+-步骤2:设置并输出词云
+-步骤3:观察结果，优化迭代</p> <div class="language- extra-class"><pre class="language-text"><code>#GovRptWordCloudv1.py
+import jieba
+import wordcloud
+f=open(&quot;关于实施乡村振兴战略的意见.txt&quot;,'r',encoding='tuf-8')
+t=f.read()
+f.close()
+ls=jieba.lcut(t)
+txt=' '.join(ls)
+w=wordcloud.WordCloud(font_path='msyh.ttc',\
+	width=1000,height=700,background_color='white',\
+	max_words=15)
+w.generate(txt)
+w.to_file('grwordcloud.png')
+</code></pre></div><h2 id="政府工作报告词云举一反三"><a href="#政府工作报告词云举一反三" aria-hidden="true" class="header-anchor">#</a> 政府工作报告词云举一反三</h2> <p>1.举一反三
+扩展能力
+-了解wordcloud更多参数，扩展词云能力
+-特色词云:设计一款属于自己的特色词云风格
+-更多文件:用更多文件练习词云生成</p> <h1 id="体育竞技分析"><a href="#体育竞技分析" aria-hidden="true" class="header-anchor">#</a> 体育竞技分析</h1> <h2 id="体育竞技分析问题分析"><a href="#体育竞技分析问题分析" aria-hidden="true" class="header-anchor">#</a> 体育竞技分析问题分析</h2> <p>1.问题分析
+体育竞技分析
+-需求：毫厘是多少？如何科学分析体育竞技比赛？
+-输入：球员的水平
+-输出：可预测的比赛成绩
+高手过招，胜负只在毫厘之间</p> <p>2.问题分析
+体育竞技分析:模拟N场比赛
+-计算思维：抽象+自动化
+-模拟：抽象比赛过程+自动化执行N场比赛
+-当N越大时，比赛结果分析会越科学</p> <p>3.问题分析
+比赛规则
+-双人击球比赛：A&amp;B，回合制，5局3胜
+-开始时一方先发球，直至判分，接下来胜者发球
+-球员只能在发球局得分，15分胜一局</p> <h2 id="体育竞技分析实例讲解"><a href="#体育竞技分析实例讲解" aria-hidden="true" class="header-anchor">#</a> 体育竞技分析实例讲解</h2> <p>1.体育竞技分析
+程序总体框架及步骤
+-步骤1：打印程序的介绍性信息式-printIntro()
+-步骤2：获得程序运行参数：proA,proB,n-getInputs()
+-步骤3：利用球员A和B的能力值，模拟n局比赛-simNGames()
+-步骤4：输出球员A和B获胜比赛的场次及概率-printSummary()</p> <p>2.体育竞技分析</p> <div class="language- extra-class"><pre class="language-text"><code>#介绍性内容，提高用户体验
+def printIntro():
+	print(&quot;这个程序模拟两个选手A和B的某种竞技比赛&quot;)
+	print(&quot;程序运行需要A和B的能力值(以0到1之间的小数表示)&quot;)
+def getInputs():
+	a=eval(input(&quot;请输入选手A的能力值(0-1):&quot;))
+	b=eval(input(&quot;请输入选手B的能力值(0-1):&quot;))
+	n=eval(input(&quot;模拟比赛的场次:&quot;))
+	return a,b,n
+def gameOver(a,b):
+	return a==15 or b==15
+def simOneGame(probA,probB):
+	socreA,socreB=0,0
+	serving='A'
+	while not gameover(scoreA,scoreB):
+		if serving=='A':
+			if random()&lt;probA:
+				ScoreA+=1
+			else:
+				serving==&quot;B&quot;
+		else:
+			if random()&lt;probB:
+				ScoreB+=1	
+			else:
+				serving=='A'	
+	return socreA,socreB
+def simNGames(n,probA,probB):
+	winsA,winsB=0,0
+	for i in range(n):
+		scoreA,scoreB=sinOneGame(probA,probB)
+		if score&gt;scoreB:
+			winsA+=1
+		else:
+			winsB+=1
+	return winsA,winsB
+def printSummary(winsA,winsB):
+	n=winsA+winsB
+	print(&quot;竞技分析开始，共模拟{}场比赛&quot;.format(n))
+	print(&quot;选手A获胜{}场比赛，占比{:0.1f}&quot;.format(winsA,winsA/n))
+	print(&quot;选手B获胜{}场比赛，占比{:0.1f}&quot;.format(winsB,winsB/n))
+def main():
+	printIntro()
+	probA,probB,n=getInputs()
+	winsA,winsB=simNGames(n,probA,probB)
+	printSummary(winsA,winsB)
+</code></pre></div><h2 id="体育竞技分析举一反三"><a href="#体育竞技分析举一反三" aria-hidden="true" class="header-anchor">#</a> 体育竞技分析举一反三</h2> <p>1.举一反三
+理解自顶向下和自底向上
+-理解自顶向下的设计思维:分而治之
+-理解自底向上的执行思维:模块化集成
+-自顶向下是&quot;系统&quot;思维的简化</p> <p>2.举一反三
+应用问题的扩展
+-扩展比赛参数，增加对更多能力对比情况的判断
+-扩展比赛设计，增加对真实比赛结果的预测
+-扩展分析逻辑，反向推理，用胜率推算能力？</p> <h2 id="自顶向下和自底向上"><a href="#自顶向下和自底向上" aria-hidden="true" class="header-anchor">#</a> 自顶向下和自底向上</h2> <p>1.自顶向下(设计)
+解决复杂问题的有效方法
+-将一个总问题表达为若干个小问题组成的形式
+-使用同样方法进一步分解小问题
+-直至，小问题可以利用计算机简单明了的解决</p> <p>2.自底向上(执行)
+逐步组建复杂系统的有效测试方式
+-分单元测试，逐步组装
+-按照自顶向下相反的路径操作
+-直至，系统各部分以组装的思路都经过测试和验证</p> <h1 id="python程序设计思维"><a href="#python程序设计思维" aria-hidden="true" class="header-anchor">#</a> Python程序设计思维</h1> <h2 id="计算生态与python语言"><a href="#计算生态与python语言" aria-hidden="true" class="header-anchor">#</a> 计算生态与Python语言</h2> <p>1.计算生态
+从开源运动说起
+-1983年，Richard Stallman启动GNU项目
+-1989年，GNU通用许可协议诞生，自由软件时代到来
+-1991年，Linus Torvalds发布Linux内核
+-1998年，网景浏览器开源，产生了Mozilla
+开源生态逐步建立
+大教堂模式-集市模式</p> <p>2.计算生态
+开源思想深入演化和发展，形成了计算生态
+计算生态以开源项目为组织形式，充分利用&quot;共识原则&quot;和&quot;社会利他&quot;组织人员，在竞争发展、相互依存和迅速更迭中完成信息技术的更新换代，形成了技术的自我演化路径</p> <p>3.计算生态
+没有顶层设计，以功能为单位，具备三个特点
+-竞争发展
+-相互依存
+-迅速更迭</p> <p>4.计算生态与Python语言
+-以开源项目为代表的大量第三方库
+Python语言提供&gt;13万个第三方库
+-库的建设经过野蛮生长和自然选择
+同一个功能，Python语言2个以上第三方库</p> <p>5.计算生态与Python语言
+-库之间相互关联使用，依存发展
+Python库之间广泛联系，逐级封装
+-社区庞大，新技术更迭迅速
+AlphaGo深度学习采用Python语言开源
+API（应用程序编写接口）!=计算生态</p> <p>6.计算生态的价值
+创新:跟随创新，集成创新，原始创新
+-加速科技类应用创新的重要支撑
+-发展科技产品商业价值的重要模式
+-国家科技体系安全和稳固的基础</p> <p>7.计算生态的运用
+刀耕火种-&gt;站在巨人的肩膀上
+-编程的起点不是算法而是系统
+-编程如同搭积木，利用计算生态为主要模式
+-编程的目标是快速解决问题</p> <h2 id="计算思维与程序设计"><a href="#计算思维与程序设计" aria-hidden="true" class="header-anchor">#</a> 计算思维与程序设计</h2> <p>1.计算思维
+第三种人类思维特征
+-逻辑思维：推理和演绎，数学为代表，A-&gt;B B-&gt;C A-&gt;C
+-实证思维：实验和验证，物理为代表，引力波&lt;-实验
+-计算思维：设计和构造，计算机为代表，汉诺塔递归</p> <p>2.抽象和自动化
+-计算思维:Computational Thinking
+-抽象问题的计算过程，利用计算机自动化求解
+-计算思维是基于计算机的思维方式</p> <p>3.计算思维
+抽象问题的计算过程，利用计算机自动化求解
+-计算思维基于计算机强大的算例及海量数据
+-抽象计算过程，关注设计的构造，而非因果
+-以计算机程序设计为实现的主要手段</p> <p>4.计算思维
+编程是将计算机思维编程现实的过程
+抽象-&gt;设计和构造
+自动化-&gt;编程</p> <h2 id="用户体验与软件产品"><a href="#用户体验与软件产品" aria-hidden="true" class="header-anchor">#</a> 用户体验与软件产品</h2> <p>1.用户体验
+实现功能-&gt;关注体验
+-用户体验指用户对产品建立的主观感受和认识
+-关心功能实现，更要关心用户体验，才能做出好产品
+-编程知识手段，不是目的，程序最终为人类服务</p> <p>2.提高用户体验的方法
+方法1：进度展示
+-如果程序需要计算时间，可能产生等待，请增加进度展示
+-如果程序有若干步骤，需要提示用户，请增加进度展示
+-如果程序可能存在大量次数的循环，请增加进度展示</p> <p>3.提高用户体验的方法
+方法2：异常处理
+-当获得用户输入，对合规性需要检查，需要异常处理
+-当读写文件时，对结果进行判断，需要异常处理
+-当进行输入输出时，对运算结果进行判断，需要异常处理</p> <p>4.提高用户体验的方法
+其他类方法
+-打印输出：特定位置，输出程序运行的过程信息
+-日志文件：对程序异常及用户使用进行定期记录
+-帮助信息：给用户多种方式提供帮助信息</p> <p>5.提高用户体验的方法
+软件程序-&gt;软件产品
+用户体验是程序到产品的关键环节</p> <h2 id="基本的程序设计模式"><a href="#基本的程序设计模式" aria-hidden="true" class="header-anchor">#</a> 基本的程序设计模式</h2> <p>1.基本的程序设计模式
+从IPO开始...
+-确定IPO：明确计算部分及功能边界
+-编写程序：将计算求解的设计变成现实
+-调试程序：确保程序按照正确逻辑能够正确运行</p> <p>2.基本的程序设计模式
+模块化设计
+-通过函数或对象封装将程序划分为模块及模块间的表达
+-具体包括：主程序、子程序和子程序间关系
+-分而治之：一种分而治之、分层抽象、体系化的设计思想</p> <p>3.基本的程序设计模式
+模块化设计
+-紧耦合：两个部分之间交流很多，无法独立存在
+-松耦合：两个部分之间交流很少，可以独立存在
+-模块内容紧耦合，模块之间松耦合</p> <p>4.基本的程序设计模式
+配置化设计
+程序引擎+配置文件
+-引擎+配置：程序执行和配置分离，将可选参数配置化
+-将程序开发变成配置文件编写，扩展功能而不修改程序
+-关键在于接口设计，清晰明了、灵活可扩展</p> <p>5.应用开发的四个步骤
+从应用需求到软件产品
+-1.产品定义：对应用需求充分理解和明确定义
+产品定义，而不仅是功能定义，要考虑商业模式
+-2.系统架构：以系统方式思考产品的技术实现
+系统架构，关注数据流，模块化，体系架构
+-3.设计与实现：结合结构完成关键设计及系统实现
+结合可扩展性、灵活性等进行设计优化
+-4.用户体验：从用户角度思考应用效果
+用户至上，体验优先，以用户为中心</p> <h1 id="python第三方库安装"><a href="#python第三方库安装" aria-hidden="true" class="header-anchor">#</a> Python第三方库安装</h1> <h2 id="看见更大的python世界"><a href="#看见更大的python世界" aria-hidden="true" class="header-anchor">#</a> 看见更大的Python世界</h2> <p>1.python社区</p> <blockquote><p>13万个第三方库 https://pypi.org/
+PyPI
+-PyPI:Python Package Index
+-PSF维护的展示全球Python计算生态的主站
+-学会检索并利用PyPI,找到合适的第三方库开发程序</p></blockquote> <p>2.Python社区
+实例:开发与区块链相关的程序
+-第一步：在Pypi.org搜索blockchain
+-第二步：挑选适合开发目标的第三方库作为基础
+-第三部：完成自己需要的功能</p> <p>3.安装Python第三方库
+三种方法
+-方法1（主要方法）：使用pip命令
+-方法2：集成安装方法
+-方法3：文件安装方法</p> <h2 id="第三方库的pip安装方法"><a href="#第三方库的pip安装方法" aria-hidden="true" class="header-anchor">#</a> 第三方库的pip安装方法</h2> <p>1.pip安装方法
+使用pip安装工具（命令行下执行）
+pip -h</p> <p>2.常用的pip命令
+pip install &lt;第三方库名&gt;
+-安装指定的第三方库
+pip install -U &lt;第三方库名&gt;
+-使用-U标签更新已安装的指定第三方库
+pip uninstall &lt;第三方库名&gt;
+-卸载指定的第三方库
+pip download &lt;第三方库名&gt;
+-下载但不安装指定的第三方库
+pip show &lt;第三方库名&gt;
+-列出某个指定第三方库的详细信息
+pip search &lt;关键词&gt;
+-根据关键词在名称和介绍中搜索第三方库
+pip list
+-列出当前系统已经安装的第三方库</p> <p>3.pip安装方法
+主要方法，适合99%以上情况
+-适合Windows、Mac和Linux等操作系统
+-未来获取第三方库的方式，目前的主要方式
+-适合99%以上情况，需要联网安装</p> <h2 id="第三方库的集成安装方法"><a href="#第三方库的集成安装方法" aria-hidden="true" class="header-anchor">#</a> 第三方库的集成安装方法</h2> <p>1.集成安装方法
+Anaconda https://www.continuum.io
+-支持近800个第三方库
+-包含多个主流工具
+-适合数据计算领域开发</p> <h2 id="第三方库的文件安装方法"><a href="#第三方库的文件安装方法" aria-hidden="true" class="header-anchor">#</a> 第三方库的文件安装方法</h2> <p>1.为什么有些第三方库用pip可以下载，但无法安装？
+-某些第三方库pip下载后，需要编译再安装
+-如果操作系统没有编译环境，则能下载但不能安装
+-可以直接下载编译后的版本用于安装吗？</p> <p>2.文件安装方法
+http://www.lfd.uci.edu/~gohlke/pythonlibs/
+UCI界面
+提供编译后的第三方库</p> <p>3.文件安装方法
+实例：安装wordcloud库
+-步骤1：在UCI界面搜索wordcloud
+-步骤2：下载对应版本的文件
+-步骤3：使用pip install &lt;文件名&gt;安装</p> <h1 id="模块7-os库的使用"><a href="#模块7-os库的使用" aria-hidden="true" class="header-anchor">#</a> 模块7 os库的使用</h1> <h2 id="os库基本介绍"><a href="#os库基本介绍" aria-hidden="true" class="header-anchor">#</a> os库基本介绍</h2> <p>1.os库提供通用的、基本的操作系统交互功能
+-os库是Python标准库，包含几百个函数
+-常用路径操作、进程管理、环境参数等几类</p> <p>2.os库基本介绍
+os库提供通用的、基本的操作系统交互功能
+-路径操作：os.path字库，处理文件路径及信息
+-进程管理：启动路径中其他程序
+-环境参数：获得系统软硬件信息等环境参数</p> <h2 id="os库之路径操作"><a href="#os库之路径操作" aria-hidden="true" class="header-anchor">#</a> os库之路径操作</h2> <p>1.路径操作
+os.path字库以path为入口，用于操作和处理文件路径
+import os.path
+import os.path as op</p> <p>2.函数及描述
+os.path.abspath(path):返回path在当前系统中的绝对路径</p> <blockquote><blockquote><blockquote><p>os.path.abspath('file.txt')
+'c:\users\ssss\python36-32'\file.txt'
+os.path.normpath(path):归一化path的表示形式，统一用\分隔路径</p></blockquote></blockquote> <blockquote><blockquote><p>os.path.normpath(&quot;d://pye//file.txt&quot;)
+d:\pye\file.txt
+os.path.relpath(path):返回当前程序与文件之间的相对路径(relative path)</p></blockquote></blockquote> <blockquote><blockquote><p>os.path.relpath(&quot;c://pye//file.txt&quot;)
+'..\..\..\..\....\..\pye\file.txt'
+os.path.dirname(path)：返回path中的目录名称</p></blockquote></blockquote> <blockquote><blockquote><p>os.path.dirname(&quot;d://pye//file.txt&quot;)
+'d://pye'
+os.path.basename(path):返回path中最后的文件名称</p></blockquote></blockquote> <blockquote><blockquote><p>os.path.basename(&quot;d://pye//file.txt&quot;)
+'file.txt'
+os.path.join(path,*paths)
+组合path与paths,返回一个路径字符串</p></blockquote></blockquote> <blockquote><blockquote><p>os.path.join('d:/','pye/file.txt')
+'d:/pye/file.txt'
+os.path.exists(path):判断path对应文件或目录是否存在，返回True或False</p></blockquote></blockquote> <blockquote><blockquote><p>os.path.exists(&quot;d://pye//file.txt&quot;)
+False
+os.path.isfile(path):判断path所对应是否为已存在的文件，返回True或False</p></blockquote></blockquote> <blockquote><blockquote><p>os.path.isfile(&quot;d://pye//file.txt&quot;)
+True
+os.path.isdir():判断path所对应是否为已存在的目录，返回True或False</p></blockquote></blockquote> <blockquote><blockquote><p>os.path.isdir(&quot;d://pye//file.txt&quot;)
+False
+os.path.getatime(path):返回path对应文件或目录上一次的访问时间</p></blockquote></blockquote> <blockquote><blockquote><p>os.path.getatime(&quot;d://pye//file.txt&quot;)
+1518356633.7551725
+os.path.getmtime(path):返回path对应文件或目录最近一次的修改时间</p></blockquote></blockquote> <blockquote><blockquote><p>os.path.getmtime(&quot;d://pye//file.txt&quot;)
+1517356633.7551725
+os.pathe.getctime(path)：返回path对应文件或目录的创建时间</p></blockquote></blockquote> <blockquote><blockquote><p>time.ctime(os.path.getctime(&quot;d://pye//file.txt&quot;))
+'sum Feb 11 17:07:52 2019'
+os.path.getsize(path):返回path对应文件的大小，以字节为单位</p></blockquote></blockquote> <blockquote><blockquote><p>os.path.getsize(&quot;d://pye//file.txt&quot;)
+100768</p></blockquote></blockquote></blockquote> <h2 id="os库之进程管理"><a href="#os库之进程管理" aria-hidden="true" class="header-anchor">#</a> os库之进程管理</h2> <p>1.进程管理
+os.system(command)
+-执行程序或命令command
+-在Windows系统中，返回值为cmd的调用返回信息</p> <p>2.进程管理
+import os
+os.system(&quot;c:\windows\system32\cacl.exe&quot;)</p> <blockquote><blockquote><blockquote></blockquote></blockquote></blockquote> <p>0
+import os
+os.system('c:\windows\system32\mspaint.exe <br>
+d:\pyecourse\grwordcloud.png')</p> <blockquote><blockquote><blockquote></blockquote></blockquote></blockquote> <p>0</p> <h2 id="os库之环境参数"><a href="#os库之环境参数" aria-hidden="true" class="header-anchor">#</a> os库之环境参数</h2> <p>1.环境参数
+获取或改变系统环境信息
+函数及描述
+os.chdir(path):修改当前程序操作的路径</p> <blockquote><blockquote><blockquote><p>os.chdir('d:')
+os.getcwd()：返回程序的当前路径</p></blockquote></blockquote> <blockquote><blockquote><p>os.getcwd()
+&quot;d:\&quot;
+os.getlogin():获得当前系统登录用户名称</p></blockquote></blockquote> <blockquote><blockquote><p>os.getlogin()
+'mosheng'
+os.cpu_count():获得当前系统的CPU数量</p></blockquote></blockquote> <blockquote><blockquote><p>os.cpu_count()
+8
+os.urandom(n):获得n个字节长度的随机字符串，通常用于加解密运算</p></blockquote></blockquote> <blockquote><blockquote><p>os.urandom(10)
+b'7\xbe\xf2!\xc1=\x01gl\xb3'</p></blockquote></blockquote></blockquote> <h1 id="实例14-第三方库安装脚本"><a href="#实例14-第三方库安装脚本" aria-hidden="true" class="header-anchor">#</a> 实例14 第三方库安装脚本</h1> <h2 id="第三方库安装脚本问题分析"><a href="#第三方库安装脚本问题分析" aria-hidden="true" class="header-anchor">#</a> 第三方库安装脚本问题分析</h2> <p>1.问题分析
+第三方库自动安装脚本
+-需求：批量安装第三方库需要人工干预，能否自动安装？
+-自动执行pip逐一根据安装需求安装
+如何自动执行一个程序？例如pip?</p> <h2 id="第三方库安装脚本实例讲解"><a href="#第三方库安装脚本实例讲解" aria-hidden="true" class="header-anchor">#</a> 第三方库安装脚本实例讲解</h2> <p>1.第三方库自动安装脚本</p> <div class="language- extra-class"><pre class="language-text"><code>#BatchInstall.py
+import os
+libs={
+	'numpy','matplotlib','pillow',..
+	....'pygame'
+}
+try:
+	for lib in libs:
+		os.system('pip install'+lib)
+	print(&quot;successful&quot;)
+except:
+	print(&quot;failed somehow&quot;)
+</code></pre></div><h2 id="第三方库安装脚本举一反三"><a href="#第三方库安装脚本举一反三" aria-hidden="true" class="header-anchor">#</a> 第三方库安装脚本举一反三</h2> <p>1.举一反三
+自动化脚本+
+-编写各类自动化运行程序的脚本，调用已有程序
+-扩展应用：安装更多第三方库，增加配置文件
+-扩展异常检测：捕获更多异常类型，程序更稳定友好</p> <h1 id="实例15-霍兰德人格分析雷达图"><a href="#实例15-霍兰德人格分析雷达图" aria-hidden="true" class="header-anchor">#</a> 实例15 霍兰德人格分析雷达图</h1> <h2 id="霍兰德人格分析雷达图问题分析"><a href="#霍兰德人格分析雷达图问题分析" aria-hidden="true" class="header-anchor">#</a> 霍兰德人格分析雷达图问题分析</h2> <p>1.问题分析
+雷达图Radar Chart
+雷达图是多特性直观展示的重要方式</p> <p>2.问题分析
+霍兰德人格分析
+-霍兰德认为：人格兴趣与职业之间应有一种内在的对应关系
+-人格分类：研究型、艺术型、社会型、企业型、传统型、现实型
+-职业：工程师、实验员、艺术家、推销员、记事员、社会工作者</p> <p>3.问题分析
+霍兰德人格分析雷达图
+-需求：雷达图方式验证霍兰德人格分析
+-输入：各职业人群结合兴趣的调研数据
+-输出：雷达图</p> <p>4.问题分析
+霍兰德人格分析雷达图
+-通用雷达图绘制：matplotlib库
+-专业的多维数据表示：numpy库
+-输出：雷达图</p> <h2 id="霍兰德人格分析雷达图实例讲解"><a href="#霍兰德人格分析雷达图实例讲解" aria-hidden="true" class="header-anchor">#</a> 霍兰德人格分析雷达图实例讲解</h2> <h2 id="霍兰德人格分析雷达图举一反三"><a href="#霍兰德人格分析雷达图举一反三" aria-hidden="true" class="header-anchor">#</a> 霍兰德人格分析雷达图举一反三</h2> <p>1.举一反三
+目标+沉浸+熟练
+-编程的目标感：寻找感兴趣的目标，寻觅之
+-编程的沉浸感：寻找可实现的方法，思考之
+-编程的熟练度：练习，练习，在练习，熟练之</p> <h1 id="实例15-玫瑰花绘制"><a href="#实例15-玫瑰花绘制" aria-hidden="true" class="header-anchor">#</a> 实例15 玫瑰花绘制</h1> <h2 id="玫瑰花绘制问题分析"><a href="#玫瑰花绘制问题分析" aria-hidden="true" class="header-anchor">#</a> 玫瑰花绘制问题分析</h2> <p>1.问题分析
+玫瑰花绘制
+-需求：用Python绘制一朵玫瑰花，献给所思所念
+-输入：你的想象力
+-输出：玫瑰花</p> <p>2.问题分析
+玫瑰花绘制
+-绘制机理；turtle基本图形绘制
+-绘制思想，因人而异
+-思想有多大，世界就有多大</p> <h2 id="玫瑰花绘制实例讲解"><a href="#玫瑰花绘制实例讲解" aria-hidden="true" class="header-anchor">#</a> 玫瑰花绘制实例讲解</h2> <h2 id="玫瑰花绘制举一反三"><a href="#玫瑰花绘制举一反三" aria-hidden="true" class="header-anchor">#</a> 玫瑰花绘制举一反三</h2> <p>1.举一反三
+艺术之于编程，设计之于编程
+-艺术：思想优先，编程是手段
+-设计：想法和编程同样重要
+-工程：编程优先，思想次之</p> <p>2.举一反三
+编程不重要，思想才重要！
+-认识自己：明确自己的目标，有自己的思想（想法）
+-方式方法：编程只是手段，熟练之，未雨绸缪为思想服务
+-为谁编程：将自身发展与祖国发展相结合，创造真正价值</p> <h1 id="从数据处理到人工智能"><a href="#从数据处理到人工智能" aria-hidden="true" class="header-anchor">#</a> 从数据处理到人工智能</h1> <h2 id="python库之机器学习"><a href="#python库之机器学习" aria-hidden="true" class="header-anchor">#</a> Python库之机器学习</h2> <p>1.python库之机器学习
+Scikit-learn:机器学习方法工作集
+-提供一批统一化的机器学习方法功能接口
+-提供聚类、分类、回归、强化学习等计算功能
+-机器学习最基本且最优秀的Python第三方库
+http://scikit-learn.org/</p> <p>2.python库之机器学习
+TensorFlow:AlphaGo背后的机器学习计算框架
+-谷歌公司推动的开源机器学习框架
+-将数据流图作为基础，图节点代表运算，边代表张量
+-应用机器学习方法的一种方式，支撑谷歌人工智能应用
+http://www.tensorflow.org/</p> <p>3.MXNet:基于神经网络的深度学习计算框架
+-提供可扩展的神经网络及深度学习计算功能
+-可用于自动驾驶、机器翻译、语音识别等众多领域
+-Python最重要的深度学习计算框架
+https://mxnet.incubator.apache.org/</p> <h2 id="python库之数据分析"><a href="#python库之数据分析" aria-hidden="true" class="header-anchor">#</a> Python库之数据分析</h2> <p>1.Numpy:表达N维数组的最基础库
+-Python接口使用，C语言实现，计算速度优异
+-Python数据分析及科学计算的基础库，支撑Pandas等
+-提供直接的矩阵运算、广波函数、线性代数等功能
+http://www.numpy.org</p> <p>2.Pandas:Python数据分析高层次应用库
+-提供了简单易用的数据结构和数据分析工具
+-理解数据类型与索引的关系，操作索引即操作数据
+-Python最重要的数据分析功能库，基于Numpy开发
+Series=索引+一维数据
+DataFrame=行列索引+二维数据
+http://pandas.pydata.org</p> <p>3.Scipy:数学、科学和工程计算功能库
+-提供了一批数学算法及工程数据运算功能
+-类似Matlab,可用于如傅里叶变换、信号处理等应用
+-Python最重要的科学计算功能库，基于Numpy开发
+http://www.scipy.org</p> <h2 id="python库之数据可视化"><a href="#python库之数据可视化" aria-hidden="true" class="header-anchor">#</a> Python库之数据可视化</h2> <p>1.Matplotlib:高质量的二维数据可视化功能库
+-提供了超过100种数据可视化展示效果
+-通过Matplotlib.pyplot子库调用各可视化效果
+-Python最重要的数据可视化功能库，基于Numpy开发
+http://matplotlib.org</p> <p>2.Seaborn：统计类数据可视化功能库
+-提供了一批高层次的统计类数据可视化展示效果
+-主要展示数据间分布、分类和线性关系等内容
+-基于Matplotlib开发，支持Numpy和Pandas
+http://seaborn.pydata.org/</p> <p>3.Mayavi:三维科学数据可视化功能库
+-提供了一批简单易用的3D科学计算数据可视化展示效果
+-目前版本是Mayavi2，三维可视化最主要的第三方库
+-支持Numpy、TVTK、Traits、Envisage等第三方库</p> <p>http://docs.enthought.com/mayavi/mayavi</p> <h2 id="python库之文本处理"><a href="#python库之文本处理" aria-hidden="true" class="header-anchor">#</a> Python库之文本处理</h2> <p>1.PyPDF2:用来处理pdf文件的工具集
+-提供了一批处理PDF文件的计算功能
+-支持获取信息、分隔/整合文件、加密解密等
+-完全Python语言实现、不需要额外依赖，功能稳定
+http://mstamy2.github.io/PyPDF2</p> <p>2.NLTK:自然语言文本处理第三方库
+-提供了一批简单易用的自然语言文本处理功能
+-支持语言文本分类、标记、语法句法、语义分析等
+-最优秀的Python自然语言处理库
+http://www.nltk.org/</p> <p>3.Python-docx：创建或更新Microsoft Word文件的第三方库
+-提供创建或更新.doc.docx等文件的计算功能
+-增加并配置段落、图片、表格、文字等，功能全面
+http://python-docx.readthedocs.io/en/latest/index.html</p> <h1 id="从web解析到网络空间"><a href="#从web解析到网络空间" aria-hidden="true" class="header-anchor">#</a> 从Web解析到网络空间</h1> <h2 id="python库之web网站开发"><a href="#python库之web网站开发" aria-hidden="true" class="header-anchor">#</a> Python库之Web网站开发</h2> <p>1.Django:最流行的Web应用框架
+-提供了构建Web系统的基本应用框架
+-MTV模式：模型（Model）、模版（Template）、视图（Views）
+-Python最重要的Web应用框架，略微复杂的应用框架
+https://www.djangoproject.com</p> <p>2.Pyramid:规模适中的Web应用框架
+-提供了简单方便构建Web系统的应用框架
+-不大不小，规模适中，适合快速构建并适度扩展类应用
+-Python产品级Web应用框架，起步简单可扩展性好
+http://trypyramid.com/</p> <p>3.Flask:web应用开发微框架
+-提供了最简单构建Web系统的应用框架
+-特点是：简单、规模小、快速
+-Django&gt;Pyramid&gt;Flask
+http://flask.pocoo.org</p> <h2 id="python库之web信息提取"><a href="#python库之web信息提取" aria-hidden="true" class="header-anchor">#</a> Python库之web信息提取</h2> <p>1.Beautiful Soup:HTML和XML的解析库
+-提供了解析HTML和XML等Web信息的功能
+-又名beautifulsoup4或bs4，可以加载多种解析引擎
+-常与网络爬虫库搭配使用，如Scrapy、requests等</p> <p>2.Re:正则表达式解析和处理功能库
+-提供了定义和解析正则表达式的一批通用功能
+-可用于各类场景、包括定点的Web信息提取
+-Python最主要的标准库之一，无需安装</p> <p>3.Python-Goose:提取文章类型Web页面的功能库
+-提供类对Web页面中文章信息/视频等元数据的读取功能
+-针对特定类型Web页面，应用覆盖面较广
+-Python最主要的Web信息提取库</p> <h2 id="python库之网络爬虫"><a href="#python库之网络爬虫" aria-hidden="true" class="header-anchor">#</a> Python库之网络爬虫</h2> <p>1.Requests:最友好的网络爬虫功能库
+-提供了简单易用的类HTTP协议网络爬虫功能
+-支持链接池、SSL、Cookies、HTTP(S)代理等
+-Python最主要的页面级网络爬虫功能库</p> <p>2.Scrapy:优秀的网络爬虫框架
+-提供了构建网络爬虫系统的框架功能，功能半成品
+-支持批量和定时网页爬取、提供数据处理流程等
+-Python最主要且最专业的网络爬虫框架</p> <p>3.pyspider:强大的Web页面爬取系统
+-提供了完整的网页爬取系统构建功能
+-支持数据库后端、消息队列、优先级、分布式架构等
+-Python重要的网络爬虫类第三方库</p> <h2 id="python库之网络应用开发"><a href="#python库之网络应用开发" aria-hidden="true" class="header-anchor">#</a> Python库之网络应用开发</h2> <p>1.WeRoBot:微信公众号开发框架
+-提供了解析微信服务器消息及反馈消息的功能
+-建立微信机器人的重要技术手段</p> <p>2.aip:百度AI开放平台接口
+-提供了访问百度AI服务的Python功能接口
+-语音、人脸、OCR、NLP、知识图片、图像搜索等领域
+-Python百度AI应用的最主要方式</p> <p>3.MyQR:二维码生成第三方库
+-提供了生成二维码的系统功能
+-基本二维码、艺术二维码和动态二维码</p> <h1 id="从人机交互到艺术设计"><a href="#从人机交互到艺术设计" aria-hidden="true" class="header-anchor">#</a> 从人机交互到艺术设计</h1> <h2 id="python库之图形艺术"><a href="#python库之图形艺术" aria-hidden="true" class="header-anchor">#</a> Python库之图形艺术</h2> <p>1.Quads:迭代的艺术
+-对图片进行四分迭代，形成像素风
+-可以生成动图或静图图像
+-简单易用，具有很高展示度</p> <p>2.ascii_art:ASCII艺术库
+-将普通图片转为ASCII艺术风格
+-输出可以是纯文本或彩色文本
+-可采用图片格式输出</p> <p>3.turtle:海龟绘图体系
+Random Art</p> <h2 id="python库之图形用户界面"><a href="#python库之图形用户界面" aria-hidden="true" class="header-anchor">#</a> Python库之图形用户界面</h2> <p>1.PyQt5:Qt开发框架的Python接口
+-提供了创建Qt5程序的Python API接口
+-Qt是非常成熟的跨平台桌面应用开发系统，完备GUI
+-推荐的Python GUI开发第三方库</p> <p>2.wxPython:跨平台GUI开发框架
+-提供了专用于Python的跨平台GUI开发框架
+-理解数据类型与索引的关系，操作索引即操作数据
+-Python最主要的数据分析功能库，基于Numpy开发</p> <p>3.PyGObject:使用GTK+开发GUI的功能库
+-提供了整合GTK+、WebKitGTK+等库的功能
+-GTK+:跨平台的一种用户图形界面GUI框架
+-实例：Anaconda采用该库构建GUI</p> <h2 id="python库之虚拟现实"><a href="#python库之虚拟现实" aria-hidden="true" class="header-anchor">#</a> Python库之虚拟现实</h2> <p>1.VR Zero:在树莓派上开发VR应用的Python库
+-提供大量与VR开发相关的功能
+-针对树莓派的VR开发库，支持设备小型化，配置简单化
+-非常适合初学者实践VR开发及应用</p> <p>2.pyovr:Oculus Rift的Python开发接口
+-针对Oculus VR设备的Python开发库
+-基于成熟的VR设备，提供全套文档，工业级应用设备
+-Python+虚拟现实领域探索的一种思路</p> <p>3.Vizard：基于Python的通用VR开发引擎
+-专业的企业级虚拟现实开发引擎
+-提供详细的官方文档
+-支持多种主流的VR硬件设备，具有一定通用性</p> <h2 id="python库之游戏开发"><a href="#python库之游戏开发" aria-hidden="true" class="header-anchor">#</a> Python库之游戏开发</h2> <p>1.PyGame:简单的游戏开发功能库
+-提供了基于SDL的简单游戏开发功能及实现引擎
+-理解游戏对外部输入的响应机制及角色构建和交互机制
+-Python游戏入门最主要的第三方库</p> <p>2.Panda3D:开源、跨平台的3D渲染和游戏开发库
+-一个3D游戏引擎，提供Python和C++两种接口
+-支持很多先进特性：法线贴图、光泽贴图、卡通渲染等
+-由迪士尼和卡尼基梅隆大学共同开发</p> <p>3.cocos2d:构建2D游戏和图形界面交互式应用的框架
+-提供了基于OpenGL的游戏开发图形渲染功能
+-支持GPU加速，采用树形结构分层管理游戏对象类型
+-适用于2D专业级游戏开发</p></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/skill-tree/assets/js/app.72dd125b.js" defer></script><script src="/skill-tree/assets/js/61.962f4e83.js" defer></script>
+  </body>
+</html>

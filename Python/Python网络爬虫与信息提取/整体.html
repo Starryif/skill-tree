@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Python语言开发工具选择 | 青焰的技能树</title>
+    <meta name="description" content="边学习边做好笔记，汇总成册方便查阅，不走重复路，点亮技能树。">
+    <link rel="icon" href="/skill-tree/logo.ico">
+    
+    <link rel="preload" href="/skill-tree/assets/css/0.styles.b8dd86a5.css" as="style"><link rel="preload" href="/skill-tree/assets/js/app.72dd125b.js" as="script"><link rel="preload" href="/skill-tree/assets/js/60.d0ad8ef4.js" as="script"><link rel="prefetch" href="/skill-tree/assets/js/10.91df5722.js"><link rel="prefetch" href="/skill-tree/assets/js/11.41d1cd4d.js"><link rel="prefetch" href="/skill-tree/assets/js/12.8556f2c5.js"><link rel="prefetch" href="/skill-tree/assets/js/13.49192743.js"><link rel="prefetch" href="/skill-tree/assets/js/14.88be0a44.js"><link rel="prefetch" href="/skill-tree/assets/js/15.51335612.js"><link rel="prefetch" href="/skill-tree/assets/js/16.5191e6ae.js"><link rel="prefetch" href="/skill-tree/assets/js/17.d04d3e0e.js"><link rel="prefetch" href="/skill-tree/assets/js/18.84418bd8.js"><link rel="prefetch" href="/skill-tree/assets/js/19.842aaf10.js"><link rel="prefetch" href="/skill-tree/assets/js/2.c07a8465.js"><link rel="prefetch" href="/skill-tree/assets/js/20.33f7c98d.js"><link rel="prefetch" href="/skill-tree/assets/js/21.b3d39a47.js"><link rel="prefetch" href="/skill-tree/assets/js/22.ec52062d.js"><link rel="prefetch" href="/skill-tree/assets/js/23.390d1851.js"><link rel="prefetch" href="/skill-tree/assets/js/24.6d294b84.js"><link rel="prefetch" href="/skill-tree/assets/js/25.309d6cba.js"><link rel="prefetch" href="/skill-tree/assets/js/26.b74ca268.js"><link rel="prefetch" href="/skill-tree/assets/js/27.17d5de65.js"><link rel="prefetch" href="/skill-tree/assets/js/28.7489ff30.js"><link rel="prefetch" href="/skill-tree/assets/js/29.d9d6154e.js"><link rel="prefetch" href="/skill-tree/assets/js/3.1feea6c6.js"><link rel="prefetch" href="/skill-tree/assets/js/30.f7e8fe8b.js"><link rel="prefetch" href="/skill-tree/assets/js/31.308b86f3.js"><link rel="prefetch" href="/skill-tree/assets/js/32.3bb8e258.js"><link rel="prefetch" href="/skill-tree/assets/js/33.21fd5bd2.js"><link rel="prefetch" href="/skill-tree/assets/js/34.b42a07bb.js"><link rel="prefetch" href="/skill-tree/assets/js/35.969a85d6.js"><link rel="prefetch" href="/skill-tree/assets/js/36.5960e1d3.js"><link rel="prefetch" href="/skill-tree/assets/js/37.b966bcdf.js"><link rel="prefetch" href="/skill-tree/assets/js/38.4c39df5a.js"><link rel="prefetch" href="/skill-tree/assets/js/39.14465973.js"><link rel="prefetch" href="/skill-tree/assets/js/4.3330d463.js"><link rel="prefetch" href="/skill-tree/assets/js/40.c4ddeefc.js"><link rel="prefetch" href="/skill-tree/assets/js/41.46225b7b.js"><link rel="prefetch" href="/skill-tree/assets/js/42.f55facb8.js"><link rel="prefetch" href="/skill-tree/assets/js/43.2b695f25.js"><link rel="prefetch" href="/skill-tree/assets/js/44.60078cd8.js"><link rel="prefetch" href="/skill-tree/assets/js/45.f4be811b.js"><link rel="prefetch" href="/skill-tree/assets/js/46.35ec0b62.js"><link rel="prefetch" href="/skill-tree/assets/js/47.7e6a6ccb.js"><link rel="prefetch" href="/skill-tree/assets/js/48.d82a54ae.js"><link rel="prefetch" href="/skill-tree/assets/js/49.8d6e1391.js"><link rel="prefetch" href="/skill-tree/assets/js/5.bf7463d2.js"><link rel="prefetch" href="/skill-tree/assets/js/50.c361dbf9.js"><link rel="prefetch" href="/skill-tree/assets/js/51.86643bd0.js"><link rel="prefetch" href="/skill-tree/assets/js/52.3b1e9251.js"><link rel="prefetch" href="/skill-tree/assets/js/53.f9b57c52.js"><link rel="prefetch" href="/skill-tree/assets/js/54.44bbbd7f.js"><link rel="prefetch" href="/skill-tree/assets/js/55.08906c10.js"><link rel="prefetch" href="/skill-tree/assets/js/56.fb2c0dd5.js"><link rel="prefetch" href="/skill-tree/assets/js/57.71b1f488.js"><link rel="prefetch" href="/skill-tree/assets/js/58.985d9800.js"><link rel="prefetch" href="/skill-tree/assets/js/59.f40308a1.js"><link rel="prefetch" href="/skill-tree/assets/js/6.4f7bd484.js"><link rel="prefetch" href="/skill-tree/assets/js/61.962f4e83.js"><link rel="prefetch" href="/skill-tree/assets/js/62.53c46cfe.js"><link rel="prefetch" href="/skill-tree/assets/js/63.769be78f.js"><link rel="prefetch" href="/skill-tree/assets/js/64.a1dff529.js"><link rel="prefetch" href="/skill-tree/assets/js/65.3402bf23.js"><link rel="prefetch" href="/skill-tree/assets/js/66.38cd918d.js"><link rel="prefetch" href="/skill-tree/assets/js/67.e412267d.js"><link rel="prefetch" href="/skill-tree/assets/js/68.61a0440d.js"><link rel="prefetch" href="/skill-tree/assets/js/69.c65f0c67.js"><link rel="prefetch" href="/skill-tree/assets/js/7.1d1caca0.js"><link rel="prefetch" href="/skill-tree/assets/js/70.d8c147ab.js"><link rel="prefetch" href="/skill-tree/assets/js/71.cc97eb82.js"><link rel="prefetch" href="/skill-tree/assets/js/72.485282c7.js"><link rel="prefetch" href="/skill-tree/assets/js/73.14a46d4a.js"><link rel="prefetch" href="/skill-tree/assets/js/74.d368f1f2.js"><link rel="prefetch" href="/skill-tree/assets/js/75.a46ebd79.js"><link rel="prefetch" href="/skill-tree/assets/js/76.5831c17f.js"><link rel="prefetch" href="/skill-tree/assets/js/77.30bd2be9.js"><link rel="prefetch" href="/skill-tree/assets/js/8.58b5d9b4.js"><link rel="prefetch" href="/skill-tree/assets/js/9.5d8b698c.js">
+    <link rel="stylesheet" href="/skill-tree/assets/css/0.styles.b8dd86a5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/skill-tree/" class="home-link router-link-active"><!----> <span class="site-name">青焰的技能树</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/skill-tree/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/HTML/" class="nav-link">HTML</a></li><li class="dropdown-subitem"><a href="/skill-tree/CSS/" class="nav-link">CSS</a></li><li class="dropdown-subitem"><a href="/skill-tree/JavaScript/" class="nav-link">JavaScript</a></li></ul></li><li class="dropdown-item"><h4>后端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/PHP/" class="nav-link">PHP</a></li></ul></li><li class="dropdown-item"><h4>编程</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/Python/" class="nav-link router-link-active">Python</a></li><li class="dropdown-subitem"><a href="/skill-tree/Java/" class="nav-link">Java</a></li></ul></li><li class="dropdown-item"><h4>图像处理</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/PS/" class="nav-link">PS</a></li><li class="dropdown-subitem"><a href="/skill-tree/AE/" class="nav-link">AE</a></li><li class="dropdown-subitem"><a href="/skill-tree/PR/" class="nav-link">PR</a></li></ul></li><li class="dropdown-item"><h4>数据库</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/SQL/" class="nav-link">SQL</a></li></ul></li><li class="dropdown-item"><h4>网络安全</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/web/" class="nav-link">网络安全</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/skill-tree/网站/" class="nav-link">网站</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">空闲</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/看书/" class="nav-link">看书</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/视频/" class="nav-link">视频</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/锻炼/" class="nav-link">锻炼</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/习惯/" class="nav-link">习惯</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/词句/" class="nav-link">词句</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/兼职/" class="nav-link">兼职</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/摄影/" class="nav-link">摄影</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/DIY/" class="nav-link">DIY</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/Aerial/" class="nav-link">航拍</a></li></ul></div></div><div class="nav-item"><a href="https://starryif.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  船星
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/skill-tree/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/HTML/" class="nav-link">HTML</a></li><li class="dropdown-subitem"><a href="/skill-tree/CSS/" class="nav-link">CSS</a></li><li class="dropdown-subitem"><a href="/skill-tree/JavaScript/" class="nav-link">JavaScript</a></li></ul></li><li class="dropdown-item"><h4>后端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/PHP/" class="nav-link">PHP</a></li></ul></li><li class="dropdown-item"><h4>编程</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/Python/" class="nav-link router-link-active">Python</a></li><li class="dropdown-subitem"><a href="/skill-tree/Java/" class="nav-link">Java</a></li></ul></li><li class="dropdown-item"><h4>图像处理</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/PS/" class="nav-link">PS</a></li><li class="dropdown-subitem"><a href="/skill-tree/AE/" class="nav-link">AE</a></li><li class="dropdown-subitem"><a href="/skill-tree/PR/" class="nav-link">PR</a></li></ul></li><li class="dropdown-item"><h4>数据库</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/SQL/" class="nav-link">SQL</a></li></ul></li><li class="dropdown-item"><h4>网络安全</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill-tree/web/" class="nav-link">网络安全</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/skill-tree/网站/" class="nav-link">网站</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">空闲</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/看书/" class="nav-link">看书</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/视频/" class="nav-link">视频</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/锻炼/" class="nav-link">锻炼</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/习惯/" class="nav-link">习惯</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/词句/" class="nav-link">词句</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/兼职/" class="nav-link">兼职</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/摄影/" class="nav-link">摄影</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/空闲/DIY/" class="nav-link">DIY</a></li><li class="dropdown-item"><!----> <a href="/skill-tree/Aerial/" class="nav-link">航拍</a></li></ul></div></div><div class="nav-item"><a href="https://starryif.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  船星
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/skill-tree/Python/" class="sidebar-link">序言</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Python语言程序设计</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Python应用基础</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>11周精通Python计划</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Python网络爬虫与信息提取</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/skill-tree/Python/Python网络爬虫与信息提取/整体.html" class="active sidebar-link">Python语言开发工具选择</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python网络爬虫与信息提取/整体.html#requests库的安装" class="sidebar-link">Requests库的安装</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python网络爬虫与信息提取/整体.html#http协议及requests库方法" class="sidebar-link">HTTP协议及Requests库方法</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python网络爬虫与信息提取/整体.html#requests库主要方法解析" class="sidebar-link">Requests库主要方法解析</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python网络爬虫与信息提取/整体.html#requests库的get-方法" class="sidebar-link">Requests库的get()方法</a></li><li class="sidebar-sub-header"><a href="/skill-tree/Python/Python网络爬虫与信息提取/整体.html#爬取网页的通用代码框架" class="sidebar-link">爬取网页的通用代码框架</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="python语言开发工具选择"><a href="#python语言开发工具选择" aria-hidden="true" class="header-anchor">#</a> Python语言开发工具选择</h1> <p>1.IDE:集成开发环境
+编写、调试、发布Python程序的工具
+文本工具类IDE
+IDLE
+Notepad++
+Sublime Text
+Vim &amp; Emacs
+Atom
+Komodo Edit
+集成工具类IDE
+PyCharm
+Wing
+PyDev &amp; Eclipse
+Visual Studio
+Anaconda &amp; Spyder
+Canopy</p> <p>2.IDLE
+自带、默认、常用、入门级
+适用于
+-Python入门
+-功能简单直接
+300+代码以内</p> <p>3.Sublime Text
+-专为程序员开发的第三方专用编程工具
+-专业编程体验
+-多种编程风格
+-工具非注册免费使用</p> <p>4.Wing
+-公司维护，工具收费
+-调试功能丰富
+-版本控制，版本同步
+-适合多人共同开发</p> <p>5.Visual Studio &amp; PTVS
+-微软公司维护
+-Win环境为主
+-调试功能丰富</p> <p>6.Eclipse
+PyDev
+开源IDE开发工具
+需要有一定开发经验</p> <p>7.PyCharm
+-社区版免费
+-简单，集成度高
+-适合较复杂工程</p> <p>8.Canopy
+科学计算，数据分析
+公司维护，工具收费
+支持近500个第三方库
+适合科学计算领域应用开发</p> <p>9.Anaconda
+科学计算，数据分析
+开源免费
+支持近800个第三方库</p> <p>#网络爬虫之规则
+#Requests库入门</p> <h2 id="requests库的安装"><a href="#requests库的安装" aria-hidden="true" class="header-anchor">#</a> Requests库的安装</h2> <p>1.官方文档
+http://www.python-requests.org</p> <p>2.pip install requests</p> <div class="language- extra-class"><pre class="language-text"><code>import requests
+r=requests.get(&quot;http://www.baidu.com&quot;)
+r.status_code  #200
+r.encoding='utf-8'
+r.text
+</code></pre></div><p>3.Requests库的7个主要方法
+requests.request()构造一个请求，支撑以下各方法的基础方法
+requests.get()
+获取HTML网页的主要方法，对应于HTTP的GET
+requests.head()
+获取HTML网页头信息的方法，对应于HTTP的HEAD
+requests.post()
+向HTML网页提交POST请求的方法，对应于HTTP的POST
+request.put()
+向HTML网页提交PUT请求的方法，对应于HTTP的PUT
+request.patch()
+向HTML网页提交局部修改请求，对应于HTTP的PATCH
+request.delete()
+向HTML网页提交删除请求，对应于HTTP的DELETE</p> <h2 id="http协议及requests库方法"><a href="#http协议及requests库方法" aria-hidden="true" class="header-anchor">#</a> HTTP协议及Requests库方法</h2> <p>1.HTTP协议
+HTTP，Hypertext Transfer Protocol，超文本传输协议
+HTTP是一个基于&quot;请求与响应&quot;模式的、无状态的应用层协议
+HTTP协议采用URL作为定位网络资源的标识
+URL格式 http://host[:port][path]
+host:合法的Internet主机域名或IP地址
+port:端口号，缺省端口为80
+path:请求资源的路径
+URL是通过HTTP协议存取资源的Internet路径，一个URL对应一个数据资源。</p> <p>2.HTTP协议对资源的操作
+GET：请求获取URL位置的资源
+HEAD：请求获取URL位置资源的响应消息报告，即获得该资源的头部信息
+POST：请求向URL位置的资源后附加新的数据
+PUT：请求向URL位置存储一个资源，覆盖原URL位置的资源
+PATCH：请求局部更新URL位置的资源，即改变该处资源的部分类容
+DELETE：请求删除URL位置存储的位置</p> <p>3.理解PATCH和PUT的区别
+假设URL位置有一组数据UserInfo，包括UserID、UserName等20个字段
+需求：用户修改了UserName，其他不变。
+-采用PATCH，仅向URL提交UserName的局部更新请求。
+-采用PUT，必须将所有20个字段一并提交到URL，未提交字段被删除。
+PATCH的最主要好处：节省网络带宽</p> <p>4.HTTP协议与Requests库功能一致性一致
+Requests库的head()方法
+r=requests.head('http://httpbin.org/get')
+r.headers
+r.text
+Requests库的post()方法
+payload={'key1':'value1','key2':'value2'}
+r=requests.post('http://httpbin.org/post',data=payload)
+print(r.text)
+{...
+'form':{
+'key2':'value2'
+'key1':'value1'
+},
+}
+向URL POST一个字典，自动编码为form(表单)
+Requests库的post()方法
+r=requests.post(&quot;http://httpbin.org/post&quot;,data='abc')
+print(r.text)
+{
+'data':'abc'
+'form':{
+}
+}
+向URL POS一个字符串，自动编码为data
+Requests库的put()方法
+payload={'key1':'value1','key2':'value2'}
+r=requests.put('http://httpbin.org/put',data=payload)
+print(t.text)
+{...
+'form':{
+'key2':'value2',
+'key1':'value1'	
+}
+}</p> <h2 id="requests库主要方法解析"><a href="#requests库主要方法解析" aria-hidden="true" class="header-anchor">#</a> Requests库主要方法解析</h2> <p>1.requests.request(method,url,**kwargs)
+method:请求方式，对应get/put/post等7种
+url：拟获取页面的url链接
+**kwargs:控制访问的参数，共13个
+requests.request(method,url,**kwargs)</p> <p>2.method:请求方式
+r=requests.request('GET',url,**kwargs)
+r=requests.request('HEAD',url,**kwargs)
+r=requests.request('POST',url,**kwargs)
+r=requests.request('PUT',url,**kwargs)
+r=requests.request('PATCH',url,**kwargs)
+r=requests.request('delete',url,**kwargs)
+r=requests.request('OPTIONS',url,**kwargs)</p> <p>3.**kwargs:控制访问的参数，均为可选项
+params:字典或字节序列，作为参数增加到url中</p> <blockquote><blockquote><blockquote><p>kv={'key1':'value1','key2':'value2'}
+r=requests.request(&quot;GET&quot;,'http://python123.io/ws',params=kv)
+print(r.url)
+http://python123.io/ws?key1=value1&amp;key2=value2
+data:字典、字节序列或文件对象，作为Request的内容</p></blockquote></blockquote> <blockquote><blockquote><p>kv={'key1':'value1','key2':'value2'}
+r=requests.request('POST','http://python123.io/wa',data=kv)
+body='主体内容'
+r=requests.request('POST','http://python123.io/wa',data=kv)
+json:JSON格式的数据，作为Request的内容</p></blockquote></blockquote> <blockquote><blockquote><p>kv={'key1':'value1'}
+r=requests.request('POST','http://python123.io/ws',json=kv)
+headers:字典，HTTP定制头</p></blockquote></blockquote> <blockquote><blockquote><p>hd={'user-agent':'Chrome/10'}
+r=requests.request('POST','http://python123.io/ws',headers=hd)
+coolies:字典或CookieJar,Request中的cookie
+auth:元组，支持HTTP认证功能
+files：字典类型，传输文件</p></blockquote></blockquote> <blockquote><blockquote><p>fs={'file':open('data.xls','rb')}
+r=requests.request('POST','http://python123.io/ws',files=fs)
+timeout:设定超时时间，秒为单位</p></blockquote></blockquote> <blockquote><blockquote><p>r=requests.request('GET','http://www.baidu.com',timeout=10)
+proxies:字典类型，设定访问代理服务器，可以增加登录认证</p></blockquote></blockquote> <blockquote><blockquote><p>pxs={
+'http':'http://user:pass@10.10.10.1:1234'
+'https':'https://10.10.10.1:4321'
+}</p></blockquote></blockquote> <blockquote><blockquote><p>r=requests.request('GET','http://www.baidu.com',proxies=pxs)
+allow_redirects:True/False,默认为True，重定向开关
+stream:True/False,默认为True，获取内容立即下载开关
+verify:True/False,默认为True，认证SSL证书开关
+cert:本地SSL证书路径</p></blockquote></blockquote></blockquote> <p>4.requests.get(url,params=None,**kwargs)
+url:拟获取页面的url链接
+params:url中的额外参数，字典或字节流格式，可选
+**kwargs:12个控制访问的参数
+requests.head(url,**kwargs)
+url:拟获取页面的url链接
+**kwargs:13个控制访问的参数
+requests.post(url,data=None,json=None,**kwargs)
+url:拟更新页面的url链接
+data:字典、字节序列或文件，Request的内容
+json：JSON格式的数据,Request的内容
+**kwargs:11个控制访问的参数
+request.put(url,data=None,**kwargs)
+url:拟更新页面的url链接
+data:字典、字节序列或文件，Request的内容
+**kwargs:12个控制访问的参数
+request.patch(url,data=None,**kwargs)
+url:拟更新页面的url链接
+data:字典、字节序列或文件，Request的内容
+**kwargs:12个控制访问的参数
+request.delete(url,**kwargs)
+url:拟删除页面的url链接
+**kwargs:13个控制访问的参数</p> <h2 id="requests库的get-方法"><a href="#requests库的get-方法" aria-hidden="true" class="header-anchor">#</a> Requests库的get()方法</h2> <p>1.r=requests.get(url)
+Request:构造一个向服务器请求资源的Request对象
+Response:返回一个包含服务器资源的Response对象
+Response对象包含爬虫返回的内容</p> <blockquote><blockquote><blockquote><p>import requests
+r=requests.get(&quot;http://www.baidu.com&quot;)
+print(r.status_code)
+200</p></blockquote></blockquote> <blockquote><blockquote><p>type(r)
+&lt;class 'requests.models.Response'&gt;</p></blockquote></blockquote> <blockquote><blockquote><p>r.headers
+{
+'Cache-Control':'private,no-cache,no-store,proxy-revalidate,ection':'keep-Alive','Transfer-Encoding':'chunked','Server':
+}</p></blockquote></blockquote></blockquote> <p>2.Response对象的属性
+r.status_code:HTTP请求的返回状态，200表示连接成功，404表示失败
+r.text:HTTP响应内容的字符串形式，即url对应的页面内容
+r.encoding:从HTTP header中猜测的响应内容编码方式
+r.apparent_encoding:从内容中分析出的响应内容编码方式（备选编码方式）
+r.content:HTTP响应内容的二进制形式</p> <p>3.理解Response的编码
+r.encoding:如果header中不存在charset字段，则认为编码为ISO-8859-1
+r.apparent_encoding:根据网页内容分析出的编码方式</p> <h2 id="爬取网页的通用代码框架"><a href="#爬取网页的通用代码框架" aria-hidden="true" class="header-anchor">#</a> 爬取网页的通用代码框架</h2> <p>1.理解Requests库的异常
+requests.ConnectionError:网络连接错误异常，如DNS查询失败，拒绝连接等
+requests.HTTPError:HTTP错误异常
+requests.URLRequired:URL缺失异常
+requests.TooManyRedirects:超过最大重定向次数，产生重定向异常
+requests.ConnectTimeout:连接远程服务器超时异常
+requests.Timeout:请求URL超时，产生超时异常
+r.raise_for_status():如果不是200，产生异常requests.HTTPError</p> <p>2.爬取网页的通用代码框架</p> <div class="language- extra-class"><pre class="language-text"><code>import requests
+def getHTMLText(url):
+	try:
+		r=requests.get(url,timeout=30)
+		r.raise_for_status()#如果状态不是200,引发HTTPError异常
+		r.encoding=r.apparent_encoding
+		return r.text
+	except
+		return &quot;产生异常&quot;
+if __name__=='__main__':
+	url='http://www.baidu.com'
+	print(getHTMLText(url))
+</code></pre></div><p>#网络爬虫的“盗亦有道”</p> <p>##网络爬虫引发的问题</p> <p>1.网络爬虫的尺寸
+爬取网页，玩转网页：小规模，数据量小，爬取速度不敏感，&gt;90%，Requests库
+爬取网站，爬取系列网站：中规模，数据规模较大，爬取速度敏感，Scrapy库
+爬取全网：大规模，搜索引擎，爬取速度关键，定制开发</p> <p>2.网络爬虫引发的问题
+-网络爬虫的“骚扰”
+受限于编写水平和目的，网络爬虫将会为web服务器带来巨大的资源开销
+-网络爬虫的法律风险
+服务器上的数据有产权归属
+网络爬虫获取数据后牟利将带来法律风险
+-网络爬虫泄漏隐私
+网络爬虫可能具备突破简单访问控制的能力，获得被保护数据从而泄露个人隐私。</p> <p>3.网络爬虫的限制
+-来源审查：判断User-Agent进行限制
+检查来访HTTP协议头的User-Agent域，只响应浏览器或友好爬虫的访问。
+-发布公告：Robots协议
+告知所有爬虫网站的爬取策略，要求爬虫遵守</p> <p>##Robots协议</p> <p>1.Robots协议
+Robots Exclusion Standard 网络爬虫排除标准
+作用：网站告知网络爬虫那些页面可以抓取，哪些不行。
+形式：在网站根目录下的robots.txt文件</p> <p>2.Robots协议基本语法
+#注释 <em>代表所有 /代表根目录
+User-agent:</em>
+Disallow:/</p> <p>3.案例
+http://www.baidu.com/robots.txt
+http://www.qq.com/robots.txt
+http://news.qq.com/robots.txt
+http://www.moe.edu.cn/robots.txt(无robots协议)</p> <p>4.Robots.txt文件要放在网站的根目录
+并不是所有的网站都有Robots协议
+没有robots.txt文件，允许所有爬虫无限制地爬取其内容</p> <p>##Robots协议的遵守方式</p> <p>1.Robots协议的使用
+网络爬虫：自动或人工识别robots.txt，再进行内容爬取。
+约束性：Robots协议是建议但非约束性，网络爬虫可以不遵守，但存在法律风险</p> <p>2.对Robots协议的理解
+爬取全网：必须遵守
+爬取网站，爬取系列网站：非商业且偶尔，建议遵守；商业利益：必须遵守
+爬取网页，玩转网页：访问量较大，建议遵守；访问量很小：可以遵守
+类人行为可不参考Robots协议</p> <p>#Requests库网络爬虫实战（5个实例）</p> <p>##京东商品页面的爬取</p> <div class="language- extra-class"><pre class="language-text"><code>import requests
+url='http://item.jd.com/2967795.html'
+try:
+	r=requests.get(url)
+	r.raise_for_status()
+	r.encoding=r.apparent_encoding
+	print(r.text[:1000])
+except:
+	print(&quot;爬取失败&quot;)
+</code></pre></div><p>##亚马逊商品页面的爬取</p> <div class="language- extra-class"><pre class="language-text"><code>import requests
+url='http://www.amazon.cn/gp/product/B01M8L5Z3Y'
+try:
+	kv={'user-agent':'Mozilla/5.0'}
+	r=requests.get(url,headers=kv)
+	r.raise_for_status()
+	r.encoding=r.apparent_encoding
+	print(r.text[1000:2000])
+except:
+	print(&quot;爬取失败&quot;)
+</code></pre></div><p>##百度360搜索关键词提交</p> <div class="language- extra-class"><pre class="language-text"><code>import requests
+keyword='python'
+try:
+	kv={'q':keyword}
+	r=requests.get(&quot;http://www.so.com/s&quot;,params=kv)
+	print(r.request.url)
+	r.raise_for_status()
+	print(len(r.text))
+except:
+	print(&quot;爬取失败&quot;)
+</code></pre></div><p>##网络图片的爬取和存储</p> <div class="language- extra-class"><pre class="language-text"><code>import requests
+import os
+url='http://image.nationalgeographic.com.cn/2017/0211/2545445.jpg'
+root='D://pics//'
+path=root+url.split('/')[-1]
+try:
+	if not os.path.exists(root):
+		os.mkdir(root)
+	if not os.path.exists(path):
+		r=requests.get(url)
+		with open(path,'wb')as f:
+			f.write(r.content)
+			f.close()
+			print(&quot;文件保存成功&quot;)
+	else:
+		print(&quot;文件已存在&quot;)
+except:
+	print(&quot;爬取失败&quot;)
+</code></pre></div><p>##IP地址归属地的自动查询</p> <div class="language- extra-class"><pre class="language-text"><code>import requests
+url='http://m.ip138.com/ip.asp?ip='
+try:
+	r=requests.get(url+'202.204.80.112')
+	r.raise_for_status()
+	r.encoding=r.apparent_encoding
+	print(r.text[-500:])
+except:
+	print(&quot;爬取失败&quot;)
+</code></pre></div><p>#网络爬虫之提取</p> <p>#Beautiful Soup库入门
+##Beautiful Soup库的安装</p> <p>1.pip install beautifulsoup4</p> <p>2.import requests
+from bs4 import BeautifulSoup
+r=requests.get('http://python123.io/ws/demo.html')
+demo=r.text
+soup=BeautifulSoup(demo,'html.parser')
+print(soup.prettify())</p> <p>3.from bs4 import BeautifulSoup
+soup=BeautifulSoup('</p><p>data</p><p>','html.parser')</p> <p>##Beautiful Soup库的基本元素</p> <p>1.Beautiful Soup库是解析、遍历、维护&quot;标签树&quot;的功能库</p> <p>2.Beautiful Soup库的引用
+Beautiful Soup库，也叫beautifulsoup4或bs4
+from bs4 import BeautifulSoup
+import bs4</p> <p>3.HTML/XML文档&lt;-&gt;标签树&lt;-&gt;BeautifulSoup类</p> <blockquote><blockquote><blockquote><p>from bs4 import BeautifulSoup
+soup=BeautifulSoup('</p><html>data</html>','html.parser')
+soup2=BeautifulSoup(open('D://demo.html'),'html.parser')
+BeautifulSoup对应一个HTML/XML文档的全部内容<p></p></blockquote></blockquote></blockquote> <p>4.Beautiful Soup库解析器
+bs4的HTML解析器，BeautifulSoup(mk,'html.parser'),安装bs4库
+lxml的HTML解析器，BeautifulSoup(mk,'lxml'),pip install lxml
+lxml的XML解析器，BeautifulSoup(mk,'xml'),pip install lxml
+html5lib的解析器,BeautifulSoup(mk,'html5lib'),pip install html5lib</p> <p>5.Beautiful Soup类的基本元素
+Tag，标签，最基本的信息组织单元，分别用&lt;&gt;和&lt;/&gt;标明开头和结尾
+Name，标签的名字，</p><p>...</p>的名字的是'p'，格式是<tag>.name
+Attributes，标签的属性，字典形式组织，格式:<tag>.attrs
+NavigableString，标签内非属性字符串，&lt;&gt;...&lt;&gt;中字符串，格式：<tag>.string
+Comment：标签内字符串的注释部分，一种特殊的Comment类型<p></p> <p>6.当HTML文档中存在多个相同Tag标签是，Soup.<tag>是返回其中的第一个</tag></p> <p>7.type(tag.attrs)
+&lt;class 'dict'&gt;
+type(tag)
+&lt;class 'bs4.element.Tag'&gt;
+标签可以有0个或多个属性，如果没有属性，则tag.attrs获得空字典
+type(soup.p.string)
+&lt;class 'bs4.element.NavigableString'&gt;
+NavigableString是可以跨越多个标签层次的</p> <p>8.newsoup=BeautfulSoup('<b></b></p><p>This is not a comment</p>','html.parser')<p></p> <blockquote><blockquote><blockquote><p>newsoup.b.string
+'this is a comment'</p></blockquote></blockquote> <blockquote><blockquote><p>type(newsoup.b.string)
+&lt;class 'bs4.element.Comment'&gt;</p></blockquote></blockquote> <blockquote><blockquote><p>newsoup.p.string
+'this is not a comment'</p></blockquote></blockquote> <blockquote><blockquote><p>type(newsoup.p.string)
+&lt;class 'bs4.element.NavigableString'&gt;</p></blockquote></blockquote></blockquote> <p>##基于bs4库的HTML格式化和编码</p> <p>1.让</p><html>内容更加友好的显示
+bs4的prettify()方法：为HTML文档的标签和文档增加换行符<p></p> <p>2.bs4库将任何读入的HTML文件或字符串都转换成UTF-8编码</p> <blockquote><blockquote><blockquote><p>print(soup.p.prettify())
+</p><p>
+中文
+</p><p></p></blockquote></blockquote></blockquote> <p>##基于bs4库的HTML内容遍历方法</p> <p>1.标签树的下行遍历
+.contents：子节点的列表，将<tag>所有儿子节点存入列表
+。children：子节点的迭代类型，与.contents类似，用于循环遍历儿子节点
+.descendants：子孙节点的迭代类型，包含所有子孙节点，用于循环遍历
+for child in soup.bady.children:
+print(child)
+#遍历儿子节点
+for child in soup.body.descendants:
+print(child)
+#遍历子孙节点</tag></p> <p>2.标签树的上行标签
+.parent：节点的父亲标签
+.parents：节点先辈标签的迭代类型，用于循环遍历先辈节点</p> <blockquote><blockquote><blockquote><p>soup=BeautifulSoup(&quot;damo&quot;,'parser')
+for parent in soup.a.parents:
+if parent is None:
+print(parent)
+else:
+print(parent.name)
+p
+body
+html
+[document]</p></blockquote></blockquote></blockquote> <p>3.标签树的平行遍历
+.next_sibling：返回按照HTML文本顺序的下一个平行节点标签
+.previous_sibling：返回按照HTML文本顺序的上一个平行节点标签
+.next_siblings：迭代类型，返回按照HTML文本顺序的后续所有平行节点标签
+.previous_siblings：迭代类型，返回按照HTML文本顺序的前续所有平行节点标签
+平行遍历发生在同一个父节点下的各节点间
+for sibling in soup.a.next_siblings:
+print(sibling)
+#遍历后续节点
+for sibling in soup.a.previsous_siblings:
+print(sibling)
+#遍历前续节点</p> <p>#信息组织与提取方法
+##基于bs4库的HTML内容查找方法</p> <p>1.&lt;&gt;.find_all(name,attrs,recursive,string,**kwargs)
+返回一个列表类型，存储查找的结果
+name:对标签名称的检索字符串
+attrs:对标签属性值的检索字符串，可标注属性检索
+recursive:是否对子孙全部检索，默认True
+string:&lt;&gt;...&lt;/&gt;中字符串区域的检索字符串</p> <p>2.-soup.find_all('a')</p> <p>-soup.find_all(['a','b'])
+-for tag in soup.find_all(True):
+print(tag.name)
+html
+head
+title
+body
+p
+b
+p
+a
+a
+-import re
+for tag in soup.find_all(re.compile('b')):
+print(tag.name)
+body
+b</p> <p>3.-soup.find_all('p','course')
+-soup.find_all(id='link1')
+-soup.find_all(id='link')
+-import re
+soup.find_all(id=re.compile('link'))</p> <p>4.-soup.find_all('a')
+-soup.find_all('a','recursive'=False)</p> <p>5.-soup.find_all(string='Basic python')
+-import re
+soup.find_all(string=re.compile('python'))</p> <p>6.<tag>(..)等价于<tag>.find_all(..)
+soup(..)等价于soup.find_all(..)</tag></tag></p> <p>7.扩展方法
+&lt;&gt;.find:搜索且只返回一个结果，字符串类型，同.find_all()参数
+&lt;&gt;.find_parents()：在先辈节点搜索，返回列表类型，同.find_all()参数
+&lt;&gt;.find_parent()：在先辈节点中返回一个结果，字符串类型，同.find_all()参数
+&lt;&gt;.find_next_siblings()：在后续平行节点中搜索，返回列表类型，同.find_all()参数
+&lt;&gt;.find_next_sibling():在后续平行节点中返回一个结果，字符串类型，同.find()参数
+&lt;&gt;.find_previous_siblings()：在前序平行节点中搜索，返回列表类型，同.find_all()参数
+&lt;&gt;.find_previous_sibling()：在前序平行节点中返回一个结果，字符串类型，同.find()参数</p> <p>##信息标记的三种形式</p> <p>1.信息的标记
+-标记后的信息可形成信息组织结构，增加了信息维度
+-标记后的信息可用于通信、存储或展示
+-标记后的结构与信息一样具有重要价值
+-标记后的信息更利于程序理解和运用</p> <p>2.HTML的信息标记
+HTML超文本传输协议
+HTML是WWW（World Wide Web）的信息组织方式
+超文本：声音图像视频
+文本
+HTML通过预定义的&lt;&gt;..&lt;/&gt;标签形式组织不同类型的信息</p> <p>3.信息标记的三种形式
+XML、JSON、YAML</p> <p>4.XML
+eXtensible Markup Language
+<img src="china.jpg" size="10">..
+标签Tag 名称Name 属性Attribute
+<img src="china.jpg" size="10">
+空元素的缩写形式
+
+注释书写形式</p> <p>5.JSON
+JavaScript Object Notation
+有类型的键值对 key:value
+&quot;name&quot;:&quot;北京理工大学&quot;
+&quot;&quot;类型
+键key
+值value
+&quot;name&quot;:['北京理工大学',&quot;延安自然科学院&quot;]
+多值用[,]组织
+键值对嵌套用{,}
+&quot;name&quot;:{
+'newName':'北京理工大学',
+'oldName':'延安自然科学院'
+}
+'key':'value'
+'key':['value1','value2']
+'key':{
+'subkey1':'subvalue1'
+'subkey2':'subvalue2'
+}</p> <p>6.YAML
+YAML Ain't Markup Language
+无类型键值对key:value
+name:北京理工大学
+键key:值value
+仅字符串
+name:
+newName:北京理工大学
+oldName:延安自然科学院
+表达并列关系
+name:
+-北京理工大学
+-延安自然科学院
+|表达整块数据 #表示注释
+text:|  #学校介绍
+北京理工大学创立于1940年，前身是延安自然科学院，..
+....学校现隶属于工业和信息化部
+key:value
+key:#Comment
+-value1
+-value2
+key:
+subkey1:subvalue1
+subkey2:subvalue2</p> <p>##三种信息标记形式的比较</p> <p>1.三种信息标记形式的比较
+XML 最早的通用信息标记语言，可扩展性好，但繁琐
+JSON 信息有类型，适合程序处理(js)，较XML简洁
+YAML 信息无类型，文本信息比例最高，可读性好</p> <p>2.三种信息标记形式的比较
+XML Internet上的信息交互与传递
+JSON 移动应用云端和节点的信息通信，一般用于程序对接口处理的地方，无注释
+YAML 各类系统的配置文件，有注释易读</p> <p>##信息提取的一般方法</p> <p>1.信息提取的一般方法
+方法一：完整解析信息的标记形式，再提取关键信息
+XML JSON YAML
+需要标记解析器 例如：bs4库的标签树遍历
+优点：信息解析准确
+缺点：提取过程繁琐，速度慢</p> <p>2.方法二：无视标记形式，直接搜索关键信息
+搜索
+对信息的文本查找函数即可
+优点：提取过程简洁，速度较快。
+缺点：提取结果准确性与信息内容相关。</p> <p>3.融合方法：结合形式解析与搜索方法，提取关键信息。
+XML JSON YAML 搜索
+需要标记解析器及文本查找函数</p> <p>4.实例
+提取HTML中所有URL链接
+思路：1、搜索到所有<a>标签
+2、解析<a>标签格式，提取href后的链接内容</a></a></p> <p>5.&gt;&gt;&gt;from bs4 import BeautifulSoup</p> <blockquote><blockquote><blockquote><p>soup=BeautifulSoup(demo,'html.parser')
+for link in soup.find_all('a'):
+print(link.get('href'))
+http://www.icourse163.org/course/BIT-268001
+http://www.icourse163.org/course/BIT-1001870001</p></blockquote></blockquote></blockquote> <p>#实例1：中国大学排名爬虫
+##&quot;中国大学排名定向爬虫&quot;实例介绍</p> <p>1.功能描述
+输入：大学排名URL链接
+输出：大学排名信息的屏幕输出（排名，大学名称，总分）
+技术路线：requests-bs4
+定向爬虫：仅对输入URL进行爬取，不扩展爬取</p> <p>2.程序的结构设计
+步骤1：从网络上获取大学排名网页内容
+getHTMLText()
+步骤2：提取网页内容中信息到合适的数据结构
+fillUnivList()
+步骤3：利用数据结构展示并输出结构
+printUnivList()</p> <p>##&quot;中国大学排名定向爬虫&quot;实例编写</p> <div class="language- extra-class"><pre class="language-text"><code>import requests
+from bs4 import BeautifulSoup
+import bs4
+
+def getHTMLText(url):
+	try:
+		r=requests.get(url,timeout=30)
+		r.raise_for_status()
+		r.encoding=r.apparent_encoding
+		return t.text
+	except:
+		return ''
+
+def fillUnivList(ulist,html):
+	soup=BeautifulSoup(html,'html.parser')
+	for tr in soup.find('tbody').children:
+		if isinstance(tr,bs4.element.Tag):
+			tds=tr('td')
+			ulist.append([tds[0].string,tds[1].string,tds[2].string])
+
+def printUnivList(ulist,num):
+	print(&quot;{:^10}\t{:^6}\t{:^10}&quot;.format(&quot;排名&quot;,&quot;学校名称&quot;,&quot;总分&quot;))
+	for i in range(num):
+		u=ulist[i]
+		print(&quot;{:^10}\t{:^6}\t{:^10}&quot;.format(u[0]),u[1],u[2])
+
+def main():
+	uinfo=[]
+	url='httP://www.zuihaodaxue.cn/zuihaodaxuepaimi.html'
+	html=getHTMLText(url)
+	fillUnivList(unifo,html)
+	printUnivList(unifo,20) #20 univs
+main()
+
+</code></pre></div><p>##&quot;中国大学排名定向爬虫&quot;实例优化</p> <p>1.中文对齐问题的原因
+当中文字符宽度不够时，采用西文字符填充；中西文字符占用宽度不同。</p> <p>2.中文对齐问题的解决
+采用中文字符的空格填充chr(12288)</p> <ol start="3"><li></li></ol> <div class="language- extra-class"><pre class="language-text"><code>def printUnivList(ulist,num):
+	tplt='{:^10}\t{:{3}^10}\t{:^10}
+	print(tplt.format(&quot;排名&quot;,&quot;学校名称&quot;,&quot;总分&quot;,chr(12288)))
+	for i in range(num):
+		u=ulist[i]
+		print(tplt.format(u[0]),u[1],u[2],chr(12288))
+</code></pre></div><p>#网络爬虫之实战</p> <p>#Re(正则表达式)库入门
+##正则表达式的概念</p> <p>1.正则表达式
+regular expression regex RE
+正则表达式是用来简洁表达一组字符串的表达式
+正则表达式优势：简洁‘一行胜千言’</p> <p>2.正则表达式
+通用的字符串表达框架
+简洁表达一组字符串的表达式
+针对字符串表达‘简洁’和‘特征’思想的工具
+判断某字符串的特征归属</p> <p>3.正则表达式在文本处理中十分常用
+-表达文本类型的特征(病毒、入侵等)
+-同时查找或特换一组字符串
+-匹配字符串的全部或部分
+正则表达式主要应用在字符串匹配中</p> <p>4.正则表达式的使用
+编译：将符合正则表达式语法的字符串转换成正则表达式特征
+regex='P(Y|YT|YTH|YTHO)?N'
+编译：p=re.compile(regex)-&gt;特征</p> <p>##正则表达式的语法</p> <p>1.正则表达式的语法
+正则表达式语法由字符和操作符构成</p> <p>2.正则表达式的常用操作符
+.表示任何单个字符
+[]字符集，对单个字符给出取值范围，[abc]表示a,b,c,[a-z]表示a到z单个字符
+[^]非字符集，对单个字符给出排除范围，[^abc]表示非a或b或c的单个字符
+<em>前一个字符0次或无限次扩展，abc</em>表示ab、abc、abcc、abccc等
++前一个字符1次或无限次扩展，abc+表示abc、abcc、abccc等
+?前一个字符0次或1次扩展，abc?表示ab、abc
+|左右表达式任意一个，abc|def表示abc、def
+{m}扩展前一个字符m次，ab{2}c表示abbc
+{m,n}扩展前一个字符m至n次(含n)，ab{1,2}c表示abc,abcc
+^匹配字符串开头，^abc表示abc且在一个字符串的开头
+$匹配字符串结尾，abc$表示abc且在一个字符串的结尾
+()分组标记，内部只能使用|操作符，(abc|def)表示abc、def
+\d数字，等价于[0-9]
+\w单词字符，等价于[A-Za-z0-9]</p> <p>3.经典正则表达式实例
+^[A-Za-z]+$ 由26个字母组成的字符串
+^[A-Za-z0-9]+$ 由26个字母和数字组成的字符串
+^-?\d+$ 整数形式的字符串
+^[0-9]<em>[1-9][0-9]</em>$ 正整数形式的字符串
+[1-9]\d{5} 中国境内邮政编码，6位
+[\u4e00-\u9fa5] 匹配中文字符
+\d{3}-\d{8}|\d{4}-\d{7} 国内电话号码，010-68913536</p> <p>4.匹配IP地址的正则表达式
+IP地址字符串形式的正则表达式(IP地址分4段，每段0-255)
+0-99:[1-9]?\d
+100-199:1\d{2}
+200-249:2[0-4]\d
+250-255:25[0-5]
+(([1-9]?\d|1\d{2}|2[0-4]\d|25[0-5]).){3}([1-9]?\d|1\d{2}|2[0-4]\d|25[0-5])</p> <p>##Re库的基本使用</p> <p>1.Re库介绍
+Re库是Python的标准库，主要用于字符串匹配
+调用方式：import re</p> <p>2.正则表达式的表示类型
+-raw string类型（原生字符串类型）
+re库采用raw string类型表示正则表达式，表示为:r'text'
+raw string是不包含转义符的字符串
+-string类型，更繁琐。
+当正则表达式包含转义符时，使用raw string</p> <p>3.re.search(pattern,string,flags=0)
+在一个字符串中搜索匹配正则表达式的第一个位置，返回match对象
+pattern：正则表达式的字符串或原生字符串表示
+string:待匹配字符串
+flags:正则表达式使用时的控制标记
+-re.I re.IGNORECASE 忽略正则表达式的大小写，[A-Z]能够匹配小写字符
+-re.M re.MULTILINE 正则表达式中的^操作符能够将给定字符串的每行当作匹配开始
+-re.S re.DOTALL 正则表达式中的.操作符能够匹配所有字符，默认匹配除换行外的所有字符</p> <p>4.re.match(pattern,string,falg=0)
+从一个字符串的开始位置起匹配正则表达式，返回match对象。
+pattern：正则表达式的字符串或原生字符串表示
+string:待匹配字符串
+flags:正则表达式使用时的控制标记</p> <p>5.re.findall(pattern,string,flags=0)
+搜索字符串，以列表类型返回全部能匹配的子串。
+pattern：正则表达式的字符串或原生字符串表示
+string:待匹配字符串
+flags:正则表达式使用时的控制标记</p> <p>6.re.split(pattern,string,maxsplit=0,flags=0)
+将一个字符串按照正则表达匹配结果进行分割，返回列表类型。
+pattern：正则表达式的字符串或原生字符串表示
+string:待匹配字符串
+maxsplit:最大分割数，剩余部分作为最后一个元素输出。
+flags:正则表达式使用时的控制标记</p> <p>7.re.finditer(pattern,string,flags=0)
+搜索字符串，返回一个匹配结果的迭代类型，每个迭代元素是match对象。
+pattern：正则表达式的字符串或原生字符串表示
+string:待匹配字符串
+flags:正则表达式使用时的控制标记</p> <p>8.re.sub(pattern,repl,string,count=0,flags=0)
+在一个字符串中替换所有匹配正则表达式的子串，返回替换后的字符串。
+pattern：正则表达式的字符串或原生字符串表示
+repl:替换匹配字符串的字符串
+string:待匹配字符串
+count:匹配的最大替换次数
+flags:正则表达式使用时的控制标记</p> <p>9.re库的另一种等价用法</p> <blockquote><blockquote><blockquote><p>rst=re.search(r'[1-9]\d{5}','BIT 100081')
+函数式用法：一次性操作</p></blockquote></blockquote> <blockquote><blockquote><p>pat=re.compile(r'[1-9]\d{5}')
+rst=pat.search(&quot;BIT 100081&quot;)</p></blockquote></blockquote></blockquote> <p>10.regex=re.compile(pattern,flags=0)
+将正则表达式的字符串形式编译成正则表达式对象
+pattern：正则表达式的字符串或原生字符串表示
+flags:正则表达式使用时的控制标记</p> <p>##Re库的match对象</p> <p>1.Match对象的属性
+.string 待匹配的文本
+.re 匹配时使用的pattern对象(正则表达式)
+.pos 正则表达式搜索文本的开始位置
+.endpos 正则表达式搜索文本的结束位置</p> <p>2.Match对象的方法
+.group(0):获得匹配后的字符串
+.start():匹配字符串在原始字符串的开始位置
+.end():匹配字符串在原始字符串的结束位置
+.span():返回(.start(),.end())</p> <p>##Re库的贪婪匹配和最小匹配</p> <p>1.同时匹配长短不同的多项，返回哪一个呢？</p> <blockquote><blockquote><blockquote><p>match=re.search(r'PY.*N','PYANBNCNDN')
+match.group(0)</p></blockquote></blockquote></blockquote> <p>2.贪婪匹配：Re库默认采用贪婪匹配，即输出匹配最长的子串</p> <blockquote><blockquote><blockquote><p>match=re.search(r'PY.*N','PYANBNCNDN')
+match.group(0)
+PYANBNCNDN</p></blockquote></blockquote></blockquote> <p>3.最小匹配，如何输出最短的子串呢？</p> <blockquote><blockquote><blockquote><p>match=re.search(r'PY.*?N','PYANBNCNDN')
+match.group(0)
+PYAN</p></blockquote></blockquote></blockquote> <p>4.最小匹配操作符
+*?前一个字符0次或无限次扩展，最小匹配
++?前一个字符1次或无限次扩展，最小匹配
+??前一个字符0次或1次扩展，最小匹配
+{m,n}?扩展前一个字符m至n次(含n),最小匹配</p> <p>#实例2：淘宝商品比价定向爬虫
+##&quot;淘宝商品比价定向爬虫&quot;实例介绍
+##&quot;淘宝商品比价定向爬虫&quot;实例编写</p> <p>#实例3：股票数据定向爬虫
+##&quot;股票数据定向爬虫&quot;实例介绍
+##&quot;股票数据定向爬虫&quot;实例编写
+##&quot;股票数据定向爬虫&quot;实例优化</p> <p>#网络爬虫之框架</p> <p>#Scrapy爬虫框架
+##requests库和Scrapy爬虫的比较
+##Scrapy爬虫框架介绍
+##Scrapy爬虫框架解析
+##Scrapy爬虫的常用命令</p> <p>#Scrapy爬虫基本使用
+##Scrapy爬虫的基本使用
+##Scrapy爬虫的第一个实例
+##yield关键字的使用</p> <p>#股票数据Scrapy爬虫
+##&quot;股票数据Scrapy爬虫&quot;实例介绍
+##&quot;股票数据Scrapy爬虫&quot;实例编写
+##&quot;股票数据Scrapy爬虫&quot;实例优化</p></html></tag></tag></tag></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/skill-tree/assets/js/app.72dd125b.js" defer></script><script src="/skill-tree/assets/js/60.d0ad8ef4.js" defer></script>
+  </body>
+</html>
